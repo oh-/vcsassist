@@ -1,0 +1,15 @@
+// Requirements
+// ============
+
+@import "susy";
+
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+);
+
+// Susy testing
+// ============
+
+body {@include container(80em); }
+nav { @include span(25%) };
