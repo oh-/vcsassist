@@ -20,7 +20,7 @@ and Blueprint http://www.blueprintcss.org/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-1.0 Reset
+1.0 Reset / Susy
 2.0 Typography
 3.0 Elements
 4.0 Forms
@@ -167,8 +167,8 @@ body:after {
 }
 
 /* line 15, ../sass/_grids.scss */
-nav.main-navigation {
-  width: 100%;
+nav {
+  width: 25%;
   float: left;
   margin-right: 1.69492%;
 }
@@ -701,6 +701,42 @@ a:hover, a:focus, a:active {
 /*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
+/* line 2, ../sass/site/_site.scss */
+header#masthead {
+  min-height: 150px;
+  background-color: red;
+}
+
+/* line 1, ../sass/layout/_sidebar-content.scss */
+.content-area {
+  float: right;
+  margin: 0 0 0 -25%;
+  width: 100%;
+}
+
+/* line 7, ../sass/layout/_sidebar-content.scss */
+.site-main {
+  margin: 0 0 0 25%;
+}
+
+/* line 11, ../sass/layout/_sidebar-content.scss */
+.site-content .widget-area {
+  float: left;
+  overflow: hidden;
+  width: 25%;
+}
+
+/* line 17, ../sass/layout/_sidebar-content.scss */
+.site-footer {
+  clear: both;
+  width: 100%;
+}
+
+/* line 10, ../sass/site/_site.scss */
+div#content {
+  background-color: #fff;
+}
+
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
