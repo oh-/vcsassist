@@ -18,14 +18,15 @@
 <!--
 Compass CSS files added below
 -->
-<link href="/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <link href="/print.css" media="print" rel="stylesheet" type="text/css" />
+<link href="<?php echo get_stylesheet_directory_uri(); ?>/css/screen.css" media="screen, projection" rel="stylesheet"  type="text/css" />
+ 
+  <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/print.css" media="print" rel="stylesheet" type="text/css" />
   <!--[if IE]>
-      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+      <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
 
-
 <?php wp_head(); ?>
+
 </head>
 
 <body <?php body_class(); ?>>
