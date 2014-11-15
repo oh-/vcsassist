@@ -66,3 +66,43 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* line 43, ../sass/_grids.scss */
+#page {
+  max-width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+#page:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 47, ../sass/_grids.scss */
+#primary {
+  width: 74.57627%;
+  float: right;
+  margin-right: 0;
+}
+
+/* line 50, ../sass/_grids.scss */
+#secondary {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+/* line 13, ../sass/screen.scss */
+header#masthead {
+  min-height: 150px;
+  background-color: red;
+}
+
+/* line 18, ../sass/screen.scss */
+div#content {
+  background-color: #fff;
+}

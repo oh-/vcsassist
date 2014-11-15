@@ -1,7 +1,36 @@
 // Requirements
 // ============
 
+@import "compass";
 @import "susy";
+
+//[Susy default settings]
+//$susy: (
+//  flow: ltr,
+//  math: fluid,
+//  output: float,
+//  gutter-position: after,
+//  container: auto,
+//  container-position: center,
+//  columns: 4,
+//  gutters: .25,
+//  column-width: false,
+//  global-box-sizing: content-box,
+//  last-flow: to,
+//  debug: (
+//    image: hide,
+//    color: rgba(#66f, .25),
+//    output: background,
+//    toggle: top right,
+//  ),
+//  use-custom: (
+//    background-image: true,
+//    background-options: false,
+//    box-sizing: true,
+//    clearfix: false,
+//    rem: true,
+//  )
+//);
 
 $susy: (
   columns: 12,
@@ -11,5 +40,35 @@ $susy: (
 // Susy testing
 // ============
 
-body {@include container(80em); }
-nav { @include span(25%) };
+#page {
+	@include container;
+	@include clearfix;
+}
+#primary {
+	@include span(9 of 12 last);
+}
+#secondary {
+	@include span(3 of 12);
+}
+
+//	mobile stuff
+
+
+@media only screen and (min-width:1025px) {
+//	large screen
+
+}
+
+@media only screen and (min-width:641px) and (max-width: 1024px)  {
+//	small screen
+
+}
+
+@media only screen and (min-width:480px) and (max-width: 640px)  {
+//	medium mobile and
+#page {@include container(100%)};
+}
+@media only screen and (max-width: 479px){
+//	tiny mobile
+#page {@include container(100%)};
+}
