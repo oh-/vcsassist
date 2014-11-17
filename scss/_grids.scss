@@ -4,6 +4,7 @@
 @import "compass";
 @import "susy";
 
+
 //[Susy default settings]
 //$susy: (
 //  flow: ltr,
@@ -35,13 +36,14 @@
 $susy: (
   columns: 12,
   gutters: 1/4,
+  global-box-sizing: border-box,
 );
 
 // Susy testing
 // ============
 
 #page {
-	@include container;
+	@include container(1140px);
 	@include clearfix;
 }
 #primary {

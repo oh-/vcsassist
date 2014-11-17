@@ -16,7 +16,7 @@ javascripts_dir = "js"
 # relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
-# line_comments = false
+line_comments = false
 
 
 # If you prefer the indented syntax, you might want to regenerate this
@@ -26,7 +26,7 @@ javascripts_dir = "js"
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
 
 
-
+sass_options = {:debug_info => true}
 environment = :development
 
 # Move styles.css up one directory as required by Wordpress

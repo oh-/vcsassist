@@ -43,7 +43,7 @@ and Blueprint http://www.blueprintcss.org/
 /*--------------------------------------------------------------
 1.0 Reset
 --------------------------------------------------------------*/
-/* line 1, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/_reset\.scss}line{font-family:\000031}}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -63,7 +63,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   vertical-align: baseline;
 }
 
-/* line 19, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/_reset\.scss}line{font-family:\0000319}}
 html {
   font-size: 62.5%;
   /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
@@ -77,7 +77,7 @@ html {
   /* Apply a natural box layout model to the document; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 }
 
-/* line 26, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/_reset\.scss}line{font-family:\0000326}}
 *,
 *:before,
 *:after {
@@ -85,13 +85,13 @@ html {
   box-sizing: inherit;
 }
 
-/* line 31, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/_reset\.scss}line{font-family:\0000331}}
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
 }
 
-/* line 34, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/_reset\.scss}line{font-family:\0000334}}
 article,
 aside,
 details,
@@ -105,47 +105,47 @@ section {
   display: block;
 }
 
-/* line 46, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/_reset\.scss}line{font-family:\0000346}}
 ol, ul {
   list-style: none;
 }
 
-/* line 49, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/_reset\.scss}line{font-family:\0000349}}
 table {
   /* tables still need 'cellspacing="0"' in the markup */
   border-collapse: separate;
   border-spacing: 0;
 }
 
-/* line 53, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/_reset\.scss}line{font-family:\0000353}}
 caption, th, td {
   font-weight: normal;
   text-align: left;
 }
 
-/* line 57, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/_reset\.scss}line{font-family:\0000357}}
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: "";
 }
 
-/* line 61, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/_reset\.scss}line{font-family:\0000361}}
 blockquote, q {
   quotes: "" "";
 }
 
-/* line 64, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/_reset\.scss}line{font-family:\0000364}}
 a:focus {
   outline: thin dotted;
 }
 
-/* line 67, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/_reset\.scss}line{font-family:\0000367}}
 a:hover,
 a:active {
   outline: 0;
 }
 
-/* line 71, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/_reset\.scss}line{font-family:\0000371}}
 a img {
   border: 0;
 }
@@ -153,50 +153,50 @@ a img {
 /*--------------------------------------------------------------
 2.0 Typography
 --------------------------------------------------------------*/
-/* line 1, ../sass/typography/_typography.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_typography\.scss}line{font-family:\000031}}
 body,
 button,
 input,
 select,
 textarea {
-  color: #404040;
+  color: #1B3B50;
   font-family: sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.5;
 }
 
-/* line 1, ../sass/typography/_headings.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\000031}}
 h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
-/* line 1, ../sass/typography/_copy.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_copy\.scss}line{font-family:\000031}}
 p {
   margin-bottom: 1.5em;
 }
 
-/* line 5, ../sass/typography/_copy.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_copy\.scss}line{font-family:\000035}}
 b, strong {
   font-weight: bold;
 }
 
-/* line 9, ../sass/typography/_copy.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_copy\.scss}line{font-family:\000039}}
 dfn, cite, em, i {
   font-style: italic;
 }
 
-/* line 13, ../sass/typography/_copy.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_copy\.scss}line{font-family:\0000313}}
 blockquote {
   margin: 0 1.5em;
 }
 
-/* line 17, ../sass/typography/_copy.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_copy\.scss}line{font-family:\0000317}}
 address {
   margin: 0 0 1.5em;
 }
 
-/* line 21, ../sass/typography/_copy.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_copy\.scss}line{font-family:\0000321}}
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
@@ -209,26 +209,26 @@ pre {
   padding: 1.6em;
 }
 
-/* line 32, ../sass/typography/_copy.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_copy\.scss}line{font-family:\0000332}}
 code, kbd, tt, var {
   font-size: 15px;
   font-size: 1.5rem;
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
-/* line 37, ../sass/typography/_copy.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_copy\.scss}line{font-family:\0000337}}
 abbr, acronym {
   border-bottom: 1px dotted #666;
   cursor: help;
 }
 
-/* line 42, ../sass/typography/_copy.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_copy\.scss}line{font-family:\0000342}}
 mark, ins {
   background: #fff9c0;
   text-decoration: none;
 }
 
-/* line 47, ../sass/typography/_copy.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_copy\.scss}line{font-family:\0000347}}
 sup,
 sub {
   font-size: 75%;
@@ -238,22 +238,22 @@ sub {
   vertical-align: baseline;
 }
 
-/* line 56, ../sass/typography/_copy.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_copy\.scss}line{font-family:\0000356}}
 sup {
   bottom: 1ex;
 }
 
-/* line 60, ../sass/typography/_copy.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_copy\.scss}line{font-family:\0000360}}
 sub {
   top: .5ex;
 }
 
-/* line 64, ../sass/typography/_copy.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_copy\.scss}line{font-family:\0000364}}
 small {
   font-size: 75%;
 }
 
-/* line 68, ../sass/typography/_copy.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_copy\.scss}line{font-family:\0000368}}
 big {
   font-size: 125%;
 }
@@ -261,7 +261,7 @@ big {
 /*--------------------------------------------------------------
 3.0 Elements
 --------------------------------------------------------------*/
-/* line 1, ../sass/elements/_elements.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/elements\/_elements\.scss}line{font-family:\000031}}
 hr {
   background-color: #ccc;
   border: 0;
@@ -269,39 +269,39 @@ hr {
   margin-bottom: 1.5em;
 }
 
-/* line 1, ../sass/elements/_lists.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/elements\/_lists\.scss}line{font-family:\000031}}
 ul, ol {
   margin: 0 0 1.5em 3em;
 }
 
-/* line 5, ../sass/elements/_lists.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/elements\/_lists\.scss}line{font-family:\000035}}
 ul {
   list-style: disc;
 }
 
-/* line 9, ../sass/elements/_lists.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/elements\/_lists\.scss}line{font-family:\000039}}
 ol {
   list-style: decimal;
 }
 
-/* line 13, ../sass/elements/_lists.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/elements\/_lists\.scss}line{font-family:\0000313}}
 li > ul,
 li > ol {
   margin-bottom: 0;
   margin-left: 1.5em;
 }
 
-/* line 19, ../sass/elements/_lists.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/elements\/_lists\.scss}line{font-family:\0000319}}
 dt {
   font-weight: bold;
 }
 
-/* line 23, ../sass/elements/_lists.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/elements\/_lists\.scss}line{font-family:\0000323}}
 dd {
   margin: 0 1.5em 1.5em;
 }
 
-/* line 10, ../sass/elements/_elements.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/elements\/_elements\.scss}line{font-family:\0000310}}
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -309,18 +309,18 @@ img {
   /* Adhere to container width. */
 }
 
-/* line 15, ../sass/elements/_elements.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/elements\/_elements\.scss}line{font-family:\0000315}}
 figure {
   margin: 0;
 }
 
-/* line 1, ../sass/elements/_tables.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/elements\/_tables\.scss}line{font-family:\000031}}
 table {
   margin: 0 0 1.5em;
   width: 100%;
 }
 
-/* line 6, ../sass/elements/_tables.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/elements\/_tables\.scss}line{font-family:\000036}}
 th {
   font-weight: bold;
 }
@@ -328,7 +328,7 @@ th {
 /*--------------------------------------------------------------
 4.0 Forms
 --------------------------------------------------------------*/
-/* line 1, ../sass/forms/_forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/forms\/_forms\.scss}line{font-family:\000031}}
 button,
 input,
 select,
@@ -341,7 +341,7 @@ textarea {
   /* Improves appearance and consistency in all browsers */
 }
 
-/* line 1, ../sass/forms/_buttons.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/forms\/_buttons\.scss}line{font-family:\000031}}
 button,
 input[type="button"],
 input[type="reset"],
@@ -363,7 +363,7 @@ input[type="submit"] {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
-/* line 19, ../sass/forms/_buttons.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/forms\/_buttons\.scss}line{font-family:\0000319}}
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -372,7 +372,7 @@ input[type="submit"]:hover {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
 }
 
-/* line 27, ../sass/forms/_buttons.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/forms\/_buttons\.scss}line{font-family:\0000327}}
 button:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
@@ -385,27 +385,27 @@ input[type="submit"]:active {
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
-/* line 1, ../sass/forms/_fields.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/forms\/_fields\.scss}line{font-family:\000031}}
 input[type="checkbox"],
 input[type="radio"] {
   padding: 0;
   /* Addresses excess padding in IE8/9 */
 }
 
-/* line 6, ../sass/forms/_fields.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/forms\/_fields\.scss}line{font-family:\000036}}
 input[type="search"] {
   -webkit-appearance: textfield;
   /* Addresses appearance set to searchfield in S5, Chrome */
   box-sizing: content-box;
 }
 
-/* line 11, ../sass/forms/_fields.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/forms\/_fields\.scss}line{font-family:\0000311}}
 input[type="search"]::-webkit-search-decoration {
   /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
   -webkit-appearance: none;
 }
 
-/* line 15, ../sass/forms/_fields.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/forms\/_fields\.scss}line{font-family:\0000315}}
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
@@ -413,7 +413,7 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-/* line 21, ../sass/forms/_fields.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/forms\/_fields\.scss}line{font-family:\0000321}}
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -425,7 +425,7 @@ textarea {
   border-radius: 3px;
 }
 
-/* line 32, ../sass/forms/_fields.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/forms\/_fields\.scss}line{font-family:\0000332}}
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
@@ -435,7 +435,7 @@ textarea:focus {
   color: #111;
 }
 
-/* line 41, ../sass/forms/_fields.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/forms\/_fields\.scss}line{font-family:\0000341}}
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -444,7 +444,7 @@ input[type="search"] {
   padding: 3px;
 }
 
-/* line 49, ../sass/forms/_fields.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/forms\/_fields\.scss}line{font-family:\0000349}}
 textarea {
   overflow: auto;
   /* Removes default vertical scrollbar in IE6/7/8/9 */
@@ -460,36 +460,36 @@ textarea {
 /*--------------------------------------------------------------
 5.1 Links
 --------------------------------------------------------------*/
-/* line 1, ../sass/navigation/_links.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_links\.scss}line{font-family:\000031}}
 a {
-  color: royalblue;
+  color: #EE9500;
 }
-/* line 4, ../sass/navigation/_links.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_links\.scss}line{font-family:\000034}}
 a:visited {
-  color: purple;
+  color: #EE9500;
 }
-/* line 7, ../sass/navigation/_links.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_links\.scss}line{font-family:\000037}}
 a:hover, a:focus, a:active {
-  color: midnightblue;
+  color: #EE9500;
 }
 
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
-/* line 1, ../sass/navigation/_menus.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\000031}}
 .main-navigation {
   clear: both;
   display: block;
   float: left;
   width: 100%;
 }
-/* line 7, ../sass/navigation/_menus.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\000037}}
 .main-navigation ul {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
-/* line 12, ../sass/navigation/_menus.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000312}}
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -498,53 +498,53 @@ a:hover, a:focus, a:active {
   left: -999em;
   z-index: 99999;
 }
-/* line 20, ../sass/navigation/_menus.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000320}}
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
-/* line 26, ../sass/navigation/_menus.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000326}}
 .main-navigation ul ul li:hover > ul {
   left: 100%;
 }
-/* line 31, ../sass/navigation/_menus.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000331}}
 .main-navigation ul ul a {
   width: 200px;
 }
-/* line 42, ../sass/navigation/_menus.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000342}}
 .main-navigation ul li:hover > ul {
   left: auto;
 }
-/* line 46, ../sass/navigation/_menus.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000346}}
 .main-navigation li {
   float: left;
   position: relative;
 }
-/* line 53, ../sass/navigation/_menus.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000353}}
 .main-navigation a {
   display: block;
   text-decoration: none;
 }
 
 /* Small menu */
-/* line 65, ../sass/navigation/_menus.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000365}}
 .menu-toggle {
   display: none;
 }
 
 @media screen and (max-width: 600px) {
-  /* line 70, ../sass/navigation/_menus.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000370}}
   .menu-toggle,
   .main-navigation.toggled .nav-menu {
     display: block;
   }
 
-  /* line 75, ../sass/navigation/_menus.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000375}}
   .main-navigation ul {
     display: none;
   }
 }
-/* line 80, ../sass/navigation/_menus.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000380}}
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
@@ -552,7 +552,7 @@ a:hover, a:focus, a:active {
   overflow: hidden;
 }
 
-/* line 87, ../sass/navigation/_menus.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000387}}
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
 .post-navigation .nav-previous {
@@ -560,7 +560,7 @@ a:hover, a:focus, a:active {
   width: 50%;
 }
 
-/* line 94, ../sass/navigation/_menus.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000394}}
 .comment-navigation .nav-next,
 .paging-navigation .nav-next,
 .post-navigation .nav-next {
@@ -573,7 +573,7 @@ a:hover, a:focus, a:active {
 6.0 Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers */
-/* line 2, ../sass/modules/_accessibility.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/modules\/_accessibility\.scss}line{font-family:\000032}}
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
@@ -581,13 +581,13 @@ a:hover, a:focus, a:active {
   width: 1px;
   overflow: hidden;
 }
-/* line 9, ../sass/modules/_accessibility.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/modules\/_accessibility\.scss}line{font-family:\000039}}
 .screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
-  color: #21759b;
+  color: #1B3B50;
   display: block;
   font-size: 14px;
   font-size: 1.4rem;
@@ -606,21 +606,21 @@ a:hover, a:focus, a:active {
 /*--------------------------------------------------------------
 7.0 Alignments
 --------------------------------------------------------------*/
-/* line 1, ../sass/modules/_alignments.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/modules\/_alignments\.scss}line{font-family:\000031}}
 .alignleft {
   display: inline;
   float: left;
   margin-right: 1.5em;
 }
 
-/* line 7, ../sass/modules/_alignments.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/modules\/_alignments\.scss}line{font-family:\000037}}
 .alignright {
   display: inline;
   float: right;
   margin-left: 1.5em;
 }
 
-/* line 13, ../sass/modules/_alignments.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/modules\/_alignments\.scss}line{font-family:\0000313}}
 .aligncenter {
   display: block;
   margin: 0 auto;
@@ -629,7 +629,7 @@ a:hover, a:focus, a:active {
 /*--------------------------------------------------------------
 8.0 Clearings
 --------------------------------------------------------------*/
-/* line 1, ../sass/modules/_clearings.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/modules\/_clearings\.scss}line{font-family:\000031}}
 .clear:before,
 .clear:after,
 .entry-content:before,
@@ -646,7 +646,7 @@ a:hover, a:focus, a:active {
   display: table;
 }
 
-/* line 16, ../sass/modules/_clearings.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/modules\/_clearings\.scss}line{font-family:\0000316}}
 .clear:after,
 .entry-content:after,
 .comment-content:after,
@@ -659,18 +659,18 @@ a:hover, a:focus, a:active {
 /*--------------------------------------------------------------
 9.0 Widgets
 --------------------------------------------------------------*/
-/* line 1, ../sass/site/secondary/_widgets.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\000031}}
 .widget {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets */
 }
-/* line 5, ../sass/site/secondary/_widgets.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\000035}}
 .widget select {
   max-width: 100%;
 }
 
 /* Search widget */
-/* line 11, ../sass/site/secondary/_widgets.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000311}}
 .widget_search .search-submit {
   display: none;
 }
@@ -681,36 +681,36 @@ a:hover, a:focus, a:active {
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
-/* line 1, ../sass/site/primary/_posts-and-pages.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/primary\/_posts-and-pages\.scss}line{font-family:\000031}}
 .sticky {
   display: block;
 }
 
-/* line 5, ../sass/site/primary/_posts-and-pages.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/primary\/_posts-and-pages\.scss}line{font-family:\000035}}
 .hentry {
   margin: 0 0 1.5em;
 }
 
-/* line 9, ../sass/site/primary/_posts-and-pages.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/primary\/_posts-and-pages\.scss}line{font-family:\000039}}
 .byline,
 .updated:not(.published) {
   display: none;
 }
 
-/* line 14, ../sass/site/primary/_posts-and-pages.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/primary\/_posts-and-pages\.scss}line{font-family:\0000314}}
 .single .byline,
 .group-blog .byline {
   display: inline;
 }
 
-/* line 19, ../sass/site/primary/_posts-and-pages.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/primary\/_posts-and-pages\.scss}line{font-family:\0000319}}
 .page-content,
 .entry-content,
 .entry-summary {
   margin: 1.5em 0 0;
 }
 
-/* line 25, ../sass/site/primary/_posts-and-pages.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/primary\/_posts-and-pages\.scss}line{font-family:\0000325}}
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
@@ -719,7 +719,7 @@ a:hover, a:focus, a:active {
 /*--------------------------------------------------------------
 10.2 Asides
 --------------------------------------------------------------*/
-/* line 1, ../sass/site/primary/_asides.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/primary\/_asides\.scss}line{font-family:\000031}}
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
   display: none;
@@ -728,12 +728,12 @@ a:hover, a:focus, a:active {
 /*--------------------------------------------------------------
 10.3 Comments
 --------------------------------------------------------------*/
-/* line 1, ../sass/site/primary/_comments.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/primary\/_comments\.scss}line{font-family:\000031}}
 .comment-content a {
   word-wrap: break-word;
 }
 
-/* line 4, ../sass/site/primary/_comments.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/primary\/_comments\.scss}line{font-family:\000034}}
 .bypostauthor {
   display: block;
 }
@@ -742,7 +742,7 @@ a:hover, a:focus, a:active {
 11.0 Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
-/* line 2, ../sass/modules/_infinite-scroll.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/modules\/_infinite-scroll\.scss}line{font-family:\000032}}
 .infinite-scroll .paging-navigation,
 .infinite-scroll.neverending .site-footer {
   /* Theme Footer (when set to scrolling) */
@@ -750,7 +750,7 @@ a:hover, a:focus, a:active {
 }
 
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
-/* line 8, ../sass/modules/_infinite-scroll.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/modules\/_infinite-scroll\.scss}line{font-family:\000038}}
 .infinity-end.neverending .site-footer {
   display: block;
 }
@@ -758,7 +758,7 @@ a:hover, a:focus, a:active {
 /*--------------------------------------------------------------
 12.0 Media
 --------------------------------------------------------------*/
-/* line 1, ../sass/media/_media.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/media\/_media\.scss}line{font-family:\000031}}
 .page-content img.wp-smiley,
 .entry-content img.wp-smiley,
 .comment-content img.wp-smiley {
@@ -769,7 +769,7 @@ a:hover, a:focus, a:active {
 }
 
 /* Make sure embeds and iframes fit their containers */
-/* line 11, ../sass/media/_media.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/media\/_media\.scss}line{font-family:\0000311}}
 embed,
 iframe,
 object {
@@ -779,22 +779,22 @@ object {
 /*--------------------------------------------------------------
 12.1 Captions
 --------------------------------------------------------------*/
-/* line 1, ../sass/media/_captions.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/media\/_captions\.scss}line{font-family:\000031}}
 .wp-caption {
   margin-bottom: 1.5em;
   max-width: 100%;
 }
-/* line 5, ../sass/media/_captions.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/media\/_captions\.scss}line{font-family:\000035}}
 .wp-caption img[class*="wp-image-"] {
   display: block;
   margin: 0 auto;
 }
-/* line 9, ../sass/media/_captions.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/media\/_captions\.scss}line{font-family:\000039}}
 .wp-caption .wp-caption-text {
   margin: 0.8075em 0;
 }
 
-/* line 14, ../sass/media/_captions.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/media\/_captions\.scss}line{font-family:\0000314}}
 .wp-caption-text {
   text-align: center;
 }
@@ -802,12 +802,12 @@ object {
 /*--------------------------------------------------------------
 12.2 Galleries
 --------------------------------------------------------------*/
-/* line 1, ../sass/media/_galleries.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/media\/_galleries\.scss}line{font-family:\000031}}
 .gallery {
   margin-bottom: 1.5em;
 }
 
-/* line 5, ../sass/media/_galleries.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/media\/_galleries\.scss}line{font-family:\000035}}
 .gallery-item {
   display: inline-block;
   text-align: center;
@@ -815,47 +815,47 @@ object {
   width: 100%;
 }
 
-/* line 12, ../sass/media/_galleries.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/media\/_galleries\.scss}line{font-family:\0000312}}
 .gallery-columns-2 .gallery-item {
   max-width: 50%;
 }
 
-/* line 16, ../sass/media/_galleries.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/media\/_galleries\.scss}line{font-family:\0000316}}
 .gallery-columns-3 .gallery-item {
   max-width: 33.33%;
 }
 
-/* line 20, ../sass/media/_galleries.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/media\/_galleries\.scss}line{font-family:\0000320}}
 .gallery-columns-4 .gallery-item {
   max-width: 25%;
 }
 
-/* line 24, ../sass/media/_galleries.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/media\/_galleries\.scss}line{font-family:\0000324}}
 .gallery-columns-5 .gallery-item {
   max-width: 20%;
 }
 
-/* line 28, ../sass/media/_galleries.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/media\/_galleries\.scss}line{font-family:\0000328}}
 .gallery-columns-6 .gallery-item {
   max-width: 16.66%;
 }
 
-/* line 32, ../sass/media/_galleries.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/media\/_galleries\.scss}line{font-family:\0000332}}
 .gallery-columns-7 .gallery-item {
   max-width: 14.28%;
 }
 
-/* line 36, ../sass/media/_galleries.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/media\/_galleries\.scss}line{font-family:\0000336}}
 .gallery-columns-8 .gallery-item {
   max-width: 12.5%;
 }
 
-/* line 40, ../sass/media/_galleries.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/media\/_galleries\.scss}line{font-family:\0000340}}
 .gallery-columns-9 .gallery-item {
   max-width: 11.11%;
 }
 
-/* line 44, ../sass/media/_galleries.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/media\/_galleries\.scss}line{font-family:\0000344}}
 .gallery-caption {
   display: block;
 }
