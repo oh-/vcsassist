@@ -9,6 +9,21 @@
 @import "mixins/mixins-master";
 
 
+#page {
+	@include container(100rem);
+}
+#primary {
+	@include span(12 of 16 last);
+	@include susy-breakpoint(max-width 640px, 4) {
+		@include span(100%);
+	};
+}
+#secondary {
+	@include span(4 of 16);
+	@include susy-breakpoint(max-width 640px, 2) {
+		@include span(100%);
+	};
+}
 // heading
 
 header#masthead {
@@ -20,59 +35,11 @@ div#content {
 	background-color: $color__page;
 }
 
-//	// [breakpoint vars]
-//	$breakpoint-to-rems: true;
-//	$bp-largescreen: 1400px;
-//	$bp-screen: 720px 1200px;
-//	$bp-mobile: max-width 720px;
-//	//$bp-mobile-s: max-width 60rem;
 
-#page {
-	@include breakpoint($bp-largescreen){
-		width: container(80rem);
-		@include testing(orange);
-	}
-	@include breakpoint($bp-screen){
-		width: container(100rem);
-		@include testing(green);
-	}
-	@include breakpoint($bp-mobile){
-		width: container(90%);
-		@include testing(purple);
-	}
-	@include clearfix;	
-}
 
-#primary {
-	@include breakpoint($bp-mobile){
-		@include span(100%);
-		@include testing(blue);
-	}
-	@include breakpoint($bp-screen){
-		@include span(8 of 12 last);
-		@include testing(red);
-	}
-	@include breakpoint($bp-largescreen){
-		@include span(8 of 12 last);
-		@include testing(pink);
-	}
-}
-#secondary {
 
-	@include breakpoint($bp-largescreen){
-		@include span(4 of 12);
-		@include testing(pink);
-	}
-	@include breakpoint($bp-screen){
-		@include span(4 of 12 );
-		@include testing(red);
-	}
-	@include breakpoint($bp-mobile){
-		@include span(100%);
-		@include testing(blue);
-	}
 
-}
+// breakpoint example
 
 
 $basic: 543px;

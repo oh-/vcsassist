@@ -7,7 +7,7 @@
 
 // [breakpoint vars]
 $breakpoint-to-rems: true;
-$bp-mobile: max-width 720px;
+$bp-mobile: 720px;
 $bp-screen: 760px;
 $bp-largescreen: 1200px;
 //$bp-mobile-s: max-width 60rem;
@@ -42,10 +42,9 @@ $bp-largescreen: 1200px;
 //);
 
 $susy: (
-  columns: 12,
-  gutters: 1/4,
-  math: fluid,
+  columns: 16,
   global-box-sizing: border-box,
+  debug: (image: show)
 );
 
 // breakpoint testing
