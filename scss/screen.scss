@@ -6,6 +6,7 @@
 @import "compass/reset";
 @import "grids";
 @import "variables-site/variables-site";
+@import "mixins/mixins-master";
 
 
 // heading
@@ -17,4 +18,76 @@ header#masthead {
 
 div#content {
 	background-color: $color__page;
+}
+
+//	// [breakpoint vars]
+//	$breakpoint-to-rems: true;
+//	$bp-largescreen: 1400px;
+//	$bp-screen: 720px 1200px;
+//	$bp-mobile: max-width 720px;
+//	//$bp-mobile-s: max-width 60rem;
+
+#page {
+	@include breakpoint($bp-largescreen){
+		@include container(max-width 120rem);
+		@include testing(orange);
+	}
+	@include breakpoint($bp-screen){
+		@include container(min-width 80rem );
+		@include testing(green);
+	}
+	@include breakpoint($bp-mobile){
+		@include container(max-width 80rem);
+		@include testing(purple);
+	}
+	@include clearfix;	
+}
+
+#primary {
+	@include breakpoint($bp-mobile){
+		@include span(100%);
+		@include testing(blue);
+	}
+	@include breakpoint($bp-screen){
+		@include span(8 of 12 last);
+		@include testing(red);
+	}
+	@include breakpoint($bp-largescreen){
+		@include span(8 of 12 last);
+		@include testing(pink);
+	}
+}
+#secondary {
+
+	@include breakpoint($bp-largescreen){
+		@include span(4 of 12);
+		@include testing(pink);
+	}
+	@include breakpoint($bp-screen){
+		@include span(4 of 12 );
+		@include testing(red);
+	}
+	@include breakpoint($bp-mobile){
+		@include span(100%);
+		@include testing(blue);
+	}
+
+}
+
+
+$basic: 543px;
+$pair: 456px 794px;
+
+#foo {
+  content: 'No Media Queries';
+
+  @include breakpoint($basic) {
+    content: 'Basic Media Query';
+	background-color: red;
+  }
+
+  @include breakpoint($pair) {
+  	background-color: blue;
+    content: 'Paired Media Query';
+  }
 }

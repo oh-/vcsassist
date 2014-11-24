@@ -67,70 +67,139 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/_grids\.scss}line{font-family:\0000345}}
-#page {
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-  *zoom: 1;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.1\.3\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
-#page:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/_grids\.scss}line{font-family:\0000349}}
-#primary {
-  width: 74.57627%;
-  float: right;
-  margin-right: 0;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/_grids\.scss}line{font-family:\0000352}}
-#secondary {
-  width: 23.72881%;
-  float: left;
-  margin-right: 1.69492%;
-}
-
-@media only screen and (min-width: 480px) and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/_grids\.scss}line{font-family:\0000371}}
-  #page {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.1\.3\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
-  #page:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-}
-@media only screen and (max-width: 479px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/_grids\.scss}line{font-family:\0000375}}
-  #page {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.1\.3\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
-  #page:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000314}}
 header#masthead {
   min-height: 150px;
   background-color: #97BCD0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000319}}
 div#content {
   background-color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000330}}
+#page {
+  content: "";
+  display: table;
+}
+@media (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000330}}
+  #page {
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: orange !important;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.1\.3\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
+  #page:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+@media (min-width: 760px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000330}}
+  #page {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: green !important;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.1\.3\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
+  #page:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+@media (max-width: 720px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000330}}
+  #page {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: purple !important;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.1\.3\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
+  #page:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+@media (max-width: 720px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000346}}
+  #primary {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+    background-color: blue !important;
+  }
+}
+@media (min-width: 760px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000346}}
+  #primary {
+    width: 66.10169%;
+    float: right;
+    margin-right: 0;
+    background-color: red !important;
+  }
+}
+@media (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000346}}
+  #primary {
+    width: 66.10169%;
+    float: right;
+    margin-right: 0;
+    background-color: pink !important;
+  }
+}
+
+@media (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000360}}
+  #secondary {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+    background-color: pink !important;
+  }
+}
+@media (min-width: 760px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000360}}
+  #secondary {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+    background-color: red !important;
+  }
+}
+@media (max-width: 720px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000360}}
+  #secondary {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+    background-color: blue !important;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000381}}
+#foo {
+  content: 'No Media Queries';
+}
+@media (min-width: 543px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000381}}
+  #foo {
+    content: 'Basic Media Query';
+    background-color: red;
+  }
+}
+@media (min-width: 456px) and (max-width: 794px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000381}}
+  #foo {
+    background-color: blue;
+    content: 'Paired Media Query';
+  }
 }

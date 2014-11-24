@@ -3,6 +3,14 @@
 
 @import "compass";
 @import "susy";
+@import "breakpoint";
+
+// [breakpoint vars]
+$breakpoint-to-rems: true;
+$bp-mobile: max-width 720px;
+$bp-screen: 760px;
+$bp-largescreen: 1200px;
+//$bp-mobile-s: max-width 60rem;
 
 
 //[Susy default settings]
@@ -39,38 +47,6 @@ $susy: (
   global-box-sizing: border-box,
 );
 
-// Susy testing
+// breakpoint testing
 // ============
 
-#page {
-	@include container(1140px);
-	@include clearfix;
-}
-#primary {
-	@include span(9 of 12 last);
-}
-#secondary {
-	@include span(3 of 12);
-}
-
-//	mobile stuff
-
-
-@media only screen and (min-width:1025px) {
-//	large screen
-
-}
-
-@media only screen and (min-width:641px) and (max-width: 1024px)  {
-//	small screen
-
-}
-
-@media only screen and (min-width:480px) and (max-width: 640px)  {
-//	medium mobile and
-#page {@include container(100%)};
-}
-@media only screen and (max-width: 479px){
-//	tiny mobile
-#page {@include container(100%)};
-}
