@@ -29,15 +29,15 @@ div#content {
 
 #page {
 	@include breakpoint($bp-largescreen){
-		@include container(max-width 120rem);
+		width: container(80rem);
 		@include testing(orange);
 	}
 	@include breakpoint($bp-screen){
-		@include container(min-width 80rem );
+		width: container(100rem);
 		@include testing(green);
 	}
 	@include breakpoint($bp-mobile){
-		@include container(max-width 80rem);
+		width: container(90%);
 		@include testing(purple);
 	}
 	@include clearfix;	

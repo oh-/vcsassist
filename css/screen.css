@@ -86,46 +86,22 @@ div#content {
 @media (min-width: 1200px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000330}}
   #page {
-    max-width: 120rem;
-    margin-left: auto;
-    margin-right: auto;
+    width: 80rem;
     background-color: orange !important;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.1\.3\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
-  #page:after {
-    content: " ";
-    display: block;
-    clear: both;
   }
 }
 @media (min-width: 760px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000330}}
   #page {
-    max-width: 80rem;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100rem;
     background-color: green !important;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.1\.3\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
-  #page:after {
-    content: " ";
-    display: block;
-    clear: both;
   }
 }
 @media (max-width: 720px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000330}}
   #page {
-    max-width: 80rem;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%;
     background-color: purple !important;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.1\.3\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
-  #page:after {
-    content: " ";
-    display: block;
-    clear: both;
   }
 }
 
