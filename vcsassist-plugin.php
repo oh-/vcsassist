@@ -30,7 +30,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 add_action( 'wp_enqueue_scripts', 'category_posts_widget_styles' );
 
 function category_posts_widget_styles() {
-	wp_register_style( 'category-posts', plugins_url( 'vcsassist-plugin/cat-posts.css' ) );
+	wp_register_style( 'category-posts', plugins_url( 'vcsassist-plugin/stylesheets/screen.css' ) );
 	wp_enqueue_style( 'category-posts' );
 }
 
