@@ -14,6 +14,8 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+		<?php get_sidebar('box'); ?>
+		<?php get_sidebar("long"); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>

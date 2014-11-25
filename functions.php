@@ -79,7 +79,25 @@ function _s_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Sidebar', '_s' ),
 		'id'            => 'sidebar-1',
-		'description'   => '',
+		'description'   => 'Left side bar widget',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Main box', '_s' ),
+		'id'            => 'main-box',
+		'description'   => 'Main area widget - to contain content that can be boxed (shorter)',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Main long', '_s' ),
+		'id'            => 'main-long',
+		'description'   => 'Main space widget - to contain content that can be longer',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h1 class="widget-title">',
