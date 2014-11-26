@@ -5,47 +5,42 @@
 @import "susy";
 @import "breakpoint";
 
+//[Susy default settings]
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: after,
+  container: auto,
+  container-position: center,
+  columns: 16,
+  gutters: 0.15,
+  column-width: false,
+  global-box-sizing: content-box,
+  last-flow: to,
+  debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+  use-custom: (
+    background-image: true,
+    background-options: false,
+    box-sizing: true,
+    clearfix: false,
+    rem: true,
+  )
+);
+
 // [breakpoint vars]
 $breakpoint-to-rems: true;
-$bp-mobile: 720px;
-$bp-screen: 760px;
-$bp-largescreen: 1200px;
+$bp-mobile: max-width 640px;
+$bp-screen: 680px;
+$bp-largescreen: 880px;
 //$bp-mobile-s: max-width 60rem;
 
 
-//[Susy default settings]
-//$susy: (
-//  flow: ltr,
-//  math: fluid,
-//  output: float,
-//  gutter-position: after,
-//  container: auto,
-//  container-position: center,
-//  columns: 4,
-//  gutters: .25,
-//  column-width: false,
-//  global-box-sizing: content-box,
-//  last-flow: to,
-//  debug: (
-//    image: hide,
-//    color: rgba(#66f, .25),
-//    output: background,
-//    toggle: top right,
-//  ),
-//  use-custom: (
-//    background-image: true,
-//    background-options: false,
-//    box-sizing: true,
-//    clearfix: false,
-//    rem: true,
-//  )
-//);
-
-$susy: (
-  columns: 16,
-  global-box-sizing: border-box,
-  debug: (image: show)
-);
 
 // breakpoint testing
 // ============
