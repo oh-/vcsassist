@@ -3,7 +3,6 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
 @import "grids";
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
@@ -13,13 +12,13 @@
 	@include container(100rem);
 }
 #primary {
-	@include span(12 of 16 last);
+	@include span(12 of 16);
 	@include susy-breakpoint(max-width 640px, 4) {
 		@include span(100%);
 	};
 }
 #secondary {
-	@include span(4 of 16);
+	@include span(4 of 16 omega last);
 	@include susy-breakpoint(max-width 640px, 2) {
 		@include span(100%);
 	};
@@ -43,12 +42,11 @@ div#content {
 	@include breakpoint($bp-mobile) {
 		ul li {
 			@include span(2 of 2);
-
 		};
 	};
 	@include breakpoint($bp-screen) {
 		ul li {
-			@include gallery(1 of 3);
+			@include gallery(2 of 4);
 		};
 	};
 	@include breakpoint($bp-largescreen) {
@@ -56,7 +54,6 @@ div#content {
 			@include gallery(1 of 4);
 		};
 	};
-
 }
 //#main-long {
 //	@include container(4);

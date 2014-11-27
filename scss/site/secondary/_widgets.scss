@@ -1,5 +1,5 @@
 .widget {
-	margin: 0 0 1.5em;
+//	margin: 0 0 1.5em;
 	ul li {
 		background-color: $color__background-widget;
 	}
@@ -9,7 +9,27 @@
 	}
 }
 
+.widget-area ul li {
+	@include border-radius(4px, 4px);
+	border: 1px solid lightgrey;
+}
+
 /* Search widget */
 .widget_search .search-submit {
 	display: none;
+}
+// news widget
+$main-box-date-text: 2.5rem;
+#main-box .widget ul li {
+	position: relative;
+	padding-top: $main-box-date-text;
+	p.post-date {
+		position:absolute;
+		line-height: $main-box-date-text;
+		display:inline-block;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding: 0.05rem 0.9rem;
+	}
 }

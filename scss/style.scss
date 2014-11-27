@@ -20,7 +20,8 @@ and Blueprint http://www.blueprintcss.org/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-1.0 Reset / Susy
+1.1 Resets - Compass Defaults
+1.2 Template reset
 2.0 Typography
 3.0 Elements
 4.0 Forms
@@ -40,13 +41,15 @@ and Blueprint http://www.blueprintcss.org/
 12.1 Captions
 12.2 Galleries
 --------------------------------------------------------------*/
+@import "base";
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
+
 /*--------------------------------------------------------------
 1.0 Reset
 --------------------------------------------------------------*/
+// 1.2 Template reset
 @import "reset";
-
 /*--------------------------------------------------------------
 2.0 Typography
 --------------------------------------------------------------*/

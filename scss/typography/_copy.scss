@@ -1,4 +1,6 @@
+
 p {
+	@include adjust-font-size-to(1rem);
 	margin-bottom: 1.5em;
 }
 
@@ -21,8 +23,9 @@ address {
 pre {
 	background: $color__background-pre;
 	font-family: $font__pre;
-	@include font-size(1.5);
-	line-height: $font__line-height-pre;
+	@include adjust-font-size-to(1.5rem);
+//	@include font-size(1.5);
+//	line-height: $font__line-height-pre;
 	margin-bottom: 1.6em;
 	max-width: 100%;
 	overflow: auto;
@@ -30,7 +33,7 @@ pre {
 }
 
 code, kbd, tt, var {
-	@include font-size(1.5);
+//	@include font-size(1.5);
 	font-family: $font__code;
 }
 
