@@ -12,7 +12,7 @@
  */
 
 get_header(); ?>
-
+	<?php get_sidebar('header'); ?>
 	<div id="primary" class="content-area">
 		<?php get_sidebar('box'); ?>
 		<?php get_sidebar("long"); ?>
