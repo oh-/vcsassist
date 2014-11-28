@@ -63,7 +63,6 @@ html {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000328}}
 header#masthead {
-  min-height: 150px;
   background-color: #97BCD0;
 }
 
