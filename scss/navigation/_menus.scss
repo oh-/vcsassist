@@ -3,12 +3,11 @@
 	display: block;
 	float: left;
 	width: 100%;
-	background-color: $color__text-screen;
 	ul {
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-		
+		float: right;
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
@@ -44,8 +43,10 @@
 		}
 	}
 	li {
+		background-color: $color__text-screen;
 		float: left;
 		position: relative;
+		margin: 0 0 0 1.2rem;
 		&:hover > a {
 			@include testing(yellow);
 		}
@@ -55,7 +56,7 @@
 		text-decoration: none;
 		color: $color__background-widget;
 		padding: 0 1rem;
-		border-right: 1px solid black;
+		border-right: darken($color__background-widget, 25%);
 	}
 
 	.current_page_item > a,

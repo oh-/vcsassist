@@ -21,6 +21,12 @@
 	clear: both;
 }
 
+@mixin widget-outline {
+	padding-top: $main-box-date-text;
+	@include border-radius(4px, 4px);
+	border: 1px solid lightgrey;
+}
+
 @mixin testing($colourval) {
 	background-color: $colourval !important;
 }

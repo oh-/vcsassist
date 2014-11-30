@@ -18,21 +18,54 @@
 	};
 }
 #secondary {
-	@include span(4 of 16 omega last);
+	@include span(4 of 16 alpha last);
 	@include susy-breakpoint(max-width 640px, 2) {
 		@include span(100%);
 	};
 }
-// heading
 
-header#masthead {
-//	min-height: 150px;
+
+/*--------------------------------------------------------------
+ header-space
+
+$breakpoint-to-rems: true;
+$bp-mobile: max-width 640px;
+$bp-screen: 680px;
+$bp-largescreen: 880px;
+--------------------------------------------------------------*/
+.site-header {
 	background-color: $color__header;
 }
 
 div#content {
 	background-color: $color__page;
 }
+
+#masthead {
+	@include container(5);
+	.site-branding {
+		@include breakpoint($bp-screen) {
+			@include span(2 of 5 first);
+		};
+		@include breakpoint($bp-mobile) {
+			@include span(5 of 5);
+		};
+	}
+	#header-space {
+		@include container(3);
+		.widget_sp_image {
+			@include testing(red);
+			@include gallery(1 of 3);
+		};
+		@include breakpoint($bp-screen) {
+			@include span(3 of 5 last);
+		};
+		@include breakpoint($bp-mobile) {
+			@include span(5 of 5);
+		};
+	}
+}
+
 
 //asides - #main-box and #main-long widget areas
 
