@@ -16,13 +16,13 @@ $susy: (
   columns: 16,
   gutters: 0.15,
   column-width: false,
-  global-box-sizing: content-box,
+  global-box-sizing: border-box,
   last-flow: to,
   debug: (
     image: show,
     color: rgba(#66f, .25),
     output: background,
-    toggle: top right,
+    toggle: bottom right,
   ),
   use-custom: (
     background-image: true,

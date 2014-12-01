@@ -7,9 +7,19 @@
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
 
+$page-container: (
+	columns: 12,
+	gutters: 1/4,
+	math: fluid,
+	output: float,
+	gutter-position: inside,
+);
+	
 
 #page {
-	@include container(100rem);
+	@include container($susy 100rem);
+	padding-left: 2rem;
+	padding-right: 2rem;
 }
 #primary {
 	@include span(12 of 16);
@@ -70,7 +80,9 @@ div#content {
 //asides - #main-box and #main-long widget areas
 
 #main-box {
-	@include container(4);
+	@include container(4 0.1);
+	padding-left: 1rem;
+	padding-right: 1rem;
 
 	@include breakpoint($bp-mobile) {
 		ul li {
@@ -79,12 +91,12 @@ div#content {
 	};
 	@include breakpoint($bp-screen) {
 		ul li {
-			@include gallery(2 of 4);
+			@include gallery(2 of 4 0.03);
 		};
 	};
 	@include breakpoint($bp-largescreen) {
 		ul li {
-			@include gallery(1 of 4);
+			@include gallery(1 of 4 0.1);
 		};
 	};
 }
