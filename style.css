@@ -352,6 +352,18 @@ big {
   font-size: 125%;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_copy\.scss}line{font-family:\0000377}}
+.widget ul li p {
+  font-size: 0.8em;
+  line-height: 1.875em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_copy\.scss}line{font-family:\0000380}}
+.widget ul li a.post-title {
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: bold;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_typography\.scss}line{font-family:\0000316}}
 .widget p.post-date {
   background-color: #1B3B50;
@@ -564,14 +576,15 @@ textarea {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_links\.scss}line{font-family:\000031}}
 a {
   color: #EE9500;
+  text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_links\.scss}line{font-family:\000034}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_links\.scss}line{font-family:\000035}}
 a:visited {
   color: #EE9500;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_links\.scss}line{font-family:\000037}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_links\.scss}line{font-family:\000038}}
 a:hover, a:focus, a:active {
-  color: #EE9500;
+  color: #4FB847;
 }
 
 /*--------------------------------------------------------------
@@ -626,7 +639,7 @@ a:hover, a:focus, a:active {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000350}}
 .main-navigation li:hover > a {
-  background-color: yellow !important;
+  background-color: #4FB847;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000354}}
 .main-navigation a {
@@ -771,28 +784,38 @@ a:hover, a:focus, a:active {
 9.0 Widgets
 --------------------------------------------------------------*/
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\000031}}
+#secondary aside.widget ul li {
+  padding-top: light-grey;
+  -moz-border-radius: 4px / 4px;
+  -webkit-border-radius: 4px 4px;
+  border-radius: 4px / 4px;
+  border: 1px solid lightgrey;
+  list-style: outside none none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\000034}}
 .widget {
   /* Make sure select elements fit in widgets */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\000033}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\000036}}
 .widget ul li {
   background-color: #FFFFFF;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\000037}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000310}}
 .widget select {
   max-width: 100%;
 }
 
 /* Search widget */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000314}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000317}}
 .widget_search .search-submit {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000323}}
 #main-box .widget ul li {
   position: relative;
-  padding-top: 2.5rem;
+  padding-top: light-grey;
   -moz-border-radius: 4px / 4px;
   -webkit-border-radius: 4px 4px;
   border-radius: 4px / 4px;
@@ -800,7 +823,7 @@ a:hover, a:focus, a:active {
   max-height: 21.2rem;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000328}}
 #main-box .widget ul li p.post-date {
   position: absolute;
   line-height: 2.5rem;
@@ -811,9 +834,9 @@ a:hover, a:focus, a:active {
   padding: 0.05rem 0.9rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000339}}
 #main-long .widget ul li {
-  padding-top: 2.5rem;
+  padding-top: light-grey;
   -moz-border-radius: 4px / 4px;
   -webkit-border-radius: 4px 4px;
   border-radius: 4px / 4px;

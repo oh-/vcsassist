@@ -48,7 +48,7 @@
 		position: relative;
 		margin: 0 0 0 1.2rem;
 		&:hover > a {
-			@include testing(yellow);
+			background-color: $vcsgreen;
 		}
 	}
 	a {

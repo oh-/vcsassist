@@ -28,14 +28,19 @@ $page-container: (
 #page-wrap {
 	@include box-shadow(rgba(black, 0.8) 0 0 3rem);
 	}
+div#content {
+	background-color: $color__page;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
 #primary {
-	@include span(12 of 16);
+	@include span(12 of 16 no-gutters border-box);
 	@include susy-breakpoint(max-width 640px, 4) {
 		@include span(100%);
 	};
 }
 #secondary {
-	@include span(4 of 16 alpha last);
+	@include span(4 of 16 no-gutters border-box  last);
 	@include susy-breakpoint(max-width 640px, 2) {
 		@include span(100%);
 	};
@@ -54,9 +59,7 @@ $bp-largescreen: 880px;
 	background-color: $color__header;
 }
 
-div#content {
-	background-color: $color__page;
-}
+
 
 #masthead {
 	@include container(5);
@@ -71,7 +74,6 @@ div#content {
 	#header-space {
 		@include container(3);
 		.widget_sp_image {
-			@include testing(red);
 			@include gallery(1 of 3);
 		};
 		@include breakpoint($bp-screen) {
@@ -87,9 +89,9 @@ div#content {
 //asides - #main-box and #main-long widget areas
 
 #main-box {
-	@include container(4 0.1);
-	padding-left: 1rem;
-	padding-right: 1rem;
+	@include container(4);
+//	padding-left: 1rem;
+//	padding-right: 1rem;
 
 	@include breakpoint($bp-mobile) {
 		ul li {
@@ -108,23 +110,11 @@ div#content {
 	};
 }
 
+#main-long {
+	@include container(4);
+}
 
-// breakpoint example
-
-
-$basic: 543px;
-$pair: 456px 794px;
-
-#foo {
-  content: 'No Media Queries';
-
-  @include breakpoint($basic) {
-    content: 'Basic Media Query';
-	background-color: red;
-  }
-
-  @include breakpoint($pair) {
-  	background-color: blue;
-    content: 'Paired Media Query';
-  }
+#secondary aside.widget {
+	ul { @include span(1 of 1 border-box); }; //border box sizing because of defaults set elsewhere,the border radius was pushing over the whole size of the aside
+	li { margin-bottom: 1rem;};
 }

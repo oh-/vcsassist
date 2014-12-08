@@ -1,3 +1,6 @@
+#secondary aside.widget ul li {
+	@include widgetify;
+}
 .widget {
 //	margin: 0 0 1.5em;
 	ul li {
@@ -16,7 +19,7 @@
 }
 // news widget
 $main-box-date-text: 2.5rem;
-#main-box, {
+#main-box {
 	.widget ul li {
 		position: relative;
 		@include widget-outline;
