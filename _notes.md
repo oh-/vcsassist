@@ -32,4 +32,18 @@
 	*	Image Widget [books]
 
 
-Here
+#TODO:
+**now**
+change line height of widgets
+
+
+
+
+*later*
+Sticly posts
+add archive of posts
+style copy for regular posts
+get rid of posts from front page
+add fb,twitter SM links / icons to main menu
+add search to main menu
+add email signup form to front page

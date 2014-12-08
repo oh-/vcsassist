@@ -64,6 +64,7 @@ $bp-largescreen: 880px;
 #masthead {
 	@include container(5);
 	.site-branding {
+		text-align: center;
 		@include breakpoint($bp-screen) {
 			@include span(2 of 5 first);
 		};

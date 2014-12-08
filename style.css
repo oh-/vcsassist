@@ -266,6 +266,18 @@ h4 {
   line-height: 2.30769em;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000317}}
+h2.site-description {
+  font-size: 1.8em;
+  line-height: 1.66667em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000321}}
+h1.widget-title {
+  font-size: 1.8em;
+  line-height: 1.66667em;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_copy\.scss}line{font-family:\000032}}
 p {
   font-size: 1em;
