@@ -13,3 +13,13 @@ h3 {
 h4 {
 	@include adjust-font-size-to(1.3rem);
 }
+
+h2.site-description {
+	@include adjust-font-size-to(1.2rem);
+	font-weight: bold;
+	font-style: italic;
+}
+
+h1.widget-title {
+	@include adjust-font-size-to(1.8rem);
+}

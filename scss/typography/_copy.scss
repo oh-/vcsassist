@@ -71,3 +71,12 @@ small {
 big {
 	font-size: 125%;
 }
+
+// Widget typer face and copy
+.widget ul li {
+	@include adjust-font-size-to(0.8rem);
+	a.post-title {
+		@include adjust-font-size-to(1.2rem);
+		font-weight: bold;
+	}
+};

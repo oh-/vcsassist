@@ -7,18 +7,40 @@
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
 
+$page-container: (
+	columns: 12,
+	gutters: 1/4,
+	math: fluid,
+	output: float,
+	gutter-position: inside,
+);
+	
 
 #page {
-	@include container(100rem);
+	@include container($susy 100rem content-box);
+		padding-left: 4rem;
+		padding-right: 4rem;
+	@include breakpoint($bp-mobile) {
+		padding-left: 0.2rem;
+		padding-right: 0.2rem;
+	};
+}
+#page-wrap {
+	@include box-shadow(rgba(black, 0.8) 0 0 3rem);
+	}
+div#content {
+	background-color: $color__page;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 #primary {
-	@include span(12 of 16);
+	@include span(12 of 16 no-gutters border-box);
 	@include susy-breakpoint(max-width 640px, 4) {
 		@include span(100%);
 	};
 }
 #secondary {
-	@include span(4 of 16 alpha last);
+	@include span(4 of 16 no-gutters border-box  last);
 	@include susy-breakpoint(max-width 640px, 2) {
 		@include span(100%);
 	};
@@ -37,13 +59,13 @@ $bp-largescreen: 880px;
 	background-color: $color__header;
 }
 
-div#content {
-	background-color: $color__page;
-}
+
 
 #masthead {
 	@include container(5);
+	position: relative;
 	.site-branding {
+		text-align: center;
 		@include breakpoint($bp-screen) {
 			@include span(2 of 5 first);
 		};
@@ -51,10 +73,14 @@ div#content {
 			@include span(5 of 5);
 		};
 	}
-	#header-space {
+	#header-space {	
 		@include container(3);
+		@include breakpoint($bp-largescreen) {
+			position: absolute;
+			bottom: 0;
+			right: 1rem;
+		};	
 		.widget_sp_image {
-			@include testing(red);
 			@include gallery(1 of 3);
 		};
 		@include breakpoint($bp-screen) {
@@ -71,6 +97,8 @@ div#content {
 
 #main-box {
 	@include container(4);
+//	padding-left: 1rem;
+//	padding-right: 1rem;
 
 	@include breakpoint($bp-mobile) {
 		ul li {
@@ -79,33 +107,21 @@ div#content {
 	};
 	@include breakpoint($bp-screen) {
 		ul li {
-			@include gallery(2 of 4);
+			@include gallery(2 of 4 0.03);
 		};
 	};
 	@include breakpoint($bp-largescreen) {
 		ul li {
-			@include gallery(1 of 4);
+			@include gallery(1 of 4 0.1);
 		};
 	};
 }
 
+#main-long {
+	@include container(4);
+}
 
-// breakpoint example
-
-
-$basic: 543px;
-$pair: 456px 794px;
-
-#foo {
-  content: 'No Media Queries';
-
-  @include breakpoint($basic) {
-    content: 'Basic Media Query';
-	background-color: red;
-  }
-
-  @include breakpoint($pair) {
-  	background-color: blue;
-    content: 'Paired Media Query';
-  }
+#secondary aside.widget {
+	ul { @include span(1 of 1 border-box); }; //border box sizing because of defaults set elsewhere,the border radius was pushing over the whole size of the aside
+	li { margin-bottom: 1rem;};
 }

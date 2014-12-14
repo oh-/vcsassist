@@ -22,10 +22,16 @@
 }
 
 @mixin widget-outline {
-	padding-top: $main-box-date-text;
+	padding-top: $color__widget-border;
 	@include border-radius(4px, 4px);
 	border: 1px solid lightgrey;
 }
+
+@mixin widgetify {
+	@include widget-outline;
+	list-style: outside none none;
+}
+
 
 @mixin testing($colourval) {
 	background-color: $colourval !important;

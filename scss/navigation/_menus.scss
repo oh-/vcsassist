@@ -3,6 +3,7 @@
 	display: block;
 	float: left;
 	width: 100%;
+	@include trailer(2);
 	ul {
 		list-style: none;
 		margin: 0;
@@ -48,7 +49,7 @@
 		position: relative;
 		margin: 0 0 0 1.2rem;
 		&:hover > a {
-			@include testing(yellow);
+			background-color: $vcsgreen;
 		}
 	}
 	a {
