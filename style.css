@@ -268,11 +268,13 @@ h4 {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000317}}
 h2.site-description {
-  font-size: 1.8em;
-  line-height: 1.66667em;
+  font-size: 1.2em;
+  line-height: 1.25em;
+  font-weight: bold;
+  font-style: italic;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000323}}
 h1.widget-title {
   font-size: 1.8em;
   line-height: 1.66667em;
@@ -364,15 +366,15 @@ big {
   font-size: 125%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_copy\.scss}line{font-family:\0000377}}
-.widget ul li p {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_copy\.scss}line{font-family:\0000376}}
+.widget ul li {
   font-size: 0.8em;
   line-height: 1.875em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_copy\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_copy\.scss}line{font-family:\0000378}}
 .widget ul li a.post-title {
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 1.2em;
+  line-height: 1.25em;
   font-weight: bold;
 }
 
@@ -608,15 +610,16 @@ a:hover, a:focus, a:active {
   display: block;
   float: left;
   width: 100%;
+  margin-bottom: 3em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\000036}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\000037}}
 .main-navigation ul {
   list-style: none;
   margin: 0;
   padding-left: 0;
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000312}}
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -625,35 +628,35 @@ a:hover, a:focus, a:active {
   left: -999em;
   z-index: 99999;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000320}}
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000326}}
 .main-navigation ul ul li:hover > ul {
   left: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000331}}
 .main-navigation ul ul a {
   width: 200px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000342}}
 .main-navigation ul li:hover > ul {
   left: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000346}}
 .main-navigation li {
   background-color: #1B3B50;
   float: left;
   position: relative;
   margin: 0 0 0 1.2rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000351}}
 .main-navigation li:hover > a {
   background-color: #4FB847;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000355}}
 .main-navigation a {
   display: block;
   text-decoration: none;
@@ -663,24 +666,24 @@ a:hover, a:focus, a:active {
 }
 
 /* Small menu */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000370}}
 .menu-toggle {
   display: none;
 }
 
 @media screen and (max-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000375}}
   .menu-toggle,
   .main-navigation.toggled .nav-menu {
     display: block;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000380}}
   .main-navigation ul {
     display: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000385}}
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
@@ -688,7 +691,7 @@ a:hover, a:focus, a:active {
   overflow: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000392}}
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
 .post-navigation .nav-previous {
@@ -696,7 +699,7 @@ a:hover, a:focus, a:active {
   width: 50%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000399}}
 .comment-navigation .nav-next,
 .paging-navigation .nav-next,
 .post-navigation .nav-next {

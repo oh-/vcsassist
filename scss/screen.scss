@@ -63,6 +63,7 @@ $bp-largescreen: 880px;
 
 #masthead {
 	@include container(5);
+	position: relative;
 	.site-branding {
 		text-align: center;
 		@include breakpoint($bp-screen) {
@@ -72,8 +73,13 @@ $bp-largescreen: 880px;
 			@include span(5 of 5);
 		};
 	}
-	#header-space {
+	#header-space {	
 		@include container(3);
+		@include breakpoint($bp-largescreen) {
+			position: absolute;
+			bottom: 0;
+			right: 1rem;
+		};	
 		.widget_sp_image {
 			@include gallery(1 of 3);
 		};

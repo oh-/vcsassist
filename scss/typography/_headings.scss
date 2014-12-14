@@ -15,7 +15,9 @@ h4 {
 }
 
 h2.site-description {
-	@include adjust-font-size-to(1.8rem);
+	@include adjust-font-size-to(1.2rem);
+	font-weight: bold;
+	font-style: italic;
 }
 
 h1.widget-title {
