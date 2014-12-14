@@ -1,23 +1,13 @@
 <?php
 /*
 Plugin Name: VCS Assist Site Plugin for vcsassist.org
-Description: Site specific code changes for vcsassist.org
-*/
-/* 	Features:
-		Widgets
-		Custom post types
+Description: Site specific code changes for vcsassist.org. Features - [from Mrinal Kanti Roy's widget 'Category Posts Widget'] Adds a widget that shows the most recent posts from a single category.
+Author: Made SO
+Version: 0.1
+Author URI: http://www.madeso.uk/
 */
 /* widgets */
 
-// Creating the widget 
-/*
-Plugin Name: Category Posts Widget
-Plugin URI: https://wordpress.org/plugins/category-posts/
-Description: Adds a widget that shows the most recent posts from a single category.
-Author: Mrinal Kanti Roy
-Version: 4.0
-Author URI: http://profiles.wordpress.org/mkrdip/
-*/
 
 // Don't call the file directly
 if ( !defined( 'ABSPATH' ) ) exit;

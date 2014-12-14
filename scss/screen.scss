@@ -4,6 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "susy";
 
 /* Default CSS Styles for the Category Posts Widget plugin Version: 4.0 */
 
@@ -12,14 +13,14 @@
     margin: 0;
     padding: 0;
   }
-  font-size: 12px;
-  line-height: 18px;
+//	font-size: 12px;
+//	line-height: 18px;
   p {
     margin-bottom: 0;
   }
   .post-title {
-    font-size: 15px;
-    font-weight: bold;
+//	font-size: 15px;
+//	font-weight: bold;
   }
   .post-date {
     font-style: italic;
@@ -35,6 +36,7 @@
     margin: 3px 0;
     padding: 3px 0;
     border-bottom: 1px solid #ccc;
+	position: relative;
     &:last-child {
       border-bottom: none;
     }
@@ -46,5 +48,6 @@
     padding: 0 0 5px 0;
     overflow: hidden;
   }
-  .comment-num! {}
+  .comment-num:has() {}
 }
+
