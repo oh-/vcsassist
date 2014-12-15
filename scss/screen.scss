@@ -97,8 +97,6 @@ $bp-largescreen: 880px;
 
 #main-box {
 	@include container(4);
-//	padding-left: 1rem;
-//	padding-right: 1rem;
 
 	@include breakpoint($bp-mobile) {
 		ul li {
@@ -112,7 +110,7 @@ $bp-largescreen: 880px;
 	};
 	@include breakpoint($bp-largescreen) {
 		ul li {
-			@include gallery(1 of 4 0.1);
+			@include gallery(1 of 4);
 		};
 	};
 }

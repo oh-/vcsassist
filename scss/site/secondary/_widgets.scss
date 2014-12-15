@@ -20,22 +20,24 @@
 // news widget
 $main-box-date-text: 2.5rem;
 #main-box {
-	.widget ul li {
-		position: relative;
-		@include widget-outline;
-		max-height: 21.2rem;
-		overflow: hidden;
-		p.post-date {
-			position:absolute;
-			line-height: $main-box-date-text;
-			display:inline-block;
-			top: 0;
-			left: 0;
-			right: 0;
-			padding: 0.05rem 0.9rem;
+	.widget {
+		ul li {
+			@include padding-leader();
+			@include widgetify;
+			position: relative;
+			max-height: 21rem;
+			overflow: hidden;
+			p.post-date {
+				position:absolute;
+				display:inline-block;
+				top: 0;
+				left: 0;
+				right: 0;
+				padding: 0.05rem 0.9rem;
+			}
 		}
 	}
 }
 #main-long .widget ul li {
-	@include widget-outline;
+	@include widgetify;
 }
