@@ -18,3 +18,9 @@ textarea {
 	color: $color__background-widget;
 	@include adjust-font-size-to(13px);
 }
+
+#main-long .widget p.post-date {
+	background-color: $color__text-screen;
+	color: $color__background-widget;
+	@include adjust-font-size-to(13px);
+}

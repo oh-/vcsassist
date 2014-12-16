@@ -34,8 +34,8 @@
 
 #TODO:
 **now**
-change line height of widgets
-
+[]	widget margin or padding to not be stuck to the borders.
+[]	heading for events - the date of the event heading >
 
 
 

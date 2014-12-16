@@ -96,7 +96,7 @@ $bp-largescreen: 880px;
 //asides - #main-box and #main-long widget areas
 
 #main-box {
-	@include container(4);
+	@include container(4 0.05);
 
 	@include breakpoint($bp-mobile) {
 		ul li {
@@ -110,7 +110,7 @@ $bp-largescreen: 880px;
 	};
 	@include breakpoint($bp-largescreen) {
 		ul li {
-			@include gallery(1 of 4);
+			@include gallery(1 of 4 0.05);
 		};
 	};
 }
