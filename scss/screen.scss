@@ -96,8 +96,10 @@ $bp-largescreen: 880px;
 //asides - #main-box and #main-long widget areas
 
 #main-box {
-	@include container(4 0.05);
-
+	@include container(3 0.05);
+	ul li {
+		@include debug-vertical-alignment();
+	};
 	@include breakpoint($bp-mobile) {
 		ul li {
 			@include span(2 of 2);
@@ -110,7 +112,7 @@ $bp-largescreen: 880px;
 	};
 	@include breakpoint($bp-largescreen) {
 		ul li {
-			@include gallery(1 of 4 0.05);
+			@include gallery(1 of 3 0.05);
 		};
 	};
 }

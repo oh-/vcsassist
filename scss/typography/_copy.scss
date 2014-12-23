@@ -70,9 +70,9 @@ big {
 
 // Widget typer face and copy
 .widget ul li {
-	@include adjust-font-size-to(0.8rem);
+	@include adjust-font-size-to(0.75rem);
 	a.post-title {
-		@include adjust-font-size-to(1.2rem);
+		@include adjust-font-size-to(1.5rem);
 		font-weight: bold;
 	}
 };
