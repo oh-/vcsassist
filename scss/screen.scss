@@ -63,6 +63,7 @@ $bp-largescreen: 880px;
 
 #masthead {
 	@include container(5);
+	@include padding-trailer(1.2);
 	position: relative;
 	ul.nav-menu {
 		position: absolute;
@@ -112,7 +113,7 @@ $bp-largescreen: 880px;
 #main-box {
 	@include container(3 0.05);
 	ul li {
-		@include debug-vertical-alignment();
+//		@include debug-vertical-alignment();
 	};
 	@include breakpoint($bp-mobile) {
 		ul li {
