@@ -3,7 +3,6 @@
 	display: block;
 	float: left;
 	width: 100%;
-	@include trailer(2);
 	ul {
 		list-style: none;
 		margin: 0;
@@ -45,11 +44,11 @@
 	}
 	li {
 		background-color: $color__text-screen;
+		&.current_page_item { background-color: $vcsorange};
 		float: left;
 		position: relative;
-		margin: 0 0 0 1.2rem;
 		&:hover > a {
-			background-color: $vcsgreen;
+			background-color: $color__selected;
 		}
 	}
 	a {

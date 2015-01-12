@@ -64,6 +64,18 @@ $bp-largescreen: 880px;
 #masthead {
 	@include container(5);
 	position: relative;
+	ul.nav-menu {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		$svg-gradient-shim-threshold: 1 !global;
+		@include background-image(linear-gradient($vcsblue-light, $vcsblue 30%, $vcsblue 80%, $vcsblue-light));
+		li {
+			border-right: 1px solid $color__text-alt;
+			@include background-image(linear-gradient($vcsblue-light, $vcsblue 30%, $vcsblue 80%, $vcsblue-light));
+		}
+	}
 	.site-branding {
 		text-align: center;
 		@include breakpoint($bp-screen) {
@@ -73,23 +85,25 @@ $bp-largescreen: 880px;
 			@include span(5 of 5);
 		};
 	}
-	#header-space {	
-		@include container(3);
-		@include breakpoint($bp-largescreen) {
-			position: absolute;
-			bottom: 0;
-			right: 1rem;
-		};	
-		.widget_sp_image {
-			@include gallery(1 of 3);
-		};
-		@include breakpoint($bp-screen) {
-			@include span(3 of 5 last);
-		};
-		@include breakpoint($bp-mobile) {
-			@include span(5 of 5);
-		};
-	}
+	
+	/* next lines removed because I have removed #header-space from theme. */
+//	#header-space {
+//		@include container(3);
+//		@include breakpoint($bp-largescreen) {
+//			position: absolute;
+//			bottom: 0;
+//			right: 1rem;
+//		};
+//		.widget_sp_image {
+//			@include gallery(1 of 3);
+//		};
+//		@include breakpoint($bp-screen) {
+//			@include span(3 of 5 last);
+//		};
+//		@include breakpoint($bp-mobile) {
+//			@include span(5 of 5);
+//		};
+//	}
 }
 
 
@@ -124,4 +138,17 @@ $bp-largescreen: 880px;
 #secondary aside.widget {
 	ul { @include span(1 of 1 border-box); }; //border box sizing because of defaults set elsewhere,the border radius was pushing over the whole size of the aside
 	li { margin-bottom: 1rem;};
+}
+
+//to put into site/_allwidgets.scss
+
+
+// Footer
+footer.site-footer {
+	@include container();
+	margin-right: span(1 of 30);
+	margin-left: span(1 of 30);
+	.widget_sp_image {
+			@include gallery(3);
+	};
 }

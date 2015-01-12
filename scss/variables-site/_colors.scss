@@ -1,6 +1,7 @@
 $vcsgreen: #4FB847;
 $vcsorange: #EE9500;
 $vcsblue: #1B3B50;
+$vcsblue-light: #97BCD0;
 
 
 $color__background-body: #fff;
@@ -11,8 +12,8 @@ $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__background-widget: #FFFFFF;
 
-$color__header: #97BCD0;
-$color__page: #fff;
+$color__header: #FFF;
+$color__page: #FAFAFA;
 $color__footer: #1B3B50;
 
 
@@ -32,4 +33,4 @@ $color__border-input: #ccc;
 $color__border-abbr: #666;
 
 $color__widget-border: light-grey;
-
+$color__selected: $vcsorange;
