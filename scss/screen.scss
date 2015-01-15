@@ -78,33 +78,15 @@ $bp-largescreen: 880px;
 		}
 	}
 	.site-branding {
-		text-align: center;
+		@include rhythm-margins(1, 1);
+		margin-left: gutter();
 		@include breakpoint($bp-screen) {
-			@include span(2 of 5 first);
+			@include span(2 of 5);
 		};
 		@include breakpoint($bp-mobile) {
 			@include span(5 of 5);
 		};
 	}
-	
-	/* next lines removed because I have removed #header-space from theme. */
-//	#header-space {
-//		@include container(3);
-//		@include breakpoint($bp-largescreen) {
-//			position: absolute;
-//			bottom: 0;
-//			right: 1rem;
-//		};
-//		.widget_sp_image {
-//			@include gallery(1 of 3);
-//		};
-//		@include breakpoint($bp-screen) {
-//			@include span(3 of 5 last);
-//		};
-//		@include breakpoint($bp-mobile) {
-//			@include span(5 of 5);
-//		};
-//	}
 }
 
 

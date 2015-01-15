@@ -268,12 +268,14 @@ h4 {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000317}}
 h2.site-description {
-  font-size: 1.2em;
-  line-height: 1.25em;
+  font-size: 0.9em;
+  line-height: 1.66667em;
   font-style: italic;
+  color: #666;
+  text-align: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000324}}
 h1.entry-title {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -281,7 +283,7 @@ h1.entry-title {
   margin-bottom: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000327}}
 h1.widget-title {
   font-size: 1.8em;
   line-height: 1.66667em;

@@ -15,9 +15,11 @@ h4 {
 }
 
 h2.site-description {
-	@include adjust-font-size-to(1.2rem);
+	@include adjust-font-size-to(0.9rem);
 //	font-weight: bold;
 	font-style: italic;
+	color: $color__text-input;
+	text-align: left;
 }
 h1.entry-title {
 	@include rhythm();
