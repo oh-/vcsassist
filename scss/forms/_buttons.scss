@@ -17,8 +17,10 @@ input[type="submit"] {
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 input[type="image"] {
-	height: 3em;
-	padding: .6em 0.2em .4em;
+	vertical-align: middle;
+}
+.search-button {
+	max-height: 2rem;
 }
 
 button:hover,
