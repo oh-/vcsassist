@@ -16,6 +16,10 @@ input[type="submit"] {
 	padding: .6em 1em .4em;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
+input[type="image"] {
+	height: 3em;
+	padding: .6em 0.2em .4em;
+}
 
 button:hover,
 input[type="button"]:hover,
