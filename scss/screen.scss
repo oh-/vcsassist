@@ -94,7 +94,7 @@ $bp-largescreen: 880px;
 		$svg-gradient-shim-threshold: 1 !global;
 		@include background-image(linear-gradient($vcsblue-light, $vcsblue 30%, $vcsblue 80%, $vcsblue-light));
 		li {
-			border-right: 1px solid $color__text-alt;
+			border-right: 1px solid $vcsblue-light;
 			@include background-image(linear-gradient($vcsblue-light, $vcsblue 30%, $vcsblue 80%, $vcsblue-light));
 		}
 	}
@@ -115,9 +115,6 @@ $bp-largescreen: 880px;
 
 #main-box {
 	@include container(3 0.05);
-	ul li {
-//		@include debug-vertical-alignment();
-	};
 	@include breakpoint($bp-mobile) {
 		ul li {
 			@include span(2 of 2);
@@ -149,10 +146,26 @@ $bp-largescreen: 880px;
 
 // Footer
 footer.site-footer {
-	@include container();
-	margin-right: span(1 of 30);
-	margin-left: span(1 of 30);
-	.widget_sp_image {
-			@include gallery(3);
-	};
+	@include container(6);
+	background-color: $color__background-body;
+	padding-left: gutter();
+	padding-right: gutter();
+	border-top: 20px solid $vcsgrey;
+	
+	.twocol {
+		@include span(2 of 5);
+	}
+	.threecol {
+		@include span(3 of 5 last);
+		.gallery {
+			@include gallery(1 of 3);
+		}
+	}
+
+}
+aside#footer-space {
+	@include span(5 of 6 first);
+}
+.site-info {
+	@include span(1 of 6 last);
 }

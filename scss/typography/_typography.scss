@@ -24,3 +24,6 @@ textarea {
 	color: $color__background-widget;
 	@include adjust-font-size-to(13px);
 }
+footer div.textwidget {
+	@include adjust-font-size-to(0.7rem);
+}

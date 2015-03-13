@@ -402,6 +402,12 @@ big {
   line-height: 1.84615em;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_typography\.scss}line{font-family:\0000327}}
+footer div.textwidget {
+  font-size: 0.7em;
+  line-height: 2.14286em;
+}
+
 /*--------------------------------------------------------------
 3.0 Elements
 --------------------------------------------------------------*/
