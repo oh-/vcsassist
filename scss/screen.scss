@@ -55,6 +55,27 @@ $bp-mobile: max-width 640px;
 $bp-screen: 680px;
 $bp-largescreen: 880px;
 --------------------------------------------------------------*/
+.widget_search {
+	@include span(1 of 3 at 3 last);
+	@include gutter;
+	@include rhythm;
+	text-align: right;
+	input[type="text"] {
+		@include adjust-leading-to(1);
+		@include rhythm-padding(0.4, 0.2);
+		vertical-align: middle;
+		max-width: 100%;
+	}
+	input[type="image"] {
+		@include adjust-leading-to(1);
+		@include rhythm-padding(0.3, 0.2);
+		padding-left: 1rem;
+		vertical-align: middle;
+		max-height: 3rem;
+		
+	}
+}
+
 .site-header {
 	background-color: $color__header;
 }
@@ -63,28 +84,25 @@ $bp-largescreen: 880px;
 
 #masthead {
 	@include container(5);
+	@include padding-trailer(1.2);
 	position: relative;
-	.site-branding {
-		text-align: center;
-		@include breakpoint($bp-screen) {
-			@include span(2 of 5 first);
-		};
-		@include breakpoint($bp-mobile) {
-			@include span(5 of 5);
-		};
+	ul.nav-menu {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		$svg-gradient-shim-threshold: 1 !global;
+		@include background-image(linear-gradient($vcsblue-light, $vcsblue 30%, $vcsblue 80%, $vcsblue-light));
+		li {
+			border-right: 1px solid $vcsblue-light;
+			@include background-image(linear-gradient($vcsblue-light, $vcsblue 30%, $vcsblue 80%, $vcsblue-light));
+		}
 	}
-	#header-space {	
-		@include container(3);
-		@include breakpoint($bp-largescreen) {
-			position: absolute;
-			bottom: 0;
-			right: 1rem;
-		};	
-		.widget_sp_image {
-			@include gallery(1 of 3);
-		};
+	.site-branding {
+		@include rhythm-margins(1, 1);
+		margin-left: gutter();
 		@include breakpoint($bp-screen) {
-			@include span(3 of 5 last);
+			@include span(2 of 5);
 		};
 		@include breakpoint($bp-mobile) {
 			@include span(5 of 5);
@@ -96,10 +114,7 @@ $bp-largescreen: 880px;
 //asides - #main-box and #main-long widget areas
 
 #main-box {
-	@include container(4);
-//	padding-left: 1rem;
-//	padding-right: 1rem;
-
+	@include container(3 0.05);
 	@include breakpoint($bp-mobile) {
 		ul li {
 			@include span(2 of 2);
@@ -112,7 +127,7 @@ $bp-largescreen: 880px;
 	};
 	@include breakpoint($bp-largescreen) {
 		ul li {
-			@include gallery(1 of 4 0.1);
+			@include gallery(1 of 3 0.05);
 		};
 	};
 }
@@ -124,4 +139,33 @@ $bp-largescreen: 880px;
 #secondary aside.widget {
 	ul { @include span(1 of 1 border-box); }; //border box sizing because of defaults set elsewhere,the border radius was pushing over the whole size of the aside
 	li { margin-bottom: 1rem;};
+}
+
+
+
+
+// Footer
+footer.site-footer {
+	@include container(6);
+	background-color: $color__background-body;
+	padding-left: gutter();
+	padding-right: gutter();
+	border-top: 20px solid $vcsgrey;
+	
+	.twocol {
+		@include span(2 of 5);
+	}
+	.threecol {
+		@include span(3 of 5 last);
+		.gallery {
+			@include gallery(1 of 3);
+		}
+	}
+
+}
+aside#footer-space {
+	@include span(5 of 6 first);
+}
+.site-info {
+	@include span(1 of 6 last);
 }

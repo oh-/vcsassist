@@ -87,3 +87,6 @@ function _s_setup_author() {
 	}
 }
 add_action( 'wp', '_s_setup_author' );
+
+add_filter( 'widget_text', 'shortcode_unautop' );
+add_filter( 'widget_text', 'do_shortcode' );

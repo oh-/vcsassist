@@ -30,6 +30,7 @@
 @mixin widgetify {
 	@include widget-outline;
 	list-style: outside none none;
+//	box-sizing: content-box;
 }
 
 

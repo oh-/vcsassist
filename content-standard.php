@@ -13,7 +13,7 @@
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content red">
 		<?php the_excerpt(); ?>
 		<?php
 			wp_link_pages( array(
