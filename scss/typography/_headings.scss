@@ -22,8 +22,10 @@ h2.site-description {
 	text-align: left;
 }
 h1.entry-title {
-	@include rhythm();
 }
 h1.widget-title {
 	@include adjust-font-size-to(1.8rem);
+	a {
+		color: $vcsblue;
+	}
 }

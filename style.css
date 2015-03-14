@@ -275,18 +275,14 @@ h2.site-description {
   text-align: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000324}}
-h1.entry-title {
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000326}}
 h1.widget-title {
   font-size: 1.8em;
   line-height: 1.66667em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000328}}
+h1.widget-title a {
+  color: #1B3B50;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_copy\.scss}line{font-family:\000031}}

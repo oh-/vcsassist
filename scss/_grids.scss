@@ -19,9 +19,9 @@ $susy: (
   global-box-sizing: border-box,
   last-flow: to,
   debug: (
-    image: show,
+    image: hide,
     color: rgba(#66f, .25),
-    output: overlay,
+    output: background,
     toggle: bottom right,
   ),
   use-custom: (

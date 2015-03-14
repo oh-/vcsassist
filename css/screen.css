@@ -25,54 +25,6 @@ html {
   display: block;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000365}}
-head {
-  display: block;
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-  z-index: 999;
-  color: #333;
-  background: rgba(255, 255, 255, 0.25);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000366}}
-head:before {
-  content: "|||";
-  display: block;
-  padding: 5px 10px;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000367}}
-head:hover {
-  background: rgba(255, 255, 255, 0.5);
-  color: red;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000371}}
-head:hover ~ #page, head:hover ~ body #page {
-  position: relative;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000374}}
-head:hover ~ #page:before, head:hover ~ body #page:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  content: " ";
-  z-index: 998;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2NjZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSI4Ni45NTY1MiUiIHN0b3AtY29sb3I9IiNiM2IzZmYiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iODYuOTU2NTIlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(102, 102, 255, 0.25)), color-stop(86.95652%, rgba(179, 179, 255, 0.25)), color-stop(86.95652%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
-  background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 86.95652%, rgba(0, 0, 0, 0) 86.95652%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 86.95652%, rgba(0, 0, 0, 0) 86.95652%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 86.95652%, rgba(0, 0, 0, 0) 86.95652%), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-  background-size: 6.30137%, 100% 24px;
-  background-origin: content-box, border-box;
-  background-clip: content-box, border-box;
-  background-position: left top;
-}
 @media (max-width: 640px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000319}}
   #page {
@@ -130,6 +82,56 @@ div#content {
   }
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000350}}
+.home article.post, .archive article.post {
+  padding-top: light-grey;
+  -moz-border-radius: 4px / 4px;
+  -webkit-border-radius: 4px 4px;
+  border-radius: 4px / 4px;
+  border: 1px solid lightgrey;
+  list-style: outside none none;
+  background-color: white;
+  position: relative;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000357}}
+.home article.post .entry-meta, .archive article.post .entry-meta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1B3B50;
+  color: #D3D3D3;
+  font-size: 0.60938em;
+  line-height: 2.46154em;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000370}}
+.home article.post span.posted-on a, .archive article.post span.posted-on a {
+  color: #EE9500;
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000378}}
+h1.page-title {
+  padding-top: 0.75em;
+  padding-bottom: 1.5em;
+  margin-top: 0.75em;
+  margin-bottom: -0.75em;
+  padding-top: light-grey;
+  -moz-border-radius: 4px / 4px;
+  -webkit-border-radius: 4px 4px;
+  border-radius: 4px / 4px;
+  border: 1px solid lightgrey;
+  list-style: outside none none;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: #97BCD0;
+}
+
 /*--------------------------------------------------------------
  header-space
 
@@ -138,7 +140,7 @@ $bp-mobile: max-width 640px;
 $bp-screen: 680px;
 $bp-largescreen: 880px;
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000394}}
 .widget_search {
   width: 30.30303%;
   float: right;
@@ -150,7 +152,7 @@ $bp-largescreen: 880px;
   margin-bottom: 1.5em;
   text-align: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000399}}
 .widget_search input[type="text"] {
   line-height: 1.5em;
   padding-top: 0.6em;
@@ -158,7 +160,7 @@ $bp-largescreen: 880px;
   vertical-align: middle;
   max-width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003105}}
 .widget_search input[type="image"] {
   line-height: 1.5em;
   padding-top: 0.45em;
@@ -168,12 +170,12 @@ $bp-largescreen: 880px;
   max-height: 3rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003115}}
 .site-header {
   background-color: #FFF;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003121}}
 #masthead {
   max-width: 100%;
   margin-left: auto;
@@ -187,31 +189,7 @@ $bp-largescreen: 880px;
   display: block;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000371}}
-head:hover ~ #masthead, head:hover ~ body #masthead {
-  position: relative;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000374}}
-head:hover ~ #masthead:before, head:hover ~ body #masthead:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  content: " ";
-  z-index: 998;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2NjZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSI4Ni45NTY1MiUiIHN0b3AtY29sb3I9IiNiM2IzZmYiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iODYuOTU2NTIlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(102, 102, 255, 0.25)), color-stop(86.95652%, rgba(179, 179, 255, 0.25)), color-stop(86.95652%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
-  background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 86.95652%, rgba(0, 0, 0, 0) 86.95652%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 86.95652%, rgba(0, 0, 0, 0) 86.95652%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 86.95652%, rgba(0, 0, 0, 0) 86.95652%), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-  background-size: 20.53571%, 100% 24px;
-  background-origin: content-box, border-box;
-  background-clip: content-box, border-box;
-  background-position: left top;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003125}}
 #masthead ul.nav-menu {
   position: absolute;
   bottom: 0;
@@ -224,7 +202,7 @@ head:hover ~ #masthead:before, head:hover ~ body #masthead:before {
   background-image: -webkit-linear-gradient(#97bcd0, #1b3b50 30%, #1b3b50 80%, #97bcd0);
   background-image: linear-gradient(#97bcd0, #1b3b50 30%, #1b3b50 80%, #97bcd0);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\0000396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003132}}
 #masthead ul.nav-menu li {
   border-right: 1px solid #97BCD0;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzk3YmNkMCIvPjxzdG9wIG9mZnNldD0iMzAlIiBzdG9wLWNvbG9yPSIjMWIzYjUwIi8+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiMxYjNiNTAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5N2JjZDAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
@@ -234,14 +212,14 @@ head:hover ~ #masthead:before, head:hover ~ body #masthead:before {
   background-image: -webkit-linear-gradient(#97bcd0, #1b3b50 30%, #1b3b50 80%, #97bcd0);
   background-image: linear-gradient(#97bcd0, #1b3b50 30%, #1b3b50 80%, #97bcd0);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003137}}
 #masthead .site-branding {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   margin-left: 0.82192%;
 }
 @media (min-width: 680px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003137}}
   #masthead .site-branding {
     width: 38.39286%;
     float: left;
@@ -249,7 +227,7 @@ head:hover ~ #masthead:before, head:hover ~ body #masthead:before {
   }
 }
 @media (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003137}}
   #masthead .site-branding {
     width: 100%;
     float: left;
@@ -258,7 +236,7 @@ head:hover ~ #masthead:before, head:hover ~ body #masthead:before {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003116}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003152}}
 #main-box {
   max-width: 100%;
   margin-left: auto;
@@ -270,32 +248,8 @@ head:hover ~ #masthead:before, head:hover ~ body #masthead:before {
   display: block;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000371}}
-head:hover ~ #main-box, head:hover ~ body #main-box {
-  position: relative;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000374}}
-head:hover ~ #main-box:before, head:hover ~ body #main-box:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  content: " ";
-  z-index: 998;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2NjZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSI5NS4yMzgxJSIgc3RvcC1jb2xvcj0iI2IzYjNmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSI5NS4yMzgxJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(102, 102, 255, 0.25)), color-stop(95.2381%, rgba(179, 179, 255, 0.25)), color-stop(95.2381%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
-  background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 95.2381%, rgba(0, 0, 0, 0) 95.2381%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 95.2381%, rgba(0, 0, 0, 0) 95.2381%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 95.2381%, rgba(0, 0, 0, 0) 95.2381%), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-  background-size: 33.87097%, 100% 24px;
-  background-origin: content-box, border-box;
-  background-clip: content-box, border-box;
-  background-position: left top;
-}
 @media (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003119}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003155}}
   #main-box ul li {
     width: 100%;
     float: left;
@@ -304,7 +258,7 @@ head:hover ~ #main-box:before, head:hover ~ body #main-box:before {
   }
 }
 @media (min-width: 680px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003160}}
   #main-box ul li {
     width: 49.63325%;
     float: left;
@@ -324,7 +278,7 @@ head:hover ~ #main-box:before, head:hover ~ body #main-box:before {
   }
 }
 @media (min-width: 880px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003129}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003165}}
   #main-box ul li {
     width: 32.25806%;
     float: left;
@@ -350,7 +304,7 @@ head:hover ~ #main-box:before, head:hover ~ body #main-box:before {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003135}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003171}}
 #main-long {
   max-width: 100%;
   margin-left: auto;
@@ -362,32 +316,8 @@ head:hover ~ #main-box:before, head:hover ~ body #main-box:before {
   display: block;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000371}}
-head:hover ~ #main-long, head:hover ~ body #main-long {
-  position: relative;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000374}}
-head:hover ~ #main-long:before, head:hover ~ body #main-long:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  content: " ";
-  z-index: 998;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2NjZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSI4Ni45NTY1MiUiIHN0b3AtY29sb3I9IiNiM2IzZmYiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iODYuOTU2NTIlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(102, 102, 255, 0.25)), color-stop(86.95652%, rgba(179, 179, 255, 0.25)), color-stop(86.95652%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
-  background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 86.95652%, rgba(0, 0, 0, 0) 86.95652%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 86.95652%, rgba(0, 0, 0, 0) 86.95652%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 86.95652%, rgba(0, 0, 0, 0) 86.95652%), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-  background-size: 25.8427%, 100% 24px;
-  background-origin: content-box, border-box;
-  background-clip: content-box, border-box;
-  background-position: left top;
-}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003140}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003176}}
 #secondary aside.widget ul {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -397,24 +327,19 @@ head:hover ~ #main-long:before, head:hover ~ body #main-long:before {
   margin-left: 0;
   margin-right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003141}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003177}}
 #secondary aside.widget li {
   margin-bottom: 1rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003148}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003184}}
 footer.site-footer {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-color: #fff;
-  padding-top: 3em;
-  padding-bottom: 3em;
-  padding-left: 0.82192%;
-  padding-right: 0.82192%;
-  margin-bottom: 5.47945%;
   border-top: 3rem solid #D3D3D3;
   position: relative;
+  margin-bottom: 7.5em;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.1\.3\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
 footer.site-footer:after {
@@ -422,43 +347,19 @@ footer.site-footer:after {
   display: block;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000371}}
-head:hover ~ footer.site-footer, head:hover ~ body footer.site-footer {
-  position: relative;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000374}}
-head:hover ~ footer.site-footer:before, head:hover ~ body footer.site-footer:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  content: " ";
-  z-index: 998;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2NjZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSI4Ni45NTY1MiUiIHN0b3AtY29sb3I9IiNiM2IzZmYiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iODYuOTU2NTIlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(102, 102, 255, 0.25)), color-stop(86.95652%, rgba(179, 179, 255, 0.25)), color-stop(86.95652%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
-  background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 86.95652%, rgba(0, 0, 0, 0) 86.95652%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 86.95652%, rgba(0, 0, 0, 0) 86.95652%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 86.95652%, rgba(0, 0, 0, 0) 86.95652%), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-  background-size: 17.03704%, 100% 24px;
-  background-origin: content-box, border-box;
-  background-clip: content-box, border-box;
-  background-position: left top;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003157}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003189}}
 footer.site-footer .twocol {
   width: 38.39286%;
   float: left;
   margin-right: 2.67857%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003160}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003192}}
 footer.site-footer .threecol {
   width: 58.92857%;
   float: right;
   margin-right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003162}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003194}}
 footer.site-footer .threecol .gallery {
   width: 30.30303%;
   float: left;
@@ -482,19 +383,55 @@ footer.site-footer .threecol .gallery:nth-child(3n + 3) {
   margin-right: -100%;
   clear: none;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003198}}
+footer.site-footer #footer-content {
+  background-color: #fff;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003203}}
+footer.site-footer .footnote {
+  background-color: #485865;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 3em;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003209}}
+footer.site-footer .footnote .footer-logo {
+  width: 14.81481%;
+  float: left;
+  margin-right: 2.22222%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003212}}
+footer.site-footer .footnote .address, footer.site-footer .footnote .copyright {
+  width: 65.92593%;
+  float: left;
+  margin-right: 2.22222%;
+  color: #e5e7ea;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003217}}
+footer.site-footer .footnote .social {
+  width: 14.81481%;
+  float: right;
+  margin-right: 0;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003168}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003222}}
 aside#footer-space {
   width: 82.96296%;
   float: left;
   margin-right: 2.22222%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003171}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003225}}
 .site-info {
-  position: absolute;
-  bottom: 0;
-  right: 0;
   width: 14.81481%;
   float: right;
   margin-right: 0;

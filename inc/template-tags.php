@@ -63,7 +63,7 @@ endif;
 
 if ( ! function_exists( '_s_posted_on' ) ) :
 /**
- * Prints HTML with meta information for the current post-date/time and author.
+ * Prints HTML with meta information for the current post-date/time and author (and meta data on front page [edit]).
  */
 function _s_posted_on() {
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
@@ -87,8 +87,24 @@ function _s_posted_on() {
 		_x( 'by %s', 'post author', '_s' ),
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
+	
+	
+	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>' ;
+	// if wp front page
+	if ( is_home() ) {
+	    // This is the blog posts index
+		/* translators: used between list items, there is a space after the comma */
+		$categories_list = get_the_category_list( __( ', ', '_s' ) );
+		if ( $categories_list && _s_categorized_blog() ) {
+			printf( '<span class="cat-links">' . __( ' in %1$s', '_s' ) . '</span>', $categories_list );
+		}
 
-	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>';
+		/* translators: used between list items, there is a space after the comma */
+		$tags_list = get_the_tag_list( '', __( ', ', '_s' ) );
+		if ( $tags_list ) {
+			printf( '<span class="tags-links">' . __( ' Tagged %1$s', '_s' ) . '</span>', $tags_list );
+		}
+	}
 
 }
 endif;
@@ -99,7 +115,7 @@ if ( ! function_exists( '_s_entry_footer' ) ) :
  */
 function _s_entry_footer() {
 	// Hide category and tag text for pages.
-	if ( 'post' == get_post_type() ) {
+	if ( 'post' == get_post_type() && ! is_front_page() ) {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( __( ', ', '_s' ) );
 		if ( $categories_list && _s_categorized_blog() ) {
