@@ -182,7 +182,7 @@ $bp-largescreen: 880px;
 
 // Footer
 footer.site-footer {
-	@include container(6);
+	@include container(6 border-box);
 	border-top: 3rem solid $vcsgrey;
 	position: relative;
 	@include margin-trailer(5);
@@ -198,24 +198,28 @@ footer.site-footer {
 	#footer-content {
 		background-color: $color__background-body;
 		@include span(6 of 6);
-		@include rhythm-padding(2);
+		@include rhythm-padding(2, 1);
+		padding-left: gutter();
+		padding-right: gutter();
 	}
 	.footnote {
 		background-color: #485865;
 		@include span(6 of 6);
 		@include padding-trailer(2);
-		text-align: center;
-		
+		padding-left: gutter();
+		padding-right: gutter();
 		.footer-logo {
 			@include span(1 of 6);
+			text-align: center;
 		}
 		.address, .copyright {
 			@include span(4 at 2 of 6);
 			color: #e5e7ea;
-			
+			text-align: center;			
 		}
 		.social {
 			@include span(1 at 6 of 6);
+			text-align: center;
 		}
 	}
 }
