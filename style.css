@@ -948,7 +948,12 @@ a:hover, a:focus, a:active {
   margin: 1.5em 0 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/primary\/_posts-and-pages\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/primary\/_posts-and-pages\.scss}line{font-family:\0000326}}
+.home .entry-content {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/primary\/_posts-and-pages\.scss}line{font-family:\0000330}}
 .page-links {
   clear: both;
   margin: 0 0 1.5em;

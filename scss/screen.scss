@@ -32,6 +32,7 @@ div#content {
 	background-color: $color__page;
 	padding-left: 1rem;
 	padding-right: 1rem;
+	word-wrap: break-word;
 }
 #primary {
 	@include span(12 of 16 no-gutters border-box);
@@ -177,6 +178,11 @@ $bp-largescreen: 880px;
 	li { margin-bottom: 1rem;};
 }
 
+// front page posts
+.home article.post header {
+	@include margin-leader(1);
+	
+}
 
 
 
