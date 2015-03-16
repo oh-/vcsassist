@@ -1,5 +1,6 @@
 #secondary aside.widget ul li {
 	@include widgetify;
+	@include adjust-font-size-to(12px);
 }
 .widget {
 //	margin: 0 0 1.5em;

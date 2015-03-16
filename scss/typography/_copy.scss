@@ -2,6 +2,12 @@ p {
 	@include adjust-font-size-to(1rem);
 }
 
+.home {
+	.entry-content p {
+		@include adjust-font-size-to(16px);
+	}
+}
+
 b, strong {
 	font-weight: bold;
 }
@@ -70,9 +76,19 @@ big {
 
 // Widget typer face and copy
 .widget ul li {
-	@include adjust-font-size-to(0.75rem);
+	@include adjust-leading-to(0.5, 10px);
+	p { @include adjust-font-size-to(12px);
+	}
+	p.post-date {
+		@include adjust-font-size-to(9px);
+	}
 	a.post-title {
-		@include adjust-font-size-to(1.5rem);
+		@include adjust-font-size-to(18px);
 		font-weight: bold;
 	}
 };
+
+
+footer div.textwidget {
+	@include adjust-font-size-to(0.7rem);
+}

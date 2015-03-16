@@ -21,7 +21,10 @@ h2.site-description {
 	color: $color__text-input;
 	text-align: left;
 }
-h1.entry-title {
+.home {
+	h1.entry-title {
+	@include adjust-font-size-to(36px);
+	}
 }
 h1.widget-title {
 	@include adjust-font-size-to(1.8rem);
