@@ -63,6 +63,7 @@ div#content {
 		background-color: $vcsblue;
 		color: $vcsgrey;
 		@include adjust-font-size-to(9.75px);
+//		TODO	SET MAX HEIGHT HERE
 		padding-left: 0.5rem;
 		padding-right: 0.5rem;
 	}
