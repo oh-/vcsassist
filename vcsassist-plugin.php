@@ -316,5 +316,19 @@ class CategoryPosts extends WP_Widget {
 
 add_action( 'widgets_init', create_function('', 'return register_widget("CategoryPosts");') );
 
+
+/**
+ * Category Posts Widget Class
+ *
+ * Makes a range of widget spaces and each one, or a range, is available to display newest items from categories or specific posts
+ */
+
+class WidgetBox extends WP_Widget {
+	function WidgetBox() {
+		$widget_ops = array('classname' => 'widget-box', 'description' => __('A range of widgets to show on the home page - 3 x 3 box'));
+		$this->WP_Widget('category-posts', __('Category Posts'), $widget_ops);
+	}
+}
+
 /* Stop Adding Functions Below this Line */
 ?>
