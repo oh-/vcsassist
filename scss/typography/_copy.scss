@@ -88,7 +88,6 @@ big {
 	}
 };
 
-
-footer div.textwidget {
-	@include adjust-font-size-to(0.7rem);
-}
+footer {
+	.site-info, .partner-logos p { @include adjust-font-size-to(9px);}
+	}

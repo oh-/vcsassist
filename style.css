@@ -404,9 +404,9 @@ big {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_copy\.scss}line{font-family:\0000392}}
-footer div.textwidget {
-  font-size: 0.7em;
-  line-height: 2.14286em;
+footer .site-info, footer .partner-logos p {
+  font-size: 0.5625em;
+  line-height: 2.66667em;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_typography\.scss}line{font-family:\0000316}}
