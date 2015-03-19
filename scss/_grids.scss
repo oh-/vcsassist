@@ -13,7 +13,7 @@ $susy: (
   gutter-position: after,
   container: auto,
   container-position: center,
-  columns: 16,
+  columns: 5,
   gutters: 0.15,
   column-width: false,
   global-box-sizing: border-box,
@@ -36,8 +36,8 @@ $susy: (
 
 // [breakpoint vars]
 $breakpoint-to-rems: true;
-$bp-mobile: max-width 640px;
-$bp-screen: 680px;
+$bp-mobile: max-width 680px;
+$bp-screen: 681px;
 $bp-largescreen: 880px;
 //$bp-mobile-s: max-width 60rem;
 

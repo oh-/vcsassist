@@ -6,23 +6,23 @@
 @import "grids";
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
+@import "debug";
 
 $page-container: (
-	columns: 12,
+	columns: 5,
 	gutters: 1/4,
 	math: fluid,
 	output: float,
-	gutter-position: inside,
 );
 	
 
 #page {
-	@include container($susy 100rem content-box);
-		padding-left: 4rem;
-		padding-right: 4rem;
+	@include container($page-container 100rem content-box);
+	padding-left: 4rem; //push space on each side of #page - to show background
+	padding-right: 4rem;
 	@include breakpoint($bp-mobile) {
-		padding-left: 0.2rem;
-		padding-right: 0.2rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
 	};
 }
 #page-wrap {
@@ -35,19 +35,29 @@ div#content {
 	word-wrap: break-word;
 }
 #primary {
-	@include span(12 of 16 no-gutters border-box);
-	@include susy-breakpoint(max-width 640px, 4) {
-		@include span(100%);
+	@include span(3 of 5 border-box);
+	@include breakpoint($bp-mobile) {
+		@include span(5 of 5);
 	};
+//	@include susy-breakpoint(max-width 860px, 4) {
+//		@include span(100% omega);
+//	};
 }
 #secondary {
-	@include span(4 of 16 no-gutters border-box  last);
-	@include susy-breakpoint(max-width 640px, 2) {
-		@include span(100%);
+	@include span(2 of 5 border-box);
+	@include breakpoint($bp-mobile) {
+		@include span(5 of 5);
 	};
+//	@include susy-breakpoint(max-width 860px, 2) {
+//		@include span(2 of 2);
+//		.widget {
+//			@include gallery(3 of 5 at 2);
+//		}
+//	}
 }
 
 // homepage
+
 .home article.post, .archive article.post {
 	@include widgetify;
 	background-color: white;
@@ -60,13 +70,14 @@ div#content {
 		top: 0;
 		left: 0;
 		right: 0;
+		max-height: 2.46154em; //worked out from line height - couldn't get function to work
 		background-color: $vcsblue;
 		color: $vcsgrey;
 		@include adjust-font-size-to(9.75px);
-//		TODO	SET MAX HEIGHT HERE
+		overflow: hidden;
 		padding-left: 0.5rem;
 		padding-right: 0.5rem;
-	}
+	};
 	span.posted-on {
 
 		a {
@@ -93,26 +104,6 @@ $bp-mobile: max-width 640px;
 $bp-screen: 680px;
 $bp-largescreen: 880px;
 --------------------------------------------------------------*/
-.widget_search {
-	@include span(1 of 3 at 3 last);
-	@include gutter;
-	@include rhythm;
-	text-align: right;
-	input[type="text"] {
-		@include adjust-leading-to(1);
-		@include rhythm-padding(0.4, 0.2);
-		vertical-align: middle;
-		max-width: 100%;
-	}
-	input[type="image"] {
-		@include adjust-leading-to(1);
-		@include rhythm-padding(0.3, 0.2);
-		padding-left: 1rem;
-		vertical-align: middle;
-		max-height: 3rem;
-		
-	}
-}
 
 .site-header {
 	background-color: $color__header;
@@ -121,15 +112,14 @@ $bp-largescreen: 880px;
 
 
 #masthead {
-	@include container(5);
-	@include padding-trailer(1.2);
-	position: relative;
+	@include span(5 of 5);
+	div.menu {	
+		width: 100%;
+		@include background-image(linear-gradient($vcsblue-light, $vcsblue 30%, $vcsblue 80%, $vcsblue-light));
+	}
 	ul.nav-menu {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		left: 0;
 		$svg-gradient-shim-threshold: 1 !global;
+		width: 100%;
 		@include background-image(linear-gradient($vcsblue-light, $vcsblue 30%, $vcsblue 80%, $vcsblue-light));
 		li {
 			border-right: 1px solid $vcsblue-light;
@@ -137,14 +127,37 @@ $bp-largescreen: 880px;
 		}
 	}
 	.site-branding {
-		@include rhythm-margins(1, 1);
-		margin-left: gutter();
-		@include breakpoint($bp-screen) {
-			@include span(2 of 5);
+		@include span(2 of 3 before);
+		@include rhythm-margins(2, 1);
+	}
+	#header-space {
+		// search box
+		line-height: 180px;
+		vertical-align: middle;
+		@include span(1 of 3 at 3 last);
+		@include breakpoint(max-width 800px) {
+			@include span(1 of 1 last);
+			.widget_search {
+				@include span(3 of 5 at 2);
+			}
 		};
-		@include breakpoint($bp-mobile) {
-			@include span(5 of 5);
-		};
+		.widget_search {
+			min-width: 220px;
+			text-align: left;
+			input[type="text"] {
+				@include adjust-leading-to(1);
+				@include rhythm-padding(0.4, 0.2);
+				vertical-align: middle;
+				max-width: 100%;
+			}
+			input[type="image"] {
+				@include adjust-leading-to(1);
+				@include rhythm-padding(0.3, 0.2);
+				padding-left: 1rem;
+				vertical-align: middle;
+				max-height: 3rem;
+			}		
+		}
 	}
 }
 

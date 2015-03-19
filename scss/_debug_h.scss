@@ -1,0 +1,8 @@
+* :hover { outline: 2px dotted #F00 }
+* * :hover { outline: 2px dotted #008800 }
+* * * :hover { outline: 2px dotted #FF0 }
+* * * * :hover { outline: 2px dotted #000066 }
+* * * * * :hover { outline: 1px solid #F00 }
+* * * * * * :hover { outline: 1px solid #008800 }
+* * * * * * * :hover { outline: 1px solid #FF0 }
+* * * * * * * * :hover { outline: 1px solid #000066 }

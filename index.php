@@ -12,6 +12,7 @@
  */
 
 get_header(); ?>
+	<?php get_sidebar(); ?>
 	<div id="primary" class="content-area">
 		<?php get_sidebar('box'); ?>
 		<?php get_sidebar("long"); ?>
@@ -42,6 +43,4 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

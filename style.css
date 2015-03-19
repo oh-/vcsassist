@@ -660,7 +660,7 @@ a:hover, a:focus, a:active {
   list-style: none;
   margin: 0;
   padding-left: 0;
-  float: right;
+  float: left;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000311}}
 .main-navigation ul ul {
