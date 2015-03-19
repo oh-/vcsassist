@@ -193,21 +193,23 @@ footer.site-footer {
 	border-top: 3rem solid $vcsgrey;
 	position: relative;
 	@include margin-trailer(5);
-	.twocol {
-		@include span(2 of 5);
+	.partner-logos {
+		@include span(5 of 5 last);
+		img.logo { @include gallery(1 of 5, 3);}
+		img#logo-lvsc-unitedway {@include span(1.7 of 5);}
 	}
-	.threecol {
-		@include span(3 of 5 last);
-		.gallery {
-			@include gallery(1 of 3);
-		}
+	#lvsc-info {
+		@include clearfix;
+		@include span(1.6 of 5);
+		@include adjust-font-size-to(10px);
+		@include margin-leader(-3);
 	}
 	#footer-content {
 		background-color: $color__background-body;
 		@include span(6 of 6);
 		@include rhythm-padding(2, 1);
-		padding-left: gutter();
-		padding-right: gutter();
+		padding-left: gutter(2rem);
+		padding-right: gutter(2rem);
 	}
 	.footnote {
 		background-color: #485865;
