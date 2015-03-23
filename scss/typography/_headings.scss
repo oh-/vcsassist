@@ -1,5 +1,6 @@
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-family: $font__heading, sans-serif;
 }
 h1 {
 	@include adjust-font-size-to(2.5rem);
@@ -31,4 +32,9 @@ h1.widget-title {
 	a {
 		color: $vcsblue;
 	}
+}
+
+// front page
+a.post-title, .tagcloud a, ul.nav-menu a {
+	font-family: $font__heading, sans-serif, sans-serif;
 }

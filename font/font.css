@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'PMN_Roman';
+    src: url('pmn_caecilia_lt_55_roman-webfont.eot');
+    src: url('pmn_caecilia_lt_55_roman-webfont.eot?iefix') format('eot'),
+         url('pmn_caecilia_lt_55_roman-webfont.woff') format('woff'),
+         url('pmn_caecilia_lt_55_roman-webfont.ttf') format('truetype'),
+         url('pmn_caecilia_lt_55_roman-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
