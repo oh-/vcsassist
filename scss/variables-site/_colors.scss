@@ -1,8 +1,20 @@
-$vcsgreen: #4FB847;
+$vcsgreen: #69BE28;
 $vcsorange: #EE9500;
 $vcsblue: #1B3B50;
 $vcsblue-light: #97BCD0;
 $vcsgrey: #D3D3D3;
+$vcsgrey-dark: #5e6a71;
+$vcsgrey-light: #F5F5F5;
+
+$vcs__teal-blue:  #006983;
+
+
+
+$oldvcsgreen: #4FB847;
+$oldvcsorange: #EE9500;
+$oldvcsblue: #1B3B50;
+$oldvcsblue-light: #97BCD0;
+$oldvcsgrey: #D3D3D3;
 
 
 
@@ -15,7 +27,7 @@ $color__background-ins: #fff9c0;
 $color__background-widget: #FFFFFF;
 
 $color__header: #FFF;
-$color__page: #F5F5F5;
+$color__page: $vcsgrey;
 $color__footer: #1B3B50;
 
 
@@ -23,9 +35,9 @@ $color__text-screen: $vcsblue;
 $color__text-alt: #ffffff;
 $color__text-input: #666;
 $color__text-input-focus: #111;
-$color__link: $vcsorange;
-$color__link-visited: $vcsorange;
-$color__link-hover: $vcsgreen;
+$color__link: $vcs__teal-blue;
+$color__link-visited: $vcs__teal-blue;
+$color__link-hover: adjust-lightness($vcs__teal-blue, 10);
 $color__text-main: #1B3B50;
 
 $color__border-button: #ccc #ccc #bbb;
@@ -34,5 +46,5 @@ $color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;
 $color__border-abbr: #666;
 
-$color__widget-border: light-grey;
-$color__selected: $vcsorange;
+$color__widget-border: $vcsgrey-dark;
+$color__selected: $vcsgrey-light;

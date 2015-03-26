@@ -43,18 +43,22 @@
 		}
 	}
 	li {
-		background-color: $color__text-screen;
-		&.current_page_item { background-color: $vcsorange};
+		background-color: $vcsgrey-dark;
+		&.current_page_item {
+			background-color: $vcsgrey;
+			a {color: $color__text-screen;}
+			&:hover > a {background-color: $vcsgrey;}
+		};
 		float: left;
 		position: relative;
 		&:hover > a {
-			background-color: $color__selected;
+			background-color: $vcsgreen;
 		}
 	}
 	a {
 		display: block;
 		text-decoration: none;
-		color: $color__background-widget;
+		color: $color__text-alt;
 		padding: 0 1rem;
 		border-right: darken($color__background-widget, 25%);
 	}

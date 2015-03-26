@@ -35,13 +35,16 @@ div#content {
 	word-wrap: break-word;
 }
 #primary {
-	@include span(12 of 16 no-gutters border-box);
+	@include span(3 of 4 no-gutters border-box);
 	@include susy-breakpoint(max-width 640px, 4) {
 		@include span(100%);
 	};
 }
+body.single #primary {
+	@include span(4 of 4 no-gutters border-box);
+}
 #secondary {
-	@include span(4 of 16 no-gutters border-box  last);
+	@include span(1 of 4 no-gutters border-box  last);
 	@include susy-breakpoint(max-width 640px, 2) {
 		@include span(100%);
 	};
@@ -56,23 +59,21 @@ div#content {
 	padding-right: 0.5rem;
 	overflow: hidden;
 	.entry-meta {
+		a {
+			color: $color__text_alt;
+/*			font-weight: bold;*/
+			border-bottom: 0.5px dotted;	
+		};
 		position: absolute;
 		top: 0;
 		left: 0;
 		right: 0;
 		background-color: $vcsblue;
-		color: $vcsgrey;
+		color: $color__text_alt;
 		@include adjust-font-size-to(9.75px);
 //		TODO	SET MAX HEIGHT HERE
 		padding-left: 0.5rem;
 		padding-right: 0.5rem;
-	}
-	span.posted-on {
-
-		a {
-			color: $vcsorange;
-			font-weight: bold;
-		}
 	}
 }
 
@@ -129,12 +130,7 @@ $bp-largescreen: 880px;
 		bottom: 0;
 		right: 0;
 		left: 0;
-		$svg-gradient-shim-threshold: 1 !global;
-		@include background-image(linear-gradient($vcsblue-light, $vcsblue 30%, $vcsblue 80%, $vcsblue-light));
-		li {
-			border-right: 1px solid $vcsblue-light;
-			@include background-image(linear-gradient($vcsblue-light, $vcsblue 30%, $vcsblue 80%, $vcsblue-light));
-		}
+		background-color: $vcsgrey-dark;
 	}
 	.site-branding {
 		@include rhythm-margins(1, 1);

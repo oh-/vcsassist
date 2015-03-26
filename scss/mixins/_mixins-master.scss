@@ -22,15 +22,14 @@
 }
 
 @mixin widget-outline {
-	padding-top: $color__widget-border;
 	@include border-radius(4px, 4px);
-	border: 1px solid lightgrey;
+	border: 1px solid $color__widget-border;
+//	box-sizing: content-box;
 }
 
 @mixin widgetify {
 	@include widget-outline;
 	list-style: outside none none;
-//	box-sizing: content-box;
 }
 
 
