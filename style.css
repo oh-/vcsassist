@@ -607,10 +607,12 @@ input[type="search"],
 textarea {
   color: #666;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/forms\/_fields\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/forms\/_fields\.scss}line{font-family:\0000333}}
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
@@ -620,7 +622,7 @@ textarea:focus {
   color: #111;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/forms\/_fields\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/forms\/_fields\.scss}line{font-family:\0000342}}
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -629,7 +631,7 @@ input[type="search"] {
   padding: 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/forms\/_fields\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/forms\/_fields\.scss}line{font-family:\0000350}}
 textarea {
   overflow: auto;
   /* Removes default vertical scrollbar in IE6/7/8/9 */
@@ -872,6 +874,7 @@ a:hover, a:focus, a:active {
   -webkit-border-radius: 4px 4px;
   border-radius: 4px / 4px;
   border: 1px solid #b9b9b9;
+  box-sizing: content-box;
   list-style: outside none none;
   font-size: 0.75em;
   line-height: 2em;
@@ -910,6 +913,7 @@ a:hover, a:focus, a:active {
   -webkit-border-radius: 4px 4px;
   border-radius: 4px / 4px;
   border: 1px solid #b9b9b9;
+  box-sizing: content-box;
   list-style: outside none none;
   position: relative;
   max-height: 29rem;
@@ -933,6 +937,7 @@ a:hover, a:focus, a:active {
   -webkit-border-radius: 4px 4px;
   border-radius: 4px / 4px;
   border: 1px solid #b9b9b9;
+  box-sizing: content-box;
   list-style: outside none none;
   position: relative;
 }

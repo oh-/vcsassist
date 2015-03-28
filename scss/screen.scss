@@ -34,6 +34,25 @@ div#content {
 	padding-right: 1rem;
 	word-wrap: break-word;
 }
+
+header#masthead	{
+	.site-branding {
+		@include rhythm-margins(1, 1);
+		margin-left: gutter();
+		@include breakpoint($bp-screen) { @include span(2 of 5);}
+		@include breakpoint($bp-mobile) { @include span(5 of 5 last)};
+	}
+
+	aside#header-space {
+		@include breakpoint($bp-screen) {@include span(2 of 5 at 3 last); };
+		@include breakpoint($bp-mobile) {@include span(5 of 5 first);};
+	}
+}
+
+
+body.single #content, body.page #content {
+	background-color: $vcsgrey-light;
+}
 #primary {
 	@include span(3 of 4 no-gutters border-box);
 	@include susy-breakpoint(max-width 640px, 4) {
@@ -53,8 +72,9 @@ body.single #primary {
 // homepage
 .home article.post, .archive article.post {
 	@include widgetify;
-	background-color: white;
+	background-color: $vcsgrey-light;
 	position: relative;
+	@include padding-leader(1.2);
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
 	overflow: hidden;
@@ -95,7 +115,6 @@ $bp-screen: 680px;
 $bp-largescreen: 880px;
 --------------------------------------------------------------*/
 .widget_search {
-	@include span(1 of 3 at 3 last);
 	@include gutter;
 	@include rhythm;
 	text-align: right;
@@ -132,16 +151,7 @@ $bp-largescreen: 880px;
 		left: 0;
 		background-color: $vcsgrey-dark;
 	}
-	.site-branding {
-		@include rhythm-margins(1, 1);
-		margin-left: gutter();
-		@include breakpoint($bp-screen) {
-			@include span(2 of 5);
-		};
-		@include breakpoint($bp-mobile) {
-			@include span(5 of 5);
-		};
-	}
+
 }
 
 
@@ -170,9 +180,37 @@ $bp-largescreen: 880px;
 	@include container(4);
 }
 
-#secondary aside.widget {
-	ul { @include span(1 of 1 border-box); }; //border box sizing because of defaults set elsewhere,the border radius was pushing over the whole size of the aside
-	li { margin-bottom: 1rem;};
+#secondary {
+	aside.widget {
+		ul { @include span(1 of 1 border-box); }; //border box sizing because of defaults set elsewhere,the border radius was pushing over the whole size of the aside
+		li { margin-bottom: 1rem;};
+	}
+	//newsletter signup form
+	form.contact-form { 
+		input.email {
+			@include span(4 of 5);
+			@include adjust-font-size-to(12px);
+		}
+		p.contact-submit {
+			@include span(1 of 5 last);
+			input[type="submit"] {
+				color: rgba(0, 0, 0, .8);
+				cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
+				-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
+				@include adjust-font-size-to(12px);
+				padding-left: auto;
+				padding-right: auto;
+				
+				
+//				box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+//				border: 1px solid;
+//				line-height: 1;
+//				padding: .6em 1em .4em;
+//				text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+			} //input
+		} //p.contact-submit
+		label {	display: none;}
+	}; //form.form-contact
 }
 
 // front page posts
