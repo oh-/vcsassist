@@ -99,7 +99,7 @@ body.single #primary {
   -moz-border-radius: 4px / 4px;
   -webkit-border-radius: 4px 4px;
   border-radius: 4px / 4px;
-  border: 1px solid #5e6a71;
+  border: 1px solid #b9b9b9;
   list-style: outside none none;
   background-color: white;
   position: relative;
@@ -136,7 +136,7 @@ h1.page-title {
   -moz-border-radius: 4px / 4px;
   -webkit-border-radius: 4px 4px;
   border-radius: 4px / 4px;
-  border: 1px solid #5e6a71;
+  border: 1px solid #b9b9b9;
   list-style: outside none none;
   padding-left: 0.5rem;
   padding-right: 0.5rem;

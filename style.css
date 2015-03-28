@@ -871,7 +871,7 @@ a:hover, a:focus, a:active {
   -moz-border-radius: 4px / 4px;
   -webkit-border-radius: 4px 4px;
   border-radius: 4px / 4px;
-  border: 1px solid #5e6a71;
+  border: 1px solid #b9b9b9;
   list-style: outside none none;
   font-size: 0.75em;
   line-height: 2em;
@@ -909,7 +909,7 @@ a:hover, a:focus, a:active {
   -moz-border-radius: 4px / 4px;
   -webkit-border-radius: 4px 4px;
   border-radius: 4px / 4px;
-  border: 1px solid #5e6a71;
+  border: 1px solid #b9b9b9;
   list-style: outside none none;
   position: relative;
   max-height: 29rem;
@@ -932,7 +932,7 @@ a:hover, a:focus, a:active {
   -moz-border-radius: 4px / 4px;
   -webkit-border-radius: 4px 4px;
   border-radius: 4px / 4px;
-  border: 1px solid #5e6a71;
+  border: 1px solid #b9b9b9;
   list-style: outside none none;
   position: relative;
 }
