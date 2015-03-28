@@ -24,7 +24,7 @@
 @mixin widget-outline {
 	@include border-radius(4px, 4px);
 	border: 1px solid $color__widget-border;
-	box-sizing: content-box;
+	box-sizing: border-box;
 }
 
 @mixin widgetify {
