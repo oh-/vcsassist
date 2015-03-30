@@ -1,11 +1,25 @@
-#secondary aside.widget ul li {
-	@include widgetify;
-	@include adjust-font-size-to(12px);
+#secondary {
+	aside.widget_twitter_timeline {
+		clear: both;
+		@include widgetify;
+		@include margin-leader(1);
+		overflow: hidden;
+		
+		h1 {
+			margin-left: -0.5rem;
+			margin-right: -0.5rem;
+			background-color: $vcsblue;
+			color: $color__text-alt;
+			text-align: center;
+			@include adjust-font-size-to(24px);
+		}
+	}
+	aside.widget ul li {
+		@include widgetify;
+		@include adjust-font-size-to(12px);
+	}
 }
 .widget {
-	ul li {
-		background-color: $color__background-widget;
-	}
 	/* Make sure select elements fit in widgets */
 	select {
 		max-width: 100%;
@@ -19,10 +33,7 @@
 }
 // news widget
 $main-box-date-text: 2.5rem;
-.widget ul li {
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
-}
+
 #main-box {
 	.widget {
 		ul li {
@@ -30,7 +41,6 @@ $main-box-date-text: 2.5rem;
 			@include padding-leader(1);
 			@include widgetify;
 			position: relative;
-			max-height: 29rem;
 			overflow: hidden;
 			p.post-date {
 				position:absolute;
@@ -42,16 +52,26 @@ $main-box-date-text: 2.5rem;
 		}
 	}
 }
-#main-long .widget ul li {
-	@include padding-leader(1.7);
-	@include rhythm-margins;
-	@include widgetify;
-	position: relative;
-	p.post-date {
-		position:absolute;
-		top: 0.5rem;
-		left: -2rem;
-		width: 35%;
-		padding: 0.05rem 0.9rem;
+#main-long {
+	aside.tribe-events-list-widget h1 {
+		margin-left: -0.5rem;
+		margin-right: -0.5rem;
+		background-color: $vcsblue;
+		color: $color__text-alt;
+		text-align: center;
+		@include adjust-font-size-to(24px);
+	}
+	 .widget ul li {
+		@include padding-leader(1.7);
+		@include rhythm-margins;
+		@include widgetify;
+		position: relative;
+		p.post-date {
+			position:absolute;
+			top: 0.5rem;
+			left: -2rem;
+			width: 35%;
+			padding: 0.05rem 0.9rem;
+		}
 	}
 }

@@ -29,7 +29,11 @@
 
 @mixin widgetify {
 	@include widget-outline;
+	background-color: $color__background-widget;
 	list-style: outside none none;
+	overflow: hidden;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
 }
 
 

@@ -1,10 +1,10 @@
 /*
-Theme Name: _s
-Theme URI: http://underscores.me/
-Author: Automattic
-Author URI: http://automattic.com/
-Description: Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
-Version: 1.0-wpcom
+Theme Name: VCS Assist Theme
+Theme URI: http://www.madeso.uk/
+Author: madeso
+Author URI: http://www.madeso.uk/
+Description: VCS Assist theme is the Wordpress theme for www.vcsassist.org.uk. <br />Most revent version can be found https://github.com/oh-/vcsassist/archive/master.zip<br />Recomended to install VCS Assist site plugin along side for full functionality which can be found https://github.com/oh-/vcsassist/archive/p-master.zip <br />This is theme is built on Underscores http://underscores.me/ Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Version: 0.1.13
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: _s
@@ -426,7 +426,7 @@ footer .site-info, footer .partner-logos p {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_typography\.scss}line{font-family:\0000333}}
 #main-box .widget p.post-date {
   background-color: #1B3B50;
-  color: #D3D3D3;
+  color: #ffffff;
 }
 
 /*--------------------------------------------------------------
@@ -868,44 +868,64 @@ a:hover, a:focus, a:active {
 /*--------------------------------------------------------------
 9.0 Widgets
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\000031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\000032}}
+#secondary aside.widget_twitter_timeline {
+  clear: both;
+  -moz-border-radius: 4px / 4px;
+  -webkit-border-radius: 4px 4px;
+  border-radius: 4px / 4px;
+  border: 1px solid #b9b9b9;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  list-style: outside none none;
+  overflow: hidden;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-top: 1.5em;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\000038}}
+#secondary aside.widget_twitter_timeline h1 {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  background-color: #1B3B50;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 2em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000317}}
 #secondary aside.widget ul li {
   -moz-border-radius: 4px / 4px;
   -webkit-border-radius: 4px 4px;
   border-radius: 4px / 4px;
   border: 1px solid #b9b9b9;
   box-sizing: border-box;
+  background-color: #FFFFFF;
   list-style: outside none none;
+  overflow: hidden;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   font-size: 0.75em;
   line-height: 2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\000035}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000322}}
 .widget {
   /* Make sure select elements fit in widgets */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\000036}}
-.widget ul li {
-  background-color: #FFFFFF;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000324}}
 .widget select {
   max-width: 100%;
 }
 
 /* Search widget */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000331}}
 .widget_search .search-submit {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000322}}
-.widget ul li {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000339}}
 #main-box .widget ul li {
   margin-bottom: 1.5em;
   padding-top: 1.5em;
@@ -914,12 +934,15 @@ a:hover, a:focus, a:active {
   border-radius: 4px / 4px;
   border: 1px solid #b9b9b9;
   box-sizing: border-box;
+  background-color: #FFFFFF;
   list-style: outside none none;
+  overflow: hidden;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   position: relative;
-  max-height: 29rem;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000345}}
 #main-box .widget ul li p.post-date {
   position: absolute;
   top: 0;
@@ -928,7 +951,17 @@ a:hover, a:focus, a:active {
   padding: 0.05rem 0.9rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000356}}
+#main-long aside.tribe-events-list-widget h1 {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  background-color: #1B3B50;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 2em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000364}}
 #main-long .widget ul li {
   padding-top: 2.55em;
   margin-top: 1.5em;
@@ -938,10 +971,14 @@ a:hover, a:focus, a:active {
   border-radius: 4px / 4px;
   border: 1px solid #b9b9b9;
   box-sizing: border-box;
+  background-color: #FFFFFF;
   list-style: outside none none;
+  overflow: hidden;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000369}}
 #main-long .widget ul li p.post-date {
   position: absolute;
   top: 0.5rem;

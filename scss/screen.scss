@@ -85,7 +85,7 @@ body.single #primary {
 	overflow: hidden;
 	.entry-meta {
 		a {
-			color: $color__text_alt;
+			color: $color__text-alt;
 /*			font-weight: bold;*/
 			border-bottom: 0.5px dotted;	
 		};
@@ -94,7 +94,7 @@ body.single #primary {
 		left: 0;
 		right: 0;
 		background-color: $vcsblue;
-		color: $color__text_alt;
+		color: $color__text-alt;
 		@include adjust-font-size-to(9.75px);
 //		TODO	SET MAX HEIGHT HERE
 		padding-left: 0.5rem;
@@ -172,17 +172,23 @@ $bp-largescreen: 880px;
 	@include breakpoint($bp-screen) {
 		ul li {
 			@include gallery(2 of 4 0.03);
+			min-height: 29rem;	max-height: 29rem;			
 		};
 	};
 	@include breakpoint($bp-largescreen) {
 		ul li {
 			@include gallery(1 of 3 0.05);
+			min-height: 29rem;	max-height: 29rem;
 		};
 	};
 }
 
 #main-long {
 	@include container(4);
+	aside.widget {
+		@include widgetify;
+	}
+	
 }
 
 #secondary {
