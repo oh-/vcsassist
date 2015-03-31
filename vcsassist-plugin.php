@@ -2,7 +2,7 @@
 /*
 Plugin Name: VCS Assist Site Plugin for vcsassist.org
 Description: Site specific code changes for vcsassist.org. Features - [from Mrinal Kanti Roy's widget 'Category Posts Widget'] Adds a widget that shows the most recent posts from a single category.
-Author: Made SO
+Author: madeso
 Version: 0.1
 Author URI: http://www.madeso.uk/
 */
@@ -40,6 +40,21 @@ function category_posts_add_image_size(){
 }
 
 add_action( 'init', 'category_posts_add_image_size' );
+
+
+/**
+ * Category Posts Widget Class
+ *
+ * Shows the single category posts with some configurable options
+ */
+
+
+
+function new_excerpt_more( $more ) {
+	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('[Read more]', 'your-text-domain') . '</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
+
 
 
 /**
