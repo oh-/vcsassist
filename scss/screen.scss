@@ -168,6 +168,7 @@ $bp-largescreen: 880px;
 
 #main-box {
 	@include container(3 $page-container);
+	@include trailer(1);
 	@include breakpoint($bp-mobile) {ul li {@include span(2 of 2)}};
 	@include breakpoint($bp-screen $bp-largescreen) {
 		ul li {
