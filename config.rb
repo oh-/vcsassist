@@ -27,8 +27,8 @@ javascripts_dir = "js"
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
 
 
-sass_options = {:debug_info => true}
-environment = :development
+sass_options = {:debug_info => false}
+environment = :production
 # or :production
 
 # Move styles.css up one directory as required by Wordpress

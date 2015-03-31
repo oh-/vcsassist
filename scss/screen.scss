@@ -33,9 +33,9 @@ $page-container: (
 	}
 div#content {
 	background-color: $color__page;
-	@include gutters($page-container);
-//	padding-left: gutter(1em inside);
-//	padding-right: gutter(1em inside);
+	//@include gutters(0.05rem outside);
+	padding-left: gutter(2rem inside);
+	padding-right: gutter(2rem inside);
 	word-wrap: break-word;
 }
 body.single div#content {
@@ -183,7 +183,7 @@ $bp-largescreen: 880px;
 	}
 	@include breakpoint($bp-largescreen) {
 		ul li {
-			@include gallery(1 of 3 0.05);
+			@include gallery(1 of 3);
 			min-height: 29rem;
 			max-height: 29rem;	
 		}

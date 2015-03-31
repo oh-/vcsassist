@@ -59,11 +59,12 @@ $main-box-date-text: 2.5rem;
 				padding: 0.05rem 0.9rem;
 				text-align: center;
 				color: $color__text-screen;
-				background-color: rgba($vcsgrey-light, 0.8);
+				font-weight: 600;
+				@include background-image(linear-gradient(to bottom, rgba($vcsgrey-light, 0.8), rgba($vcsgrey, 0.9)));
 				&:hover {
-					background-color: rgba($vcsgrey-dark, 0.9);
-					color: $color__text-alt
-				};
+					background-color: rgba($vcsblue, 0.94);
+					color: $color__text-alt;
+				}
 			}
 		}
 	}
