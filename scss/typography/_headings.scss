@@ -34,6 +34,16 @@ h1.widget-title {
 	}
 }
 
+// titles for search... etc
+h1.page-title {
+	@include rhythm-padding(0.5);
+
+
+	@include gutters(3em inside);
+	background-color: $vcsblue;
+	color: $color__text-alt;
+}
+
 // front page
 a.post-title, .tagcloud a, ul.nav-menu a {
 	font-family: $font__heading, sans-serif, sans-serif;

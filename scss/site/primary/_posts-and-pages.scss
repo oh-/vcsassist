@@ -18,7 +18,7 @@ body.single .hentry {
 .group-blog .byline {
 	display: inline;
 }
-
+.page-content,
 .page-content,
 .entry-content,
 .entry-summary {
@@ -33,4 +33,12 @@ body.single .hentry {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.page-content {
+	margin-top: 0;
+	@include gutters(2 inside);
+	@include rhythm-padding(1);
+//	@include margin-leader();
+
 }

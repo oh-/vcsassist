@@ -106,14 +106,19 @@ body.single #primary {
 	}
 }
 
-// titles
-h1.page-title {
-	@include rhythm-padding(0.5, 1);
-	@include rhythm-margins(0.5, -0.5);
+body.search main {
+	background-color: $vcsgrey-light;
 	@include widgetify;	
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
-	background-color: $vcsblue-light;
+	@include rhythm-margins(1);
+	padding: 0;
+	article {
+		header {@include gutters(1 inside);
+			background-color: $vcs__teal-blue;
+			color: $color__text-alt;
+			a {color: $color__text-alt;}
+		}
+		div.entry-summary p {@include gutters(1 inside);}
+	}
 }
 /*--------------------------------------------------------------
  header-space
