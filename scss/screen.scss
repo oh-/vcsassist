@@ -79,25 +79,23 @@ body.single #primary {
 }
 
 // homepage widgets content
-.home article.post, .archive article.post {
-	@include widgetify;
+.home article.post, .archive article.post, {
 	background-color: $vcsgrey-light;
 	position: relative;
-	@include padding-leader(1.2);
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
+	@include padding-leader(1);
+	padding-left: 0;
+	padding-right: 0;
 	overflow: hidden;
 	.entry-meta {
 		a {
 			color: $color__text-alt;
-/*			font-weight: bold;*/
 			border-bottom: 0.5px dotted;	
 		};
 		position: absolute;
 		top: 0;
 		left: 0;
 		right: 0;
-		background-color: $vcsblue;
+		background-color: $vcs__teal-blue;
 		color: $color__text-alt;
 		@include adjust-font-size-to(9.75px);
 //		TODO	SET MAX HEIGHT HERE
@@ -106,14 +104,14 @@ body.single #primary {
 	}
 }
 
-body.search main {
-	background-color: $vcsgrey-light;
+body.search main, body.tag main {
 	@include widgetify;	
+	background-color: $vcsgrey-light;
 	@include rhythm-margins(1);
 	padding: 0;
 	article {
 		header {@include gutters(1 inside);
-			background-color: $vcs__teal-blue;
+			background-color: lighten($vcs__teal-blue, 20);
 			color: $color__text-alt;
 			a {color: $color__text-alt;}
 		}

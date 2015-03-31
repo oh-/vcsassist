@@ -49,6 +49,11 @@ a.post-title, .tagcloud a, ul.nav-menu a {
 	font-family: $font__heading, sans-serif, sans-serif;
 }
 
+
+h1.entry-title {
+	@include rhythm-padding(0.5);
+}
+
 // content page headings
 body.single {
 	div.tptn_counter, footer.entry-footer, nav.post-navigation {

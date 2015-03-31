@@ -93,7 +93,7 @@ footer {
 	.site-info, .partner-logos p { @include adjust-font-size-to(9px);}
 	}
 
-body.single div.entry-content {
+ div.entry-content {
 	p {
 		@include gutters(10rem inside);
 		@include adjust-font-size-to(16px, 1.5);
