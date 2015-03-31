@@ -1,46 +1,10 @@
 // Requirements
 // ============
 
-@import "compass";
-@import "susy";
-@import "breakpoint";
-
-//[Susy default settings]
-$susy: (
-  flow: ltr,
-  math: fluid,
-  output: float,
-  gutter-position: after,
-  container: auto,
-  container-position: center,
-  columns: 16,
-  gutters: 0.15,
-  column-width: false,
-  global-box-sizing: border-box,
-  last-flow: to,
-  debug: (
-    image: hide,
-    color: rgba(#66f, .25),
-    output: background,
-    toggle: bottom right,
-  ),
-  use-custom: (
-    background-image: true,
-    background-options: false,
-    box-sizing: true,
-    clearfix: false,
-    rem: true,
-  )
-);
-
-
-// [breakpoint vars]
-$breakpoint-to-rems: true;
-$bp-mobile: max-width 640px;
-$bp-screen: 680px;
-$bp-largescreen: 880px;
-//$bp-mobile-s: max-width 60rem;
-
+//@import "compass";
+//@import "susy";
+//@import "breakpoint";
+//
 
 
 // breakpoint testing

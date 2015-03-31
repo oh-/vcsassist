@@ -1,5 +1,5 @@
 p {
-	@include adjust-font-size-to(1rem);
+	@include adjust-font-size-to(16px);
 }
 
 .home {
@@ -78,6 +78,7 @@ big {
 .widget ul li {
 	@include adjust-leading-to(0.5, 10px);
 	p { @include adjust-font-size-to(12px);
+		@include gutters(1.5rem inside);
 	}
 	p.post-date {
 		@include adjust-font-size-to(9px);
@@ -91,3 +92,16 @@ big {
 footer {
 	.site-info, .partner-logos p { @include adjust-font-size-to(9px);}
 	}
+
+body.single div.entry-content {
+	p {
+		@include gutters(10rem inside);
+		@include adjust-font-size-to(16px, 1.5);
+//		@include testing(red);
+		@include trailer(1.5);
+	}
+	blockquote {
+		@include gutters(15rem inside);
+		font-style: italic;
+	}
+}

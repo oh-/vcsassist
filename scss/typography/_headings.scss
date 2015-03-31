@@ -38,3 +38,24 @@ h1.widget-title {
 a.post-title, .tagcloud a, ul.nav-menu a {
 	font-family: $font__heading, sans-serif, sans-serif;
 }
+
+// content page headings
+body.single {
+	div.tptn_counter, footer.entry-footer, nav.post-navigation {
+		@include testing($vcsgrey);
+	}
+		article {
+		header.entry-header h1 {
+			@include rhythm(0, 0.8, 1.2, 1);
+			background-color: lighten($vcs__teal-blue, 20);
+			color: $color__text-alt;
+			@include gutters(2em inside);
+		}
+		h1, h2, h3 {
+			@include rhythm(0, 0.5, 0.6, 1);
+			background-color: lighten($vcs__teal-blue, 15);
+			color: $color__text-alt;
+			@include gutters(3em inside);
+		}
+}
+}

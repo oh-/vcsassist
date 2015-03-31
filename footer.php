@@ -14,7 +14,7 @@
 		<div id="footer-content">
 		<?php get_sidebar('footer'); ?>
 		<div class="site-info">
-			<?php printf( __( 'Theme: %1$s by %2$s.', '_s' ), '_s', '<a href="http://madeso.uk/" rel="designer">madeso</a>' ); ?>
+			<?php printf( __( 'Theme: %1$s by %2$s.', '_s' ), 'VCS Assist', '<a href="http://madeso.uk/" rel="designer"><strong>made</strong>so</a>' ); ?>
 		</div><!-- .site-info -->
 			
 		</div> <!-- /#footer-content --> 

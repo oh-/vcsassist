@@ -3,13 +3,16 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "grids";
+@import "base";
+//@import "grids";
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
 
+
+
 $page-container: (
-	columns: 12,
-	gutters: 1/4,
+	columns: 4,
+	gutters: 0.05,
 	math: fluid,
 	output: float,
 	gutter-position: inside,
@@ -17,56 +20,57 @@ $page-container: (
 	
 
 #page {
-	@include container($susy 100rem content-box);
-		padding-left: 4rem;
-		padding-right: 4rem;
+	@include container($susy 110rem content-box);
+		padding-left: 5rem;
+		padding-right: 5rem;
 	@include breakpoint($bp-mobile) {
 		padding-left: 0.2rem;
 		padding-right: 0.2rem;
 	};
 }
 #page-wrap {
-	@include box-shadow(rgba(black, 0.8) 0 0 3rem);
+	@include box-shadow(rgba($vcsblue, 0.8) 0 0 3rem);
 	}
 div#content {
 	background-color: $color__page;
-	padding-left: 1rem;
-	padding-right: 1rem;
+	@include gutters($page-container);
+//	padding-left: gutter(1em inside);
+//	padding-right: gutter(1em inside);
 	word-wrap: break-word;
+}
+body.single div#content {
+	@include gutters(0 $page-container);
 }
 
 header#masthead	{
 	.site-branding {
 		@include rhythm-margins(1, 1);
 		margin-left: gutter();
-		@include breakpoint($bp-screen) { @include span(2 of 5);}
-		@include breakpoint($bp-mobile) { @include span(5 of 5 last)};
+		@include breakpoint($bp-screen) {@include span(2 of 5)};
+		@include breakpoint($bp-mobile) {@include span(5 of 5 last)};
 	}
 
 	aside#header-space {
-		@include breakpoint($bp-screen) {@include span(2 of 5 at 3 last); };
-		@include breakpoint($bp-mobile) {@include span(5 of 5 first);};
+		@include breakpoint($bp-screen) {@include span(2 of 5 at 3 last)};
+		@include breakpoint($bp-mobile) {@include span(5 of 5 first)};
 	}
 }
 
+// whole post conent
+body.single #content, body.page #content {background-color: $vcsgrey-light;};
 
-body.single #content, body.page #content {
-	background-color: $vcsgrey-light;
-}
+// primary content container for pages with sidebar
 #primary {
-	@include breakpoint($bp-screen) { @include span(3 of 4 no-gutters border-box);}
-	@include breakpoint($bp-mobile) { @include span(4 of 4 omega)};
-//	@include span(3 of 4 no-gutters border-box);
-//	@include susy-breakpoint(max-width 640px, 4) {
-//		@include span(100%);
-//	};
+	@include breakpoint(min-width $bp-screen) {@include span(3 of 4 border-box no-gutters);}
+	@include breakpoint($bp-mobile) { @include span(4 of 4 border-box omega)};
 }
+// primary content without sidebar
 body.single #primary {
-	@include span(4 of 4 no-gutters border-box);
+	@include span(4 of 4 border-box);
 }
 #secondary {
-	@include breakpoint($bp-screen) { @include span(1 of 4 no-gutters border-box last);}
-	@include breakpoint($bp-mobile) { @include span(4 of 4 first)};
+	@include breakpoint($bp-screen) { @include span(1 of 4 0.05 border-box last);}
+	@include breakpoint($bp-mobile) { @include span(4 of 4 first);};
 	
 //	@include span(1 of 4 no-gutters border-box  last);
 //	@include susy-breakpoint(max-width 640px, 2) {
@@ -74,7 +78,7 @@ body.single #primary {
 //	};
 }
 
-// homepage
+// homepage widgets content
 .home article.post, .archive article.post {
 	@include widgetify;
 	background-color: $vcsgrey-light;
@@ -163,24 +167,27 @@ $bp-largescreen: 880px;
 //asides - #main-box and #main-long widget areas
 
 #main-box {
-	@include container(3 0.05);
-	@include breakpoint($bp-mobile) {
+	@include container(3 $page-container);
+	@include breakpoint($bp-mobile) {ul li {@include span(2 of 2)}};
+	@include breakpoint($bp-screen $bp-largescreen) {
 		ul li {
-			@include span(2 of 2);
-		};
-	};
-	@include breakpoint($bp-screen) {
-		ul li {
-			@include gallery(2 of 4 0.03);
-			min-height: 29rem;	max-height: 29rem;			
-		};
-	};
+			@include gallery(1.5 of 3 $page-container);
+			min-height: 29rem;
+			max-height: 29rem;
+			&:nth-child(3n) {
+				//the thhird widget - which opens up to two columns
+				@include span(3 of 3);
+				min-height: auto;
+		    }
+		}
+	}
 	@include breakpoint($bp-largescreen) {
 		ul li {
 			@include gallery(1 of 3 0.05);
-			min-height: 29rem;	max-height: 29rem;
-		};
-	};
+			min-height: 29rem;
+			max-height: 29rem;	
+		}
+	}
 }
 
 #main-long {
@@ -211,8 +218,8 @@ $bp-largescreen: 880px;
 				@include adjust-font-size-to(12px);
 				box-sizing: border-box;
 				width: 100%;
-//				padding-left: 0.4rem;
-//				padding-right: 0.4rem;
+				padding-left: 0.4rem;
+				padding-right: 0.4rem;
 				
 				
 //				box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);

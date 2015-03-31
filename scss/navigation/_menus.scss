@@ -1,3 +1,4 @@
+
 .main-navigation {
 	clear: both;
 	display: block;
@@ -74,7 +75,13 @@
 	display: none;
 }
 
-@media screen and (max-width: 600px) {
+//$bp- mobile: max-width 640px;
+//$bp- screen: 680px;
+//$bp- largescreen: 880px;
+
+
+
+@include breakpoint($bp-mobile){
 	.menu-toggle,
 	.main-navigation.toggled .nav-menu {
 		display: block;
@@ -83,13 +90,28 @@
 	.main-navigation ul {
 		display: none;
 	}
-}
+};
 
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
 	margin: 0 0 1.5em;
 	overflow: hidden;
+}
+body.single {
+	article footer span {
+		@include gutters(1em inside);
+		display: block;
+		font-weight: bold;
+		a {
+			font-weight: normal;
+		}
+	}
+	nav.post-navigation {
+		margin: 0;
+		@include gutters(2em inside);
+		@include adjust-font-size-to(24px);
+	}
 }
 
 .comment-navigation .nav-previous,

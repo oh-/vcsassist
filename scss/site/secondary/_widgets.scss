@@ -37,7 +37,7 @@ $main-box-date-text: 2.5rem;
 #main-box {
 	.widget {
 		ul li {
-			@include margin-trailer(1);
+			margin-bottom: gutter();
 			@include padding-leader(1);
 			@include widgetify;
 			position: relative;
@@ -48,6 +48,22 @@ $main-box-date-text: 2.5rem;
 				left: 0;
 				right: 0;
 				padding: 0.05rem 0.9rem;
+				background-color: $vcsblue;
+				color: $color__text-alt;
+			}
+			a.read-more {
+				position:absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				padding: 0.05rem 0.9rem;
+				text-align: center;
+				color: $color__text-screen;
+				background-color: rgba($vcsgrey-light, 0.8);
+				&:hover {
+					background-color: rgba($vcsgrey-dark, 0.9);
+					color: $color__text-alt
+				};
 			}
 		}
 	}

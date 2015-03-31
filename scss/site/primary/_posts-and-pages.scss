@@ -5,6 +5,9 @@
 .hentry {
 	margin: 0 0 1.5em;
 }
+body.single .hentry {
+	margin: 0;
+}
 
 .byline,
 .updated:not(.published){
