@@ -30,6 +30,7 @@ Compass CSS files added below
 </head>
 
 <body <?php body_class(); ?>>
+	<?php get_template_part( 'sidebar', 'google' ); ?>
 <div id="page" class="hfeed site">
 <div id="page-wrap">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', '_s' ); ?></a>
