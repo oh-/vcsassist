@@ -42,3 +42,7 @@ body.single .hentry {
 //	@include margin-leader();
 
 }
+
+footer.entry-footer {
+	@include gutters(1 inside);
+}

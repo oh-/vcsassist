@@ -31,6 +31,9 @@ h1.widget-title {
 	@include adjust-font-size-to(1.8rem);
 	a {
 		color: $vcsblue;
+		&:hover {
+			color: $vcsgreen;
+		};
 	}
 }
 
@@ -52,6 +55,7 @@ a.post-title, .tagcloud a, ul.nav-menu a {
 
 h1.entry-title {
 	@include rhythm-padding(0.5);
+	@include gutters(1 inside);
 }
 
 // content page headings

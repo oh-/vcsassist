@@ -84,7 +84,7 @@ big {
 		@include adjust-font-size-to(9px);
 	}
 	a.post-title {
-		@include adjust-font-size-to(18px);
+		@include adjust-font-size-to(14px);
 		font-weight: bold;
 	}
 };
