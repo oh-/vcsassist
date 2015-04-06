@@ -155,17 +155,18 @@ $bp-largescreen: 880px;
 #masthead {
 	@include container(5);
 	@include padding-trailer(1.2);
-	position: relative;
 	ul.nav-menu {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		left: 0;
-		background-color: $vcsgrey-dark;
+	
 	}
 
 }
-
+// partner logo (at the moment in the header)
+.partner-logos {
+	text-align: center;
+	.logo { @include span(1 of 6);}
+	.logoother {@include span(2 of 6 last);
+		p{@include adjust-font-size-to(10px);}}
+}
 
 //asides - #main-box and #main-long widget areas
 
@@ -248,24 +249,16 @@ $bp-largescreen: 880px;
 // Footer
 footer.site-footer {
 	@include container(6 border-box);
-	border-top: 3rem solid $vcsgrey;
 	position: relative;
-	@include margin-trailer(5);
 	aside#footer-space {
 		@include span(6 of 6 first);
 	}
 	#footer-content {
-		background-color: $color__background-body;
-		@include span(6 of 6);
-		@include rhythm-padding(2, 1);
-		padding-left: gutter();
-		padding-right: gutter();
+		background-color: $color__page;
+		@include span(6 of 6 at 6);
+		@include gutters(1 inside);
 	}
-	.partner-logos {
-		&:nth-child(4n) { @include omega}
-		#logo-lvsc-unitedway {@include span(2 of 5);}
-		.logo { @include span(1 of 6);}
-	}
+
 	.site-info {
 		@include span(1 of 6 at 6);
 		text-align: right;

@@ -4,7 +4,10 @@
 	display: block;
 	float: left;
 	width: 100%;
+	@include margin-trailer(1.5);
 	ul {
+		@include span(5 of 5);
+		background-color: $vcsgrey-dark;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;

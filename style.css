@@ -239,7 +239,13 @@ h1.widget-title a:hover {
   color: #69BE28;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000339}}
+#secondary aside.widget_text h1 {
+  font-size: 1.3em;
+  line-height: 2.30769em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000344}}
 h1.page-title {
   padding-top: 0.75em;
   padding-bottom: 0.75em;
@@ -249,12 +255,12 @@ h1.page-title {
   color: #ffffff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000354}}
 a.post-title, .tagcloud a, ul.nav-menu a {
   font-family: PMN_Roman, sans-serif, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000359}}
 h1.entry-title {
   padding-top: 0.75em;
   padding-bottom: 0.75em;
@@ -262,22 +268,11 @@ h1.entry-title {
   padding-right: 2.38095%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000366}}
 body.single div.tptn_counter, body.single footer.entry-footer, body.single nav.post-navigation {
   background-color: #D3D3D3 !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000367}}
-body.single article header.entry-header h1 {
-  margin-top: 0em;
-  padding-top: 1.2em;
-  padding-bottom: 1.8em;
-  margin-bottom: 1.5em;
-  background-color: #00bbe9;
-  color: #ffffff;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000370}}
 body.single article h1, body.single article h2, body.single article h3 {
   margin-top: 0em;
   padding-top: 0.75em;
@@ -287,6 +282,17 @@ body.single article h1, body.single article h2, body.single article h3 {
   color: #ffffff;
   padding-left: 1.5em;
   padding-right: 1.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000376}}
+body.single article header.entry-header h1 {
+  margin-top: 0em;
+  padding-top: 1.2em;
+  padding-bottom: 1.8em;
+  margin-bottom: 0em;
+  background-color: #00bbe9;
+  color: #ffffff;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_copy\.scss}line{font-family:\000031}}
@@ -664,15 +670,21 @@ a:hover, a:focus, a:active {
   display: block;
   float: left;
   width: 100%;
+  margin-bottom: 2.25em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\000037}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\000038}}
 .main-navigation ul {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #5e6a71;
   list-style: none;
   margin: 0;
   padding-left: 0;
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000315}}
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -681,46 +693,46 @@ a:hover, a:focus, a:active {
   left: -999em;
   z-index: 99999;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000323}}
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000329}}
 .main-navigation ul ul li:hover > ul {
   left: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000334}}
 .main-navigation ul ul a {
   width: 200px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000345}}
 .main-navigation ul li:hover > ul {
   left: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000349}}
 .main-navigation li {
   background-color: #5e6a71;
   float: left;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000351}}
 .main-navigation li.current_page_item {
   background-color: #D3D3D3;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000353}}
 .main-navigation li.current_page_item a {
   color: #1B3B50;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000354}}
 .main-navigation li.current_page_item:hover > a {
   background-color: #D3D3D3;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000358}}
 .main-navigation li:hover > a {
   background-color: #69BE28;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000362}}
 .main-navigation a {
   display: block;
   text-decoration: none;
@@ -730,24 +742,24 @@ a:hover, a:focus, a:active {
 }
 
 /* Small menu */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000377}}
 .menu-toggle {
   display: none;
 }
 
 @media (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000388}}
   .menu-toggle,
   .main-navigation.toggled .nav-menu {
     display: block;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000393}}
   .main-navigation ul {
     display: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\0000398}}
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
@@ -755,18 +767,18 @@ a:hover, a:focus, a:active {
   overflow: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\00003102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\00003105}}
 body.single article footer span {
   padding-left: 0.5em;
   padding-right: 0.5em;
   display: block;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\00003106}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\00003109}}
 body.single article footer span a {
   font-weight: normal;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\00003110}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\00003113}}
 body.single nav.post-navigation {
   margin: 0;
   padding-left: 1em;
@@ -775,7 +787,7 @@ body.single nav.post-navigation {
   line-height: 2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\00003117}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\00003120}}
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
 .post-navigation .nav-previous {
@@ -783,7 +795,7 @@ body.single nav.post-navigation {
   width: 50%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\00003124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/navigation\/_menus\.scss}line{font-family:\00003127}}
 .comment-navigation .nav-next,
 .paging-navigation .nav-next,
 .post-navigation .nav-next {
@@ -967,29 +979,37 @@ body.single nav.post-navigation {
   color: #ffffff;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000354}}
+#main-box .widget ul li p {
+  margin-bottom: 1.8em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000355}}
 #main-box .widget ul li a.read-more {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
   position: absolute;
-  bottom: 0;
   left: 0;
   right: 0;
-  padding: 0.05rem 0.9rem;
-  text-align: center;
-  color: #1B3B50;
-  font-weight: 600;
+  bottom: 0;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y1ZjVmNSIgc3RvcC1vcGFjaXR5PSIwLjgiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkM2QzZDMiIHN0b3Atb3BhY2l0eT0iMC45Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
   background-size: 100%;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(245, 245, 245, 0.8)), color-stop(100%, rgba(211, 211, 211, 0.9)));
   background-image: -moz-linear-gradient(top, rgba(245, 245, 245, 0.8), rgba(211, 211, 211, 0.9));
   background-image: -webkit-linear-gradient(top, rgba(245, 245, 245, 0.8), rgba(211, 211, 211, 0.9));
   background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0.8), rgba(211, 211, 211, 0.9));
+  padding: 0.05rem 0.9rem;
+  text-align: center;
+  color: #1B3B50;
+  font-weight: 600;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000362}}
 #main-box .widget ul li a.read-more:hover {
   background-color: rgba(27, 59, 80, 0.94);
   color: #ffffff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000376}}
 #main-long aside.tribe-events-list-widget h1 {
   margin-left: -0.5rem;
   margin-right: -0.5rem;
@@ -999,7 +1019,7 @@ body.single nav.post-navigation {
   font-size: 1.5em;
   line-height: 2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000384}}
 #main-long .widget ul li {
   padding-top: 2.55em;
   margin-top: 1.5em;
@@ -1016,7 +1036,7 @@ body.single nav.post-navigation {
   padding-right: 0.5rem;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/secondary\/_widgets\.scss}line{font-family:\0000389}}
 #main-long .widget ul li p.post-date {
   position: absolute;
   top: 0.5rem;
@@ -1072,12 +1092,24 @@ body.single .hentry {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/primary\/_posts-and-pages\.scss}line{font-family:\0000333}}
+.single .entry-meta {
+  padding-left: 2.38095%;
+  padding-right: 2.38095%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/primary\/_posts-and-pages\.scss}line{font-family:\0000336}}
+.single .tptn_counter {
+  padding-left: 2.38095%;
+  padding-right: 2.38095%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/primary\/_posts-and-pages\.scss}line{font-family:\0000340}}
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/primary\/_posts-and-pages\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/primary\/_posts-and-pages\.scss}line{font-family:\0000345}}
 .page-content {
   margin-top: 0;
   padding-left: 1.19048%;
@@ -1086,7 +1118,7 @@ body.single .hentry {
   padding-bottom: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/primary\/_posts-and-pages\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/site\/primary\/_posts-and-pages\.scss}line{font-family:\0000353}}
 footer.entry-footer {
   padding-left: 2.38095%;
   padding-right: 2.38095%;

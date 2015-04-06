@@ -36,6 +36,9 @@ h1.widget-title {
 		};
 	}
 }
+#secondary aside.widget_text h1 {
+	@include adjust-font-size-to(1.3rem);
+}
 
 // titles for search... etc
 h1.page-title {
@@ -64,17 +67,17 @@ body.single {
 		@include testing($vcsgrey);
 	}
 		article {
-		header.entry-header h1 {
-			@include rhythm(0, 0.8, 1.2, 1);
-			background-color: lighten($vcs__teal-blue, 20);
-			color: $color__text-alt;
-			@include gutters(2em inside);
-		}
 		h1, h2, h3 {
 			@include rhythm(0, 0.5, 0.6, 1);
 			background-color: lighten($vcs__teal-blue, 15);
 			color: $color__text-alt;
 			@include gutters(3em inside);
+		}
+		header.entry-header h1 {
+			@include rhythm(0, 0.8, 1.2, 0);
+			background-color: lighten($vcs__teal-blue, 20);
+			color: $color__text-alt;
+			@include gutters(2em inside);
 		}
 }
 }

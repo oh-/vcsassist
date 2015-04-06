@@ -254,7 +254,6 @@ $bp-largescreen: 880px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 1.8em;
-  position: relative;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.2\.2\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
 #masthead:after {
@@ -262,16 +261,30 @@ $bp-largescreen: 880px;
   display: block;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003159}}
-#masthead ul.nav-menu {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: #5e6a71;
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003164}}
+.partner-logos {
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003166}}
+.partner-logos .logo {
+  width: 16%;
+  float: left;
+  margin-right: 0.8%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003167}}
+.partner-logos .logoother {
+  width: 32.8%;
+  float: right;
+  margin-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003168}}
+.partner-logos .logoother p {
+  font-size: 0.625em;
+  line-height: 2.4em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003172}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003173}}
 #main-box {
   max-width: 100%;
   margin-left: auto;
@@ -285,7 +298,7 @@ $bp-largescreen: 880px;
   clear: both;
 }
 @media (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003175}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003176}}
   #main-box ul li {
     width: 100%;
     float: left;
@@ -294,7 +307,7 @@ $bp-largescreen: 880px;
   }
 }
 @media (min-width: 680px) and (max-width: 880px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003177}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003178}}
   #main-box ul li {
     width: 50%;
     float: left;
@@ -315,7 +328,7 @@ $bp-largescreen: 880px;
     margin-right: -100%;
     clear: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003181}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003182}}
   #main-box ul li:nth-child(3n) {
     width: 100%;
     float: left;
@@ -325,7 +338,7 @@ $bp-largescreen: 880px;
   }
 }
 @media (min-width: 880px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003189}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003190}}
   #main-box ul li {
     width: 32.25806%;
     float: left;
@@ -353,7 +366,7 @@ $bp-largescreen: 880px;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003197}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003198}}
 #main-long {
   max-width: 100%;
   margin-left: auto;
@@ -365,7 +378,7 @@ $bp-largescreen: 880px;
   display: block;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003199}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003200}}
 #main-long aside.widget {
   -moz-border-radius: 4px / 4px;
   -webkit-border-radius: 4px 4px;
@@ -379,7 +392,7 @@ $bp-largescreen: 880px;
   padding-right: 0.5rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003207}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003208}}
 #secondary aside.widget ul {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -388,23 +401,23 @@ $bp-largescreen: 880px;
   margin-left: 0;
   margin-right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003208}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003209}}
 #secondary aside.widget li {
   margin-bottom: 1rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003212}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003213}}
 #secondary form.contact-form input.email {
   width: 79.80769%;
   float: left;
   margin-right: 0.96154%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003216}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003217}}
 #secondary form.contact-form p.contact-submit {
   width: 19.23077%;
   float: right;
   margin-right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003218}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003219}}
 #secondary form.contact-form p.contact-submit input[type="submit"] {
   color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
@@ -418,26 +431,24 @@ $bp-largescreen: 880px;
   padding-left: 0.4rem;
   padding-right: 0.4rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003236}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003237}}
 #secondary form.contact-form label {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003241}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003242}}
 .home article.post header {
   margin-top: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003249}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003250}}
 footer.site-footer {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  border-top: 3rem solid #D3D3D3;
   position: relative;
-  margin-bottom: 7.5em;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-2\.2\.2\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
 footer.site-footer:after {
@@ -445,49 +456,30 @@ footer.site-footer:after {
   display: block;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003254}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003253}}
 footer.site-footer aside#footer-space {
   width: 100%;
   float: left;
   margin-right: 0.8%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003257}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003256}}
 footer.site-footer #footer-content {
-  background-color: #fff;
+  background-color: #D3D3D3;
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
-  padding-top: 3em;
-  padding-bottom: 1.5em;
-  padding-left: 0.29851%;
-  padding-right: 0.29851%;
+  padding-left: 2.38095%;
+  padding-right: 2.38095%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003265}}
-footer.site-footer .partner-logos:nth-child(4n) {
-  float: right;
-  margin-right: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003266}}
-footer.site-footer .partner-logos #logo-lvsc-unitedway {
-  width: 39.42308%;
-  float: left;
-  margin-right: 0.96154%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003267}}
-footer.site-footer .partner-logos .logo {
-  width: 16%;
-  float: left;
-  margin-right: 0.8%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003269}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003262}}
 footer.site-footer .site-info {
   width: 16%;
   float: right;
   margin-right: 0;
   text-align: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003273}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003266}}
 footer.site-footer .footnote {
   background-color: #485865;
   width: 100%;
@@ -498,14 +490,14 @@ footer.site-footer .footnote {
   padding-left: 0.29851%;
   padding-right: 0.29851%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003279}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003272}}
 footer.site-footer .footnote .footer-logo {
   width: 16%;
   float: left;
   margin-right: 0.8%;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003283}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003276}}
 footer.site-footer .footnote .address, footer.site-footer .footnote .copyright {
   width: 66.4%;
   float: left;
@@ -513,7 +505,7 @@ footer.site-footer .footnote .address, footer.site-footer .footnote .copyright {
   color: #e5e7ea;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003288}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003281}}
 footer.site-footer .footnote .social {
   width: 16%;
   float: right;

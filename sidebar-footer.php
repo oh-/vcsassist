@@ -9,7 +9,7 @@
 				<img src="<?php bloginfo( 'template_url' ); ?>/img/lvscandunitedwayfooterlogo.png" alt="Lvscandunitedwayfooterlogo">
 				<p>VCS Assist is a project of London Voluntary Service Council (LVSC). It is part-financed by the European Social Fund (ESF), Trust for London, and Big Lottery Fund.  ESF invests in jobs and skills, focusing on people who need support the most.</p>
 			</div>
-			<div id="logo-MOL" class="logo">
+			<div id="logo-MOL" class="logo"> 
 				<img src="<?php bloginfo( 'template_url' ); ?>/img/MAYOR-LOGO-CMYK.png" alt="MAYOR LOGO CMYK"></div>
 			<div id="logo-esf" class="logo">
 				<img src="<?php bloginfo( 'template_url' ); ?>/img/esf_logo_rgb_45mm_lores.png" alt="Esf Logo Rgb 45mm Lores">

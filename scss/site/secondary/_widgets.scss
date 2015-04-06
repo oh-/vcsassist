@@ -51,20 +51,23 @@ $main-box-date-text: 2.5rem;
 				background-color: $vcsblue;
 				color: $color__text-alt;
 			}
+			p {@include margin-trailer(1.2);}
 			a.read-more {
+				@include span(1 of 1);
 				position:absolute;
-				bottom: 0;
 				left: 0;
 				right: 0;
-				padding: 0.05rem 0.9rem;
-				text-align: center;
-				color: $color__text-screen;
-				font-weight: 600;
+				bottom: 0;
 				@include background-image(linear-gradient(to bottom, rgba($vcsgrey-light, 0.8), rgba($vcsgrey, 0.9)));
 				&:hover {
 					background-color: rgba($vcsblue, 0.94);
 					color: $color__text-alt;
 				}
+				padding: 0.05rem 0.9rem;
+				text-align: center;
+				color: $color__text-screen;
+				font-weight: 600;
+
 			}
 		}
 	}
