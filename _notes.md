@@ -1,5 +1,6 @@
 #info about the theme
-changed the username to oh-
+changed the username to 'oh-' and company to madeso-uk
+
 
 ##plugins
 *	VCSassist
