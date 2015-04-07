@@ -1,5 +1,5 @@
 #info about the theme
-
+changed the username to oh-
 
 ##plugins
 *	VCSassist
