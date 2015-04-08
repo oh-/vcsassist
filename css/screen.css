@@ -430,19 +430,19 @@ $bp-largescreen: 880px;
   margin-bottom: 1rem;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003223}}
-#secondary form input.email {
+#secondary form input.email, #secondary form input#subscribe-field {
   width: 79.80769%;
   float: left;
   margin-right: 0.96154%;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003227}}
-#secondary form p.contact-submit {
+#secondary form p.contact-submit, #secondary form p#subscribe-submit {
   width: 19.23077%;
   float: right;
   margin-right: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003229}}
-#secondary form p.contact-submit input[type="submit"] {
+#secondary form p.contact-submit input[type="submit"], #secondary form p#subscribe-submit input[type="submit"] {
   color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
   /* Improves usability and consistency of cursor style between image-type 'input' and others */

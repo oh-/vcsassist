@@ -220,11 +220,11 @@ $bp-largescreen: 880px;
 	}
 	//newsletter signup form
 	form { 
-		input.email {
+		input.email, input#subscribe-field {
 			@include span(4 of 5);
 //			@include adjust-font-size-to(12px);
 		}
-		p.contact-submit {
+		p.contact-submit, p#subscribe-submit {
 			@include span(1 of 5 last);
 			input[type="submit"] {
 				color: rgba(0, 0, 0, .8);
