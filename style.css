@@ -240,7 +240,7 @@ h1.widget-title a:hover {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/typography\/_headings\.scss}line{font-family:\0000339}}
-#secondary aside.widget_text h1 {
+#secondary aside.widget_text h1, #secondary aside.jetpack_subscription_widget h1 {
   font-size: 1.3em;
   line-height: 2.30769em;
 }

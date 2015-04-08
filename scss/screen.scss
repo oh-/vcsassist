@@ -219,7 +219,7 @@ $bp-largescreen: 880px;
 		li { margin-bottom: 1rem;};
 	}
 	//newsletter signup form
-	form.contact-form { 
+	form { 
 		input.email {
 			@include span(4 of 5);
 //			@include adjust-font-size-to(12px);

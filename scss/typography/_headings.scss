@@ -36,7 +36,7 @@ h1.widget-title {
 		};
 	}
 }
-#secondary aside.widget_text h1 {
+#secondary aside.widget_text h1, #secondary aside.jetpack_subscription_widget h1 {
 	@include adjust-font-size-to(1.3rem);
 }
 
