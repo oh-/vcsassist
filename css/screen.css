@@ -430,7 +430,7 @@ $bp-largescreen: 880px;
   margin-bottom: 1rem;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/VCS\%20Assist\/themes\/vcsassist\/scss\/screen\.scss}line{font-family:\00003223}}
-#secondary form input.email, #secondary form input#subscribe-field {
+#secondary form input.email, #secondary form p#subscribe-email {
   width: 79.80769%;
   float: left;
   margin-right: 0.96154%;
