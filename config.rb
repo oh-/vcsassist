@@ -10,6 +10,7 @@ sass_dir = "scss"
 images_dir = "img"
 javascripts_dir = "js"
 
+
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
 
@@ -26,10 +27,14 @@ javascripts_dir = "js"
 # and then run:
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
 
-
-sass_options = {:debug_info => true}
-environment = :development
+environment = :production
 # :development or :production
+
+output_style = :expanded
+
+sass_options = {:debug_info => false}
+
+
 
 # Move styles.css up one directory as required by Wordpress
 require 'fileutils'
