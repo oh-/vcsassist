@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: VCS Assist Site Plugin for vcsassist.org
-Description: Site specific code changes for vcsassist.org. Features - [from Mrinal Kanti Roy's widget 'Category Posts Widget'] Adds a widget that shows the most recent posts from a single category.
+Plugin Name: VCS Assist Site Plugin for vcsassist.org.uk
+Description: Site specific code changes for vcsassist.org.uk Features - [from Mrinal Kanti Roy's widget 'Category Posts Widget'] Adds a widget that shows the most recent posts from a single category.
 Author: madeso
 Version: 0.1
 Author URI: http://www.madeso.uk/
@@ -62,9 +62,10 @@ add_filter( 'excerpt_more', 'new_excerpt_more' );
  *
  * Shows the single category posts with some configurable options
  */
-class CategoryPosts extends WP_Widget {
 
-	function CategoryPosts() {
+class CategoryPost extends WP_Widget {
+
+	function CategoryPost() {
 		$widget_ops = array('classname' => 'cat-post-widget', 'description' => __('List single category posts'));
 		$this->WP_Widget('category-posts', __('Category Posts'), $widget_ops);
 	}
@@ -329,7 +330,7 @@ class CategoryPosts extends WP_Widget {
 
 }
 
-add_action( 'widgets_init', create_function('', 'return register_widget("CategoryPosts");') );
+add_action( 'widgets_init', create_function('', 'return register_widget("CategoryPost");') );
 
 
 /**
