@@ -56,7 +56,7 @@ register_deactivation_hook( __FILE__, 'deactivate_plugin_name' );
  * admin-specific hooks, and public-facing site hooks.
  */
 require plugin_dir_path( __FILE__ ) . 'includes/class-vcsassist-plugin.php';
-include_once plugin_dir_path( __FILE__ ) . 'includes/class-catposts.php';
+require plugin_dir_path( __FILE__ ) . 'includes/widgets.php';
 
 /**
  * Begins execution of the plugin.

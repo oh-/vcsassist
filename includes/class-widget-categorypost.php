@@ -45,6 +45,10 @@ add_filter( 'excerpt_more', 'new_excerpt_more' );
 
 class CategoryPost extends WP_Widget {
 
+  function ListCategoryPostsWidget() {
+    $opts = array('description' => __('List posts from a specified category','list-category-posts') );
+    parent::__construct(false, $name = __('List Category Posts','list-category-posts'), $opts);
+  }
 	function CategoryPost() {
 		$widget_ops = array('classname' => 'cat-post-widget', 'description' => __('List single category posts'));
 		$this->WP_Widget('category-posts', __('Category Posts'), $widget_ops);
@@ -319,67 +323,9 @@ add_action( 'widgets_init', create_function('', 'return register_widget("Categor
  * Makes a range of widget spaces and each one, or a range, is available to display newest items from categories or specific posts
  */
 
-class WidgetBox extends WP_Widget {
-	function WidgetBox() {
-		$widget_ops = array('classname' => 'widget-box', 'description' => __('A range of widgets to show on the home page - 3 x 3 box'));
-		$this->WP_Widget('category-posts', __('Category Posts'), $widget_ops);
-	}
-}
-
-
-/**
- * Creation of the TagCloudShortcode
- * This class should host all the functionality that the plugin requires.
- */
-/*
- * first get the options necessary to properly display the plugin
- */
-
-
-
-if ( !class_exists( "TagCloudShortcode" ) ) {
-    
-    class TagCloudShortcode {
-
-        /**
-         * Shortcode Function
-         */
-         function shortcode($atts)
-         {
-
-      		$out = "";
-			$out .='<style type="text/css">div#tagcloud { margin-bottom: 50px; width: 90%; margin-left: auto; margin-right: auto; text-align: center; }</style>';
-
-			$out .= '<div id="tagcloud">';
-			
-			// do something intelligent to pull attributes to set up the parameters properly, with defaults. (not working yet. deal with it.)
-			$listparams = 'number=100&echo=0';
-			
-			$out .= wp_tag_cloud($listparams);
-			
-			$out .='</div>';
-            
-            return $out;
-         }
-    } // End Class TagCloudShortcode
-} 
-
-
-/**
- * Initialize the admin panel function 
- */
-
-if (class_exists("TagCloudShortcode")) {
-
-    $TagCloudShortcodeInstance = new TagCloudShortcode();
-}
-
-
-/**
-  * Set Actions, Shortcodes and Filters
-  */
-// Shortcode events
-if (isset($TagCloudShortcodeInstance)) {
-    add_shortcode('tagcloud',array(&$TagCloudShortcodeInstance, 'shortcode'));
-}
-
+// class WidgetBox extends WP_Widget {
+// 	function WidgetBox() {
+// 		$widget_ops = array('classname' => 'widget-box', 'description' => __('A range of widgets to show on the home page - 3 x 3 box'));
+// 		$this->WP_Widget('category-posts', __('Category Posts'), $widget_ops);
+// 	}
+// }
