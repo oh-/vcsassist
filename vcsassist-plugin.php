@@ -8,16 +8,16 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              http://example.com
- * @since             1.0.0
- * @package           Plugin_Name
+ * @link              http://www.vcsassist.org.uk
+ * @since             0.2.0
+ * @package           VCS_Asssist
  *
  * @wordpress-plugin
  * Plugin Name: VCS Assist Site Plugin for vcsassist.org.uk
- * Plugin URI:        http://example.com/vcsassist-plugin-uri/
+ * Plugin URI:        http://madeso.uk/
  * Description: Site specific code changes for vcsassist.org.uk Features - [from Mrinal Kanti Roy's widget 'Category Posts Widget'] Adds a widget that shows the most recent posts from a single category.
  * Author: madeso
- * Version: 0.1
+ * Version: 0.2
  * Author URI: http://www.madeso.uk/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt

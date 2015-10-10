@@ -27,6 +27,67 @@
  * @subpackage Plugin_Name/includes
  * @author     Your Name <email@example.com>
  */
+
+function vcs_submitbutton() {
+  // link button to the Partner directory submit button, which changes to 
+  // display (hopefully) the submit link, or the register link
+  $link = wpbdp_get_page_link('add-listing');
+  echo sprintf('<a href="%1$s" class="vcs-submit-link">%2$s</a>', $link, __('Submit a listing', '_s'));
+}
+
+
+function vcs_make_button($name, $link) {
+  // Function to reuse to make a button
+        $option = sprintf('<input id="wpbdp-bar-view-listings-button" type="button" value="%1$s" onclick="window.location.href = \'%2$s\'" class="button directory category" />',
+          $name, $link );
+        return $option;
+};
+function vcs_categories_button($parent=0, $hierarchical=true) {
+    $terms = get_categories(array(
+        'taxonomy' => WPBDP_CATEGORY_TAX,
+        'orderby' => 'name',
+        'hide_empty' => 0,
+        'hierarchical' => 0
+    ));
+    foreach ($terms as $category) {
+      // print_r($category);
+      $name = $category->name;
+      $link = rtrim( wpbdp_get_page_link( 'main' ), '/' ) . '/' . wpbdp_get_option( 'permalinks-category-slug' ) . '/' . $category->slug . '/';
+      if (! $category->category_parent == 0) {
+        // only show second level categories
+        echo vcs_make_button($name, $link);
+      };
+    };
+};
+
+
+//partner directorry layout functions
+function vcspd_header() {
+  return "<div class='listings'>";
+};
+function vcspd_footer() {
+  return "</div>";
+};
+
+add_action( 'wp_print_styles', 'custom_deregister_styles', 100 );
+
+function custom_deregister_styles() {
+  /** 
+   * removing wpbdp default minimum styles - sto that I can make them myself
+   */
+  wp_deregister_style( 'wpbdp-base-css' );
+
+};
+
+function vcs_lightbox() {
+
+  echo '<a href = "javascript:void(0)" onclick = "document.getElementById(\'light\').style.display=\'none\';document.getElementById(\'fade\').style.display=\'none\'">';
+  echo '<div id="fade_wrapper">';
+  echo '<div id="fade" class="black_overlay"> [x]</div>';
+  echo '</div>';
+  echo '</a>';
+};
+
 class Plugin_Name {
 
 	/**
