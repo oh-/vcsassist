@@ -42,6 +42,20 @@ function vcs_make_button($name, $link) {
           $name, $link );
         return $option;
 };
+function vcs_tag_button($parent=0, $hierarchical=true) {
+    $terms = get_categories(array(
+        'taxonomy' => WPBDP_TAGS_TAX,
+        'orderby' => 'name',
+        'hide_empty' => 0,
+        'hierarchical' => 0
+    ));
+    foreach ($terms as $tag) {
+      // print_r($tag);
+      $name = $tag->name;
+      $link = rtrim( wpbdp_get_page_link( 'main' ), '/' ) . '/' . wpbdp_get_option( 'permalinks-tags-slug' ) . '/' . $tag->slug . '/';
+      echo vcs_make_button($name, $link);
+    };
+};
 function vcs_categories_button($parent=0, $hierarchical=true) {
     $terms = get_categories(array(
         'taxonomy' => WPBDP_CATEGORY_TAX,
@@ -58,8 +72,7 @@ function vcs_categories_button($parent=0, $hierarchical=true) {
         echo vcs_make_button($name, $link);
       };
     };
-};
-
+}; 
 
 //partner directorry layout functions
 function vcspd_header() {
@@ -68,6 +81,27 @@ function vcspd_header() {
 function vcspd_footer() {
   return "</div>";
 };
+function vcspd_search_form() {
+			$html = '';
+			$html .= sprintf('<form id="wpbdmsearchform" action="" method="GET" class="wpbdp-search-form">
+												<input type="hidden" name="action" value="search" />
+												<input type="hidden" name="page_id" value="%d" />
+												<input type="hidden" name="dosrch" value="1" />',
+												wpbdp_get_page_id('main'));
+			$html .= '<input id="intextbox" maxlength="150" name="q" size="20" type="text" value="" />';
+			$html .= sprintf('<input id="wpbdmsearchsubmit" class="submit" type="submit" value="%s" />',
+											 _x('Go', 'templates', 'WPBDM'));
+			$html .= sprintf('<a href="%s" class="advanced-search-link">%s</a>',
+											 esc_url( add_query_arg('action', 'search', wpbdp_get_page_link('main')) ),
+											 _x('Advanced Search', 'templates', 'WPBDM'));
+			$html .= '</form>';
+
+			return $html;
+}
+function vcspd_the_search_form() {
+    if (wpbdp_get_option('show-search-listings'))
+        echo vcspd_search_form();
+}
 
 add_action( 'wp_print_styles', 'custom_deregister_styles', 100 );
 
