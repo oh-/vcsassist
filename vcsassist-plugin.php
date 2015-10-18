@@ -17,7 +17,7 @@
  * Plugin URI:        http://madeso.uk/
  * Description: Site specific code changes for vcsassist.org.uk Features - [from Mrinal Kanti Roy's widget 'Category Posts Widget'] Adds a widget that shows the most recent posts from a single category.
  * Author: madeso
- * Version: 0.3
+ * Version: 0.3.1
  * Author URI: http://www.madeso.uk/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
