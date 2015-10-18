@@ -34,22 +34,22 @@ if ( ! defined( 'WPINC' ) ) {
  * The code that runs during plugin activation.
  * This action is documented in includes/class-vcsassist-plugin-activator.php
  */
-function activate_plugin_name() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-vcsassist-plugin-activator.php';
-	Plugin_Name_Activator::activate();
-}
+// function activate_plugin_name() {
+// 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-vcsassist-plugin-activator.php';
+// 	Plugin_Name_Activator::activate();
+// }
 
 /**
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-vcsassist-plugin-deactivator.php
  */
-function deactivate_plugin_name() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-vcsassist-plugin-deactivator.php';
-	Plugin_Name_Deactivator::deactivate();
-}
+// function deactivate_plugin_name() {
+// 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-vcsassist-plugin-deactivator.php';
+// 	Plugin_Name_Deactivator::deactivate();
+// }
 
-register_activation_hook( __FILE__, 'activate_plugin_name' );
-register_deactivation_hook( __FILE__, 'deactivate_plugin_name' );
+// register_activation_hook( __FILE__, 'activate_plugin_name' );
+// register_deactivation_hook( __FILE__, 'deactivate_plugin_name' );
 
 /**
  * The core plugin class that is used to define internationalization,
@@ -57,6 +57,8 @@ register_deactivation_hook( __FILE__, 'deactivate_plugin_name' );
  */
 require plugin_dir_path( __FILE__ ) . 'includes/class-vcsassist-plugin.php';
 require plugin_dir_path( __FILE__ ) . 'includes/widgets.php';
+// Walker for category list
+require plugin_dir_path( __FILE__ ) . 'includes/class-vcs-walker.php';
 
 /**
  * Begins execution of the plugin.
@@ -67,10 +69,10 @@ require plugin_dir_path( __FILE__ ) . 'includes/widgets.php';
  *
  * @since    1.0.0
  */
-function run_plugin_name() {
-
-	$plugin = new Plugin_Name();
-	$plugin->run();
-
-}
-run_plugin_name();
+// function run_plugin_name() {
+//
+// 	$plugin = new Plugin_Name();
+// 	$plugin->run();
+//
+// }
+// run_plugin_name();

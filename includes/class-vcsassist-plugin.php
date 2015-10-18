@@ -98,21 +98,68 @@ function vcspd_search_form() {
 
 			return $html;
 }
+
+class VCS_Walker extends Walker {
+    var $tree_type = 'category';
+    var $db_fields = array( 'parent' => 'parent', 'id' => 'term_id' );
+
+    private $input_type;
+    private $selected;
+    private $field;
+
+    public function __construct( $input_type='radio', $selected=null, &$field=null ) {
+        $this->input_type = $input_type;
+        $this->selected = $selected;
+        $this->field = $field;
+    }
+
+    public function start_el( &$output, $category, $depth = 0, $args = array(), $id = 0 ) {
+        switch ( $this->input_type ) {
+            case 'checkbox':
+                $output .= '<div class="wpbdmcheckboxclass">';
+                $output .= sprintf( '<input type="checkbox" class="%s" name="%s" value="%s" %s style="margin-left: %dpx;" />%s',
+                                    $this->field->is_required() ? 'required' : '',
+                                    'listingfields[' . $this->field->get_id() . '][]',
+                                    $category->term_id,
+                                    in_array( $category->term_id, is_array( $this->selected ) ? $this->selected : array( $this->selected ) ) ? 'checked="checked"' : '',
+                                    $depth * 10,
+                                    esc_attr( $category->name )
+                                  );
+                $output .= '</div>';
+                break;
+            case 'radio':
+            default:
+                $output .= sprintf( '<input type="radio" name="%s" class="%s" value="%s" %s style="margin-left: %dpx;"> %s<br />',
+                                    'listingfields[' . $this->field->get_id() . ']',
+                                    $this->field->is_required() ? 'inradio required' : 'inradio',
+                                    $category->term_id,
+                                    $this->selected == $category->term_id ? 'checked="checked"' : '',
+                                    $depth * 10,
+                                    esc_attr( $category->name )
+                                  );
+                break;
+        }
+
+    }
+
+}
+
 function vcspd_the_search_form() {
     if (wpbdp_get_option('show-search-listings'))
         echo vcspd_search_form();
 }
 
+/** 
+ * removing wpbdp default minimum styles - sto that I can make them myself
+ */
 add_action( 'wp_print_styles', 'custom_deregister_styles', 100 );
 
 function custom_deregister_styles() {
-  /** 
-   * removing wpbdp default minimum styles - sto that I can make them myself
-   */
   wp_deregister_style( 'wpbdp-base-css' );
 
 };
 
+// function for register or claim this listing registration pop over. Not currently implemented.
 function vcs_lightbox() {
 
   echo '<a href = "javascript:void(0)" onclick = "document.getElementById(\'light\').style.display=\'none\';document.getElementById(\'fade\').style.display=\'none\'">';
@@ -121,6 +168,16 @@ function vcs_lightbox() {
   echo '</div>';
   echo '</a>';
 };
+
+//Removes Admin bar from Partners
+add_action('after_setup_theme', 'remove_admin_bar');
+
+function remove_admin_bar() {
+	if (current_user_can('partner') ) {
+		show_admin_bar(false);
+	}
+}
+
 
 class Plugin_Name {
 
