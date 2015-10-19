@@ -1,4 +1,15 @@
 <?php 
+/*
+*  VCS_Cat_Walker is for the Plugin Directory submit category - it is slightly changed from the 
+* original which is the WP_Category_Walker function found in wordpress. Also of note - if the
+* plugin 'Business Directory Plugin' is updated further than 3.6.9.1 - there is a high chance
+* that the walker class have been over-written, which enables this feature. - editing detail
+* as below
+* **	file:	core/fieldtypes/class-fieldtypes-checkbox.php
+* **	line:	31: 'walker' => new VCS_Cat_Walker( 'checkbox', $value, $field ),
+
+
+ */
 class VCS_Cat_Walker extends Walker {
     public $tree_type = 'category';
     public $db_fields = array ('parent' => 'parent', 'id' => 'term_id'); //TODO: decouple this
@@ -12,38 +23,38 @@ class VCS_Cat_Walker extends Walker {
         $this->field = $field;
     }
 
-    // /**
-    //  * Starts the list before the elements are added.
-    //  *
-    //  * @see Walker:start_lvl()
-    //  *
-    //  * @since 2.5.1
-    //  *
-    //  * @param string $output Passed by reference. Used to append additional content.
-    //  * @param int    $depth  Depth of category. Used for tab indentation.
-    //  * @param array  $args   An array of arguments. @see wp_terms_checklist()
-    //  */
-    // public function start_lvl( &$output, $depth = 0, $args = array() ) {
-    //     $indent = str_repeat("\t", $depth);
-    //     $output .= "$indent<ul class='children'>\n";
-    // }
-    //
-    // /**
-    //  * Ends the list of after the elements are added.
-    //  *
-    //  * @see Walker::end_lvl()
-    //  *
-    //  * @since 2.5.1
-    //  *
-    //  * @param string $output Passed by reference. Used to append additional content.
-    //  * @param int    $depth  Depth of category. Used for tab indentation.
-    //  * @param array  $args   An array of arguments. @see wp_terms_checklist()
-    //  */
-    // public function end_lvl( &$output, $depth = 0, $args = array() ) {
-    //     $indent = str_repeat("\t", $depth);
-    //     $output .= "$indent</ul>\n";
-    // }
-    //
+    /**
+     * Starts the list before the elements are added.
+     *
+     * @see Walker:start_lvl()
+     *
+     * @since 2.5.1
+     *
+     * @param string $output Passed by reference. Used to append additional content.
+     * @param int    $depth  Depth of category. Used for tab indentation.
+     * @param array  $args   An array of arguments. @see wp_terms_checklist()
+     */
+    public function start_lvl( &$output, $depth = 0, $args = array() ) {
+        $indent = str_repeat("\t", $depth);
+        $output .= "$indent<ul class='children'>\n";
+    }
+
+    /**
+     * Ends the list of after the elements are added.
+     *
+     * @see Walker::end_lvl()
+     *
+     * @since 2.5.1
+     *
+     * @param string $output Passed by reference. Used to append additional content.
+     * @param int    $depth  Depth of category. Used for tab indentation.
+     * @param array  $args   An array of arguments. @see wp_terms_checklist()
+     */
+    public function end_lvl( &$output, $depth = 0, $args = array() ) {
+        $indent = str_repeat("\t", $depth);
+        $output .= "$indent</ul>\n";
+    }
+
     /**
      * Start the element output.
      *
@@ -115,4 +126,53 @@ class VCS_Cat_Walker extends Walker {
     public function end_el( &$output, $category, $depth = 0, $args = array() ) {
         $output .= "</li>\n";
     }
+}
+
+/*
+ * VCS_Walker - at the moment as no need to be here, but I am making a plugin that will 
+ * hopefully allow a chosen category to be displayed as a widget in the sdebar
+ */
+class VCS_Walker extends Walker {
+    var $tree_type = 'category';
+    var $db_fields = array( 'parent' => 'parent', 'id' => 'term_id' );
+
+    private $input_type;
+    private $selected;
+    private $field;
+
+    public function __construct( $input_type='radio', $selected=null, &$field=null ) {
+        $this->input_type = $input_type;
+        $this->selected = $selected;
+        $this->field = $field;
+    }
+
+    public function start_el( &$output, $category, $depth = 0, $args = array(), $id = 0 ) {
+        switch ( $this->input_type ) {
+            case 'checkbox':
+                $output .= '<div class="wpbdmcheckboxclass">';
+                $output .= sprintf( '<input type="checkbox" class="%s" name="%s" value="%s" %s style="margin-left: %dpx;" />%s',
+                                    $this->field->is_required() ? 'required' : '',
+                                    'listingfields[' . $this->field->get_id() . '][]',
+                                    $category->term_id,
+                                    in_array( $category->term_id, is_array( $this->selected ) ? $this->selected : array( $this->selected ) ) ? 'checked="checked"' : '',
+                                    $depth * 10,
+                                    esc_attr( $category->name )
+                                  );
+                $output .= '</div>';
+                break;
+            case 'radio':
+            default:
+                $output .= sprintf( '<input type="radio" name="%s" class="%s" value="%s" %s style="margin-left: %dpx;"> %s<br />',
+                                    'listingfields[' . $this->field->get_id() . ']',
+                                    $this->field->is_required() ? 'inradio required' : 'inradio',
+                                    $category->term_id,
+                                    $this->selected == $category->term_id ? 'checked="checked"' : '',
+                                    $depth * 10,
+                                    esc_attr( $category->name )
+                                  );
+                break;
+        }
+
+    }
+
 }

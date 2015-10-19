@@ -30,6 +30,8 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
+// register and remove styles and scripts throughout the site
+require plugin_dir_path( __FILE__ ) . 'styles-and-scripts.php';
 /**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-vcsassist-plugin-activator.php
