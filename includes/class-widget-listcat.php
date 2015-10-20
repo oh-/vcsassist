@@ -1,0 +1,341 @@
+<?php
+/*
+ * A category list widget that will let you choose a category from a custom taxonomy to list
+ */
+// Register 'List Custom Taxonomy' widget
+add_action( 'widgets_init', 'init_vcs_taxonomy' );
+function init_vcs_taxonomy() { return register_widget('vcs_taxonomy'); }
+
+class vcswidget_Category_Dropdown_Walker extends Walker {
+	var $tree_type = 'category';
+	var $db_fields = array ( 'id' => 'term_id', 'parent' => 'parent' );
+
+	function start_el( &$output, $term, $depth = 0, $args = array(), $current_object_id = 0 ) {
+		$term = get_term( $term, $term->taxonomy );
+		$term_slug = $term->slug;
+
+		$text = str_repeat( '&nbsp;', $depth * 3 ) . $term->name;
+		if ( $args['show_count'] ) {
+			$text .= '&nbsp;('. $term->count .')';
+		}
+
+		$class_name = 'level-' . $depth;
+
+		$output.= "\t" . '<option' . ' class="' . esc_attr( $class_name ) . '" value="' . esc_attr( $term_slug ) . '">' . esc_html( $text ) . '</option>' . "\n";
+	}
+}
+
+
+class vcs_taxonomy extends WP_Widget {
+	/** constructor */
+	function __construct() {
+		parent::__construct( 'vcs_taxonomy', $name = 'List Custom Taxonomy' );
+	}
+
+	/**
+	* This is the Widget
+	**/
+	public function widget( $args, $instance ) { //Widget Output
+		global $post;
+		extract($args);
+
+		// Widget options
+    $title = ( array_key_exists( 'title', $instance ) ) ? apply_filters('widget_title', $instance['title'] ): '';
+    $this_taxonomy = (  isset( $instance['this_taxonomy'] ) ) ? $instance['this_taxonomy'] : '';
+    $this_parent = (  isset( $instance['this_parent'] ) ) ? $instance['this_parent'] : '';
+	  $childof = '';
+    // $this_parent = ( array_key_exists('this_parent', $instance)  ) ? $instance['this_parent'] : '';
+		$hierarchical = !empty( $instance['hierarchical'] ) ? '1' : '0';
+		$inv_empty = !empty( $instance['empty'] ) ? '0' : '1'; // invert to go from UI's "show empty" to WP's "hide empty"
+		$showcount = !empty( $instance['count'] ) ? '1' : '0';
+    $orderby = (array_key_exists('orderby', $instance) ) ? $instance['orderby'] : 'count';
+    $ascdsc = ( array_key_exists('ascdsc',$instance) ) ? $instance['ascdsc']: 'desc';
+    $exclude = ( array_key_exists('exclude',$instance) ) ? $instance['exclude'] : '';
+    $dropdown = ( array_key_exists('dropdown',$instance) ) ? $instance['dropdown']: false;
+		// Dropdown doesn't work for built-in taxonomies.
+		$builtin = array( 'post_tag', 'post_format', 'category' );
+		if ( $dropdown && in_array( $this_taxonomy, $builtin ) ) {
+			$dropdown = false;
+		}
+    $only_parent = ( array_key_exists('only_parent', $instance) ) ? $instance['only_parent'] : '';
+        /*
+         * Output
+         */
+		// $tax = $this_taxonomy;
+		echo $before_widget;
+		if ( $title ) echo $before_title . $title . $after_title;
+		if($dropdown){
+			$taxonomy_object = get_taxonomy( $this_taxonomy );
+			if( in_array( $this_taxonomy, array( 'category', 'post_tag', 'post_format' ) ) )
+				$walker = '';
+			else
+				$walker = new vcswidget_Taxonomy_Dropdown_Walker();
+			$args = array(
+				'show_option_all'    => false,
+				'show_option_none'   => '',
+				'orderby'            => $orderby,
+				'order'              => $ascdsc,
+				'show_count'         => $showcount,
+				'hide_empty'         => $inv_empty,
+				'child_of'           => $childof,
+				'exclude'            => $exclude,
+				'echo'               => 1,
+				//'selected'           => 0,
+				'hierarchical'       => $hierarchical,
+				'name'               => $taxonomy_object->query_var,
+				'id'                 => 'vcs-widget-'.$this_taxonomy,
+				//'class'              => 'postform',
+				'depth'              => 0,
+				//'tab_index'          => 0,
+				'taxonomy'           => $this_taxonomy,
+				'hide_if_empty'      => true,
+				'walker'			=> $walker,
+			);
+			echo '<form action="'. get_bloginfo('url'). '" method="get">';
+			wp_dropdown_categories($args);
+			echo '<input type="submit" value="go &raquo;" /></form>';
+		}
+		else {
+			$args = array(
+					'show_option_all'    => false,
+					'orderby'            => $orderby,
+					'order'              => $ascdsc,
+					'style'              => 'list',
+					'show_count'         => $showcount,
+					'hide_empty'         => $inv_empty,
+					'use_desc_for_title' => 0,
+					'child_of'           => $this_parent,
+					//'feed'               => '',
+					//'feed_type'          => '',
+					//'feed_image'         => '',
+					'exclude'            => $exclude,
+					//'exclude_tree'       => '',
+					// 'include'            => $this_parent,
+					'hierarchical'       => $hierarchical,
+					'title_li'           => '',
+					'show_option_none'   => 'No Categories',
+					'number'             => null,
+					'echo'               => 1,
+					'depth'              => 0,
+					//'current_category'   => 0,
+					//'pad_counts'         => 0,
+					'taxonomy'           => $this_taxonomy,
+					'walker'             => new VCSPButtonWalker
+				);
+			echo '<ul id="vcs-widget-'.$this_taxonomy.'">';
+			wp_list_categories($args);
+			echo '</ul>';
+			
+		}
+		// echo '</div>';
+		echo $after_widget;
+	}
+	/** Widget control update */
+	function update( $new_instance, $old_instance ) {
+		$instance = $old_instance;
+		
+		$instance['title']  = strip_tags( $new_instance['title'] );
+		$instance['this_taxonomy'] = strip_tags( $new_instance['this_taxonomy'] );
+		$instance['orderby'] = strip_tags( $new_instance['orderby']);
+		$instance['ascdsc'] = strip_tags($new_instance['ascdsc']);
+		$instance['exclude'] = strip_tags( $new_instance['exclude']);
+		$instance['expandoptions'] = strip_tags( $new_instance['expandoptions']);
+		$instance['hierarchical'] = !empty($new_instance['hierarchical']) ? 1 : 0;
+		$instance['empty'] = !empty($new_instance['empty']) ? 1 : 0;
+		$instance['count'] = !empty($new_instance['count']) ? 1 : 0;
+		$instance['dropdown'] = !empty($new_instance['dropdown']) ? 1 : 0;
+		$instance['only_parent'] = $new_instance['only_parent'];
+		$instance['this_parent'] = strip_tags($new_instance['this_parent']);
+		// $instance['childof'] = strip_tags( $new_instance['childof']);
+
+		return $instance;
+	}
+	
+	/**
+	* Widget settings
+	**/
+	function form( $instance ) {
+		//for showing/hiding advanced options; wordpress moves this script to where it needs to go
+			wp_enqueue_script('jquery');
+			?><script>
+			jQuery(document).ready(function(){
+				var status = jQuery('#<?php echo $this->get_field_id('expandoptions'); ?>').val();
+				if ( status === 'expand' ) {
+					jQuery('.vcsw-expand-options').hide();
+					jQuery('.vcsw-all-options').show();
+				} else {
+					jQuery('.vcsw-all-options').hide();
+				}
+			
+			});
+			function vcswExpand(id){
+				jQuery('#' + id).val('expand');
+				jQuery('.vcsw-all-options').show(500); 
+				jQuery('.vcsw-expand-options').hide(500);
+			}
+			function vcswContract(id){
+				jQuery('#' + id).val('contract');
+				jQuery('.vcsw-all-options').hide(500); 
+				jQuery('.vcsw-expand-options').show(500);
+			}
+			</script><?php
+		  // instance exist? if not set defaults
+		    if ( $instance ) {
+				$title  = $instance['title'];
+				$this_taxonomy = $instance['this_taxonomy'];
+				$orderby = $instance['orderby'];
+				$ascdsc = $instance['ascdsc'];
+				$exclude = $instance['exclude'];
+				$expandoptions = $instance['expandoptions'];
+				$showcount = isset($instance['count']) ? (bool) $instance['count'] :false;
+				$hierarchical = isset( $instance['hierarchical'] ) ? (bool) $instance['hierarchical'] : false;
+				$empty = isset( $instance['empty'] ) ? (bool) $instance['empty'] : false;
+				$dropdown = isset( $instance['dropdown'] ) ? (bool) $instance['dropdown'] : false;
+				$only_parent = isset( $instance['only_parent'] ) ? (bool) $instance['only_parent'] : false;
+				$this_parent = $instance['this_parent'];
+				// $childof = $instance['childof'];
+		    } else {
+			    //These are our defaults
+				$title  = '';
+				$orderby  = 'count';
+				$ascdsc  = 'desc';
+				$exclude  = '';
+				$expandoptions  = 'contract';
+				$this_taxonomy = 'category';//this will display the category taxonomy, which is used for normal, built-in posts
+				$hierarchical = true;
+				$showcount = true;
+				$empty = false;
+				$dropdown = false;
+				$only_parent = false;
+				$childof  = '';
+				$this_parent = '';
+		    }
+			
+		// The widget form ?>
+			<p>
+				<label for="<?php echo $this->get_field_id('title'); ?>"><?php echo __( 'Title:' ); ?></label>
+				<input id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" class="widefat" />
+			</p>
+			<p>
+				<label for="<?php echo $this->get_field_id('this_taxonomy'); ?>"><?php echo __( 'Select Taxonomy:' ); ?></label>
+				<select name="<?php echo $this->get_field_name('this_taxonomy'); ?>" id="<?php echo $this->get_field_id('this_taxonomy'); ?>" class="widefat" style="height: auto;" size="4">
+        
+			<?php 
+			// which taxonomy to display
+			$args=array(
+			  'public'   => true,
+			  '_builtin' => false //these are manually added to the array later
+			); 
+			$output = 'names'; // or objects
+			$operator = 'and'; // 'and' or 'or'
+			$taxonomies=get_taxonomies($args,$output,$operator); 
+			$taxonomies[] = 'category';
+			$taxonomies[] = 'post_tag';
+			$taxonomies[] = 'post_format';
+			foreach ($taxonomies as $taxonomy ) { ?>
+				<option value="<?php echo $taxonomy; ?>" <?php if( $taxonomy == $this_taxonomy ) { echo 'selected="selected"'; } ?>><?php echo $taxonomy;?></option>
+			<?php }	?>
+			</select>
+			</p>
+			<h4 class="vcsw-expand-options"><a href="javascript:void(0)" onclick="vcswExpand('<?php echo $this->get_field_id('expandoptions'); ?>')" >More Options...</a></h4>
+			<div class="vcsw-all-options">
+				<h4 class="vcsw-contract-options"><a href="javascript:void(0)" onclick="vcswContract('<?php echo $this->get_field_id('expandoptions'); ?>')" >Hide Extended Options</a></h4>
+				<input type="hidden" value="<?php echo $expandoptions; ?>" id="<?php echo $this->get_field_id('expandoptions'); ?>" name="<?php echo $this->get_field_name('expandoptions'); ?>" />
+				
+				<input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id('count'); ?>" name="<?php echo $this->get_field_name('count'); ?>"<?php checked( $showcount ); ?> />
+				<label for="<?php echo $this->get_field_id('count'); ?>"><?php _e( 'Show Post Counts' ); ?></label><br />
+				<input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id('hierarchical'); ?>" name="<?php echo $this->get_field_name('hierarchical'); ?>"<?php checked( $hierarchical ); ?> />
+				<label for="<?php echo $this->get_field_id('hierarchical'); ?>"><?php _e( 'Show Hierarchy' ); ?></label><br/>
+				<input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id('empty'); ?>" name="<?php echo $this->get_field_name('empty'); ?>"<?php checked( $empty ); ?> />
+				<label for="<?php echo $this->get_field_id('empty'); ?>"><?php _e( 'Show Empty Terms' ); ?></label></p>
+
+
+
+				<input type="checkbox" class="checkbox vcsw-expand-cat" id="<?php echo $this->get_field_id('only_parent'); ?>" name="<?php echo $this->get_field_name('only_parent'); ?>"<?php checked( $only_parent ); ?> />
+				<label for="<?php echo $this->get_field_id('only_parent'); ?>"><?php _e( 'Only Show the Category listed' ); ?></label></p>
+<?php 
+	$catarg = array(
+/*
+$title  = '';
+$orderby  = 'count';
+$ascdsc  = 'desc';
+$exclude  = '';
+$expandoptions  = 'contract';
+$childof  = '';
+$this_taxonomy = 'category';//this will display the category taxonomy, which is used for normal, built-in posts
+$hierarchical = true;
+$showcount = true;
+$empty = false;
+$dropdown = false;
+$only_parent = false;
+ */
+		'show_option_all'    => 'All',
+		'show_option_none'   => '',
+		'option_none_value'  => '-1',
+		'orderby'            => $orderby, 
+		'order'              => $orderby,
+		'show_count'         => $showcount,
+		'hide_empty'         => $empty, 
+		'child_of'           => 0,
+		'exclude'            => $exclude,
+		'echo'               => 1,
+		'selected'           => $this_parent, // perhaps this should be the ID??
+		'hierarchical'       => 1, 
+		'name'               => $this->get_field_name('this_parent'),
+		'id'                 => $this->get_field_id('this_parent'),
+		'class'              => 'postform',
+		'depth'              => 1,
+		'tab_index'          => 0,
+		'taxonomy'           => $this_taxonomy,
+		'hide_if_empty'      => $empty,
+		'value_field'	     => 'ID',	
+	);
+wp_dropdown_categories( $catarg );
+// echo $this_parent
+?> 
+				<p>
+					<label for="<?php echo $this->get_field_id('orderby'); ?>"><?php echo __( 'Order By:' ); ?></label>
+					<select name="<?php echo $this->get_field_name('orderby'); ?>" id="<?php echo $this->get_field_id('orderby'); ?>" class="widefat" >
+						<option value="ID" <?php if( $orderby == 'ID' ) { echo 'selected="selected"'; } ?>>ID</option>
+						<option value="name" <?php if( $orderby == 'name' ) { echo 'selected="selected"'; } ?>>Name</option>
+						<option value="slug" <?php if( $orderby == 'slug' ) { echo 'selected="selected"'; } ?>>Slug</option>
+						<option value="count" <?php if( $orderby == 'count' ) { echo 'selected="selected"'; } ?>>Count</option>
+						<option value="term_group" <?php if( $orderby == 'term_group' ) { echo 'selected="selected"'; } ?>>Term Group</option>
+					</select>
+				</p>
+				<p>
+					<label><input type="radio" name="<?php echo $this->get_field_name('ascdsc'); ?>" value="asc" <?php if( $ascdsc == 'asc' ) { echo 'checked'; } ?>/> Ascending</label><br/>
+					<label><input type="radio" name="<?php echo $this->get_field_name('ascdsc'); ?>" value="desc" <?php if( $ascdsc == 'desc' ) { echo 'checked'; } ?>/> Descending</label>
+				</p>
+				<p>
+					<label for="<?php echo $this->get_field_id('exclude'); ?>">Exclude (comma-separated list of ids to exclude)</label><br/>
+					<input type="text" class="widefat" name="<?php echo $this->get_field_name('exclude'); ?>" value="<?php echo $exclude; ?>" />
+				</p>
+				<input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id('dropdown'); ?>" name="<?php echo $this->get_field_name('dropdown'); ?>"<?php checked( $dropdown ); ?> />
+				<label for="<?php echo $this->get_field_id('dropdown'); ?>"><?php _e( 'Display as Dropdown' ); ?></label></p>
+			</div>
+<?php 
+	}
+
+} // class vcs_taxonomy
+
+/* Custom version of Walker_CategoryDropdown */
+class vcswidget_Taxonomy_Dropdown_Walker extends Walker {
+	var $tree_type = 'category';
+	var $db_fields = array ( 'id' => 'term_id', 'parent' => 'parent' );
+
+	function start_el( &$output, $term, $depth = 0, $args = array(), $current_object_id = 0 ) {
+		$term = get_term( $term, $term->this_taxonomy );
+		$term_slug = $term->slug;
+
+		$text = str_repeat( '&nbsp;', $depth * 3 ) . $term->name;
+		if ( $args['show_count'] ) {
+			$text .= '&nbsp;('. $term->count .')';
+		}
+
+		$class_name = 'level-' . $depth;
+
+		$output.= "\t" . '<option' . ' class="' . esc_attr( $class_name ) . '" value="' . esc_attr( $term_slug ) . '">' . esc_html( $text ) . '</option>' . "\n";
+	}
+}
+
